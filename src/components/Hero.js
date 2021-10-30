@@ -1,4 +1,5 @@
 import { VStack, Heading, Text, Container } from "@chakra-ui/react";
+import CustomLink from "./CustomLink";
 
 const Hero = () => {
   return (
@@ -20,7 +21,11 @@ const Hero = () => {
           on their ability to spell these words. As each lesson is successfully
           completed, additional lessons will unlock.
         </Text>
-        <Text m={4}>Select a lesson to begin.</Text>
+        <CustomLink
+          text="Sign in to begin."
+          link="/signin"
+          textDecoration="underline"
+        />
       </Container>
     </VStack>
   );

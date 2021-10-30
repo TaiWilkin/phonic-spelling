@@ -49,9 +49,9 @@ export default function App() {
           <PrivateRoute path="/attempts">
             <Attempts />
           </PrivateRoute>
-          <Route path="/lessons/:id">
+          <PrivateRoute path="/lessons/:id">
             <Lesson />
-          </Route>
+          </PrivateRoute>
           <Route exact path="/lessons">
             <Lessons />
           </Route>

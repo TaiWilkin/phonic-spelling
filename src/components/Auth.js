@@ -6,14 +6,16 @@ import {
   InputGroup,
   InputRightElement,
   VStack,
-  Text
+  Text,
 } from "@chakra-ui/react";
 import { Switch, Route, useHistory, useLocation } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+
+import CustomLink from "./CustomLink";
 import { register, signin } from "../reducers/auth";
 
 const Auth = () => {
-  const { user } = useSelector(state => state.auth);
+  const { user } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
   let history = useHistory();
   const { state } = useLocation();
@@ -38,7 +40,7 @@ const Auth = () => {
       <VStack pt={4} spacing={4}>
         <Switch>
           <Route path="/signin">
-            <Text fontSize="xl">Signin</Text>
+            <Text fontSize="xl">Sign in</Text>
           </Route>
           <Route path="/register">
             <Text fontSize="xl">Register</Text>
@@ -47,7 +49,7 @@ const Auth = () => {
         <Input
           placeholder="Email"
           value={email}
-          onChange={e => setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <InputGroup size="md">
           <Input
@@ -55,7 +57,7 @@ const Auth = () => {
             type={show ? "text" : "password"}
             placeholder="Enter password"
             value={password}
-            onChange={e => setPassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
           />
           <InputRightElement width="4.5rem">
             <Button h="1.75rem" size="sm" onClick={handleClick}>
@@ -65,10 +67,20 @@ const Auth = () => {
         </InputGroup>
         <Switch>
           <Route path="/signin">
-            <Button onClick={handleSignin}>Signin</Button>
+            <>
+              <Button onClick={handleSignin}>Sign in</Button>
+              <CustomLink
+                text="Register instead."
+                link="/register"
+                color="teal"
+              />
+            </>
           </Route>
           <Route path="/register">
-            <Button onClick={handleRegister}>Register</Button>
+            <>
+              <Button onClick={handleRegister}>Register</Button>
+              <CustomLink text="Sign in instead." link="/signin" color="teal" />
+            </>
           </Route>
         </Switch>
       </VStack>

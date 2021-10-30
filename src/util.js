@@ -1,7 +1,7 @@
 import { format, parse } from "date-fns";
 import phonemes from "./data/phonemes";
 
-const SOUND_ON = false;
+const SOUND_ON = true;
 const VOICES = window.speechSynthesis?.getVoices();
 
 export const pronounce = (text) => {

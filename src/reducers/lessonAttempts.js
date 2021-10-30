@@ -2,13 +2,14 @@ import { createSlice } from "@reduxjs/toolkit";
 import { toast } from "react-toastify";
 import {
   firebaseGetLessonAttempts,
-  firebaseAddLessonAttempt
+  firebaseAddLessonAttempt,
 } from "../firebase";
+import { clearState } from "./auth";
 
 export const lessonAttemptsSlice = createSlice({
   name: "lessonattempts",
   initialState: {
-    attempts: {}
+    attempts: {},
   },
   reducers: {
     saveLessonAttemptSuccess: (state, { payload }) => {
@@ -21,36 +22,35 @@ export const lessonAttemptsSlice = createSlice({
     },
     getLessonAttemptsSuccess: (state, { payload }) => {
       state.attempts = payload;
-    }
-  }
+    },
+  },
+  extraReducers: {
+    [clearState]: (state) => ({ attempts: {} }),
+  },
 });
 
-export const {
-  saveLessonAttemptSuccess,
-  getLessonAttemptsSuccess
-} = lessonAttemptsSlice.actions;
+export const { saveLessonAttemptSuccess, getLessonAttemptsSuccess } =
+  lessonAttemptsSlice.actions;
 
-export const saveLessonAttempt = ({
-  lesson,
-  missedWords,
-  completedWords
-}) => dispatch => {
-  firebaseAddLessonAttempt({ lesson, missedWords, completedWords })
-    .then(attempt => {
-      dispatch(saveLessonAttemptSuccess(attempt));
-    })
-    .catch(error => {
-      console.log(error);
-      toast.error(error.message);
-    });
-};
+export const saveLessonAttempt =
+  ({ lesson, missedWords, completedWords }) =>
+  (dispatch) => {
+    firebaseAddLessonAttempt({ lesson, missedWords, completedWords })
+      .then((attempt) => {
+        dispatch(saveLessonAttemptSuccess(attempt));
+      })
+      .catch((error) => {
+        console.log(error);
+        toast.error(error.message);
+      });
+  };
 
-export const getLessonAttempts = () => dispatch => {
+export const getLessonAttempts = () => (dispatch) => {
   firebaseGetLessonAttempts()
-    .then(attempts => {
+    .then((attempts) => {
       dispatch(getLessonAttemptsSuccess(attempts));
     })
-    .catch(error => {
+    .catch((error) => {
       console.log(error);
       toast.error(error.message);
     });

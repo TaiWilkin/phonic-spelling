@@ -7,9 +7,20 @@ import LessonLink from "./LessonLink";
 
 const Lessons = () => {
   const { user } = useSelector((state) => state.auth);
+  if (user === null) {
+    return null;
+  }
+
+  if (user === false) {
+    return (
+      <Box>
+        <Hero />
+      </Box>
+    );
+  }
+
   return (
     <Box>
-      {user === false && <Hero />}
       <VStack m="5">
         <Heading as="h2" mb="5">
           Lessons
