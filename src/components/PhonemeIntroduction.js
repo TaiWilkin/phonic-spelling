@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { VStack, Text, Heading } from "@chakra-ui/react";
 
 import Key from "./Key";
@@ -14,12 +15,14 @@ const style = {
 
 const PhonemeIntroduction = () => {
   let { name } = useParams();
+  const { voice } = useSelector((state) => state.voice);
 
   useEffect(() => {
-    pronounce(letterDescription(name));
-  }, [name]);
+    pronounce(letterDescription(name), voice);
+  }, [name, voice]);
+
   const handleKeyPress = (name) => {
-    pronounce(letterDescription(name));
+    pronounce(letterDescription(name), voice);
   };
 
   if (!name) return null;

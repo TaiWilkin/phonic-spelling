@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import { useRouteMatch, Redirect } from "react-router-dom";
 import { Text, Box, Heading } from "@chakra-ui/react";
 import { toast } from "react-toastify";
@@ -10,6 +11,7 @@ import words from "../data/words";
 
 const WordAnalysis = ({ phonemeList, wordList }) => {
   let match = useRouteMatch();
+  const { voice } = useSelector((state) => state.voice);
   const [completedWords, setCompletedWords] = useState([]);
   const incompleteWords = wordList.filter(
     (word) => !completedWords.includes(word)
@@ -17,21 +19,21 @@ const WordAnalysis = ({ phonemeList, wordList }) => {
   const currentWord = incompleteWords[0];
   const pronounceCurrentWord = () => {
     if (currentWord) {
-      pronounce(currentWord);
+      pronounce(currentWord, voice);
     }
   };
   const useInSentence = () => {
     const sentence = words[currentWord].sentence;
     if (!sentence) {
-      pronounce("No sentence available.");
+      pronounce("No sentence available.", voice);
     } else {
-      pronounce(sentence);
+      pronounce(sentence, voice);
     }
   };
   const giveInitialPrompt = () => {
     if (currentWord) {
       const sentence = words[currentWord]?.sentence;
-      pronounce(`'${currentWord}'. ${sentence} '${currentWord}'.`);
+      pronounce(`'${currentWord}'. ${sentence} '${currentWord}'.`, voice);
     }
   };
   const onSubmit = (letters) => {

@@ -5,16 +5,14 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
-import { HStack, Heading, Spacer } from "@chakra-ui/react";
 import { ToastContainer } from "react-toastify";
 import { useDispatch } from "react-redux";
 
+import PrivateRoute from "./components/PrivateRoute";
+import Header from "./components/Header";
 import Lesson from "./components/Lesson";
 import Lessons from "./components/Lessons";
-import NavigationDrawer from "./components/NavigationDrawer";
-import AuthButtons from "./components/AuthButtons";
 import Auth from "./components/Auth";
-import PrivateRoute from "./components/PrivateRoute";
 import Attempts from "./components/Attempts";
 
 import "react-toastify/dist/ReactToastify.css";
@@ -31,14 +29,7 @@ export default function App() {
   return (
     <div className="App">
       <Router>
-        <HStack p="10px" bg="black">
-          <NavigationDrawer />
-          <Heading pl="5" color="white" size="lg">
-            Phonic Spelling
-          </Heading>
-          <Spacer />
-          <AuthButtons />
-        </HStack>
+        <Header />
         <Switch>
           <Route path="/signin">
             <Auth />

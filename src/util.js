@@ -1,16 +1,17 @@
 import { format, parse } from "date-fns";
 import phonemes from "./data/phonemes";
 
-const SOUND_ON = true;
-const VOICES = window.speechSynthesis?.getVoices();
+const SOUND_ON = process?.env?.NODE_ENV === "development" ? false : true;
+export const VOICES = window.speechSynthesis?.getVoices();
 
-export const pronounce = (text) => {
+export const pronounce = (text, voice = "Google US English") => {
   if ("speechSynthesis" in window) {
     // Speech Synthesis supported 🎉
     var msg = new SpeechSynthesisUtterance();
     msg.text = text;
     msg.rate = 0.75; // From 0.1 to 10
     msg.voice =
+      VOICES.find((v) => v.name === voice) ||
       VOICES.find((v) => v.name === "Google US English") ||
       VOICES.find((v) => v.lang === "en-US");
     if (SOUND_ON) {

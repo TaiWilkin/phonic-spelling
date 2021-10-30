@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Box, Button, HStack } from "@chakra-ui/react";
+import { useSelector } from "react-redux";
 
 import Keyboard from "./Keyboard";
 import Textbox from "./Textbox";
@@ -14,17 +15,18 @@ const Typewriter = ({
   useInSentence,
   stemList = [],
 }) => {
+  const { voice } = useSelector((state) => state.voice);
   const [letters, setLetters] = useState([]);
   const [describeLetters, setDescribeLetters] = useState(false);
   const handleKeyPress = (name) => {
     if (describeLetters) {
-      pronounce(letterDescription(name));
+      pronounce(letterDescription(name), voice);
     }
     setLetters([...letters, name]);
   };
   const handleStemKeyPress = (stem) => {
     if (describeLetters) {
-      pronounce(stem);
+      pronounce(stem, voice);
     }
     const stemLetters = stems[stem]?.letters || [];
     setLetters([...letters, ...stemLetters]);

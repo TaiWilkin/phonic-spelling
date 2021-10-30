@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useRouteMatch } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Text, Heading } from "@chakra-ui/react";
 import { toast } from "react-toastify";
 
@@ -14,6 +14,7 @@ import words from "../data/words";
 const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
   const match = useRouteMatch();
   const dispatch = useDispatch();
+  const { voice } = useSelector((state) => state.voice);
   const [completedWords, setCompletedWords] = useState([]);
   const [missedWords, setMissedWords] = useState([]);
 
@@ -24,22 +25,22 @@ const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
   const lesson = match.params.id;
 
   const pronounceCurrentWord = () => {
-    if (currentWord) pronounce(currentWord);
+    if (currentWord) pronounce(currentWord, voice);
   };
 
   const useInSentence = () => {
     const sentence = words[currentWord].sentence;
     if (!sentence) {
-      pronounce("No sentence available.");
+      pronounce("No sentence available.", voice);
     } else {
-      pronounce(sentence);
+      pronounce(sentence, voice);
     }
   };
 
   const giveInitialPrompt = () => {
     if (currentWord) {
       const sentence = words[currentWord]?.sentence;
-      pronounce(`'${currentWord}'. ${sentence} '${currentWord}'.`);
+      pronounce(`'${currentWord}'. ${sentence} '${currentWord}'.`, voice);
     }
   };
 
