@@ -35,14 +35,14 @@ const Lesson = () => {
         </Text>
       </Box>
     );
-  const { newPhonemes, allPhonemes, words, stems, notes } =
+  const { newPhonemes, allPhonemes, words, stems, notes, review } =
     lessons[match.params.id];
   const wordList = words.sort(() => (Math.random() > 0.5 ? 1 : -1));
   return (
     <div>
       <Switch>
         <Route path={`${match.path}/phoneme/:name`}>
-          <PhonemeIntroduction />
+          <PhonemeIntroduction review={review} />
         </Route>
         <Route path={`${match.path}/analysis`}>
           <WordAnalysis phonemeList={allPhonemes} wordList={wordList} />
@@ -55,7 +55,11 @@ const Lesson = () => {
           />
         </Route>
         <Route path={match.path}>
-          <LessonIntroduction notes={notes} phonemeList={newPhonemes} />
+          <LessonIntroduction
+            notes={notes}
+            phonemeList={newPhonemes}
+            review={review}
+          />
         </Route>
       </Switch>
       <Switch>
@@ -63,7 +67,7 @@ const Lesson = () => {
           <LessonContinueLink phonemeList={newPhonemes} />
         </Route>
         <Route path={`${match.path}`} exact>
-          <LessonContinueLink phonemeList={newPhonemes} />
+          <LessonContinueLink phonemeList={newPhonemes} review={review} />
         </Route>
       </Switch>
     </div>

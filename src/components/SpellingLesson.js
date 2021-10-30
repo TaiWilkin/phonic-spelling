@@ -40,7 +40,12 @@ const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
   const giveInitialPrompt = () => {
     if (currentWord) {
       const sentence = words[currentWord]?.sentence;
-      pronounce(`${currentWord}. ${sentence} ${currentWord}.`, voice);
+      pronounce(
+        `${currentWord}. ${
+          sentence ? sentence : "Listen again: "
+        } ${currentWord}.`,
+        voice
+      );
     }
   };
 

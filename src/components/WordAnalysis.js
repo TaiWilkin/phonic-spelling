@@ -54,7 +54,6 @@ const WordAnalysis = ({ phonemeList, wordList }) => {
 
     // eslint-disable-next-line
   }, [currentWord]);
-
   if (!currentWord) {
     return <Redirect to={`/lessons/${match.params.id}/spelling`} />;
   }

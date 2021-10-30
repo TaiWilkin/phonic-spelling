@@ -416,6 +416,61 @@ const words = {
   bib: {
     letters: ["b", "short-i", "b"],
   },
+  Nan: {
+    letters: ["n", "short-a", "n"],
+  },
+  pup: {
+    letters: ["p", "short-u", "p"],
+  },
+  led: {
+    letters: ["l", "short-e", "d"],
+    sentence: "She led the dog with the leash.",
+  },
+  tax: {
+    letters: ["t", "short-a", "x"],
+  },
+  ran: {
+    letters: ["r", "short-a", "n"],
+  },
+  him: {
+    letters: ["h", "short-i", "m"],
+  },
+  fall: {
+    letters: ["f", "open-a", "l", "l"],
+  },
+  got: {
+    letters: ["g", "short-o", "t"],
+  },
+  met: {
+    letters: ["m", "short-e", "t"],
+  },
+  bell: {
+    letters: ["b", "short-e", "l", "l"],
+  },
+  pit: {
+    letters: ["p", "short-i", "t"],
+  },
+  bun: {
+    letters: ["b", "short-u", "n"],
+  },
+  did: {
+    letters: ["d", "short-i", "d"],
+  },
+  quit: {
+    letters: ["qu", "short-i", "t"],
+  },
+  men: {
+    letters: ["m", "short-e", "n"],
+  },
+  had: {
+    letters: ["h", "short-a", "d"],
+  },
+  jog: {
+    letters: ["j", "short-o", "g"],
+  },
+  yam: {
+    letters: ["hard-y", "short-a", "m"],
+  },
 };
 
 export default words;
