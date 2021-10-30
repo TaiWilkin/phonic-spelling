@@ -226,6 +226,66 @@ const words = {
     letters: ["l", "short-i", "t"],
     sentence: "I 'lit' the lamp.",
   },
+  van: {
+    letters: ["v", "short-a", "n"],
+    sentence: "Let's go in the 'van'.",
+  },
+  man: {
+    letters: ["m", "short-a", "n"],
+    sentence: "The 'man' has a tall hat.",
+  },
+  vans: {
+    letters: ["v", "short-a", "n", "hard-s"],
+    sentence: "The school has two 'vans'.",
+  },
+  Tim: {
+    letters: ["t", "short-i", "m"],
+    sentence: "'Tim' has a pet cat.",
+  },
+  vim: {
+    letters: ["v", "short-i", "m"],
+    sentence: "She approached the task with 'vim' and vigor.",
+  },
+  dims: {
+    letters: ["d", "short-i", "m", "hard-s"],
+    sentence: "The light is 'dim'.",
+  },
+  wet: {
+    letters: ["w", "short-e", "t"],
+    sentence: "The clothes are 'wet'.",
+  },
+  set: {
+    letters: ["s", "short-e", "t"],
+    sentence: "I just bought a new chess 'set'.",
+  },
+  sets: {
+    letters: ["s", "short-e", "t", "s"],
+    sentence: "We should get home before the sun 'sets'.",
+  },
+  yet: {
+    letters: ["hard-y", "short-e", "t"],
+    sentence: "I don't want to go home 'yet'.",
+  },
+  pet: {
+    letters: ["p", "short-e", "t"],
+    sentence: "I want a new 'pet'.",
+  },
+  pets: {
+    letters: ["p", "short-e", "t", "s"],
+    sentence: "She 'pets' the cat.",
+  },
+  win: {
+    letters: ["w", "short-i", "n"],
+    sentence: "I will win when we play chess.",
+  },
+  bin: {
+    letters: ["b", "short-i", "n"],
+    sentence: "Throw the trash in the bin.",
+  },
+  wins: {
+    letters: ["w", "short-i", "n", "hard-s"],
+    sentence: "My mother always 'wins' at Scrabble.",
+  },
 };
 
 export default words;

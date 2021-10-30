@@ -19,6 +19,9 @@ import bImg from "./images/b.png";
 import gImg from "./images/g.png";
 import kImg from "./images/k.png";
 import lImg from "./images/l.png";
+import hardYImg from "./images/hard-y.png";
+import wImg from "./images/w.png";
+import vImg from "./images/v.png";
 
 const phonemes = {
   "short-a": {
@@ -160,6 +163,27 @@ const phonemes = {
     letter: "L",
     examples: ["lit", "ball"],
     image: lImg,
+    vowel: false,
+  },
+  "hard-y": {
+    name: "hard-y",
+    letter: "Y",
+    examples: ["yet", "young"],
+    image: hardYImg,
+    vowel: false,
+  },
+  v: {
+    name: "v",
+    letter: "V",
+    examples: ["vet", "value"],
+    image: vImg,
+    vowel: false,
+  },
+  w: {
+    name: "w",
+    letter: "w",
+    examples: ["wit", "wave"],
+    image: wImg,
     vowel: false,
   },
 };

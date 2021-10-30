@@ -2,7 +2,7 @@ import { format, parse } from "date-fns";
 import phonemes from "./data/phonemes";
 
 const SOUND_ON = process?.env?.NODE_ENV === "development" ? false : true;
-export const VOICES = window.speechSynthesis?.getVoices();
+export let VOICES = window.speechSynthesis?.getVoices();
 
 export const pronounce = (text, voice = "Google US English") => {
   if ("speechSynthesis" in window) {
@@ -10,10 +10,18 @@ export const pronounce = (text, voice = "Google US English") => {
     var msg = new SpeechSynthesisUtterance();
     msg.text = text;
     msg.rate = 0.75; // From 0.1 to 10
-    msg.voice =
-      VOICES.find((v) => v.name === voice) ||
-      VOICES.find((v) => v.name === "Google US English") ||
-      VOICES.find((v) => v.lang === "en-US");
+    const voices = VOICES.length ? VOICES : window.speechSynthesis?.getVoices();
+    if (!VOICES.length && voices.length) {
+      VOICES = voices;
+    }
+    msg.voice = voices.find((v) => v.voiceURI === voice);
+    console.log(msg.voice, voice);
+    if (!msg.voice) {
+      msg.voice = voices.find((v) => v.voiceURI === "Google US English");
+    }
+    if (!msg.voice) {
+      msg.voice = voices.find((v) => v.lang === "en-US");
+    }
     if (SOUND_ON) {
       window.speechSynthesis.cancel();
       window.speechSynthesis.speak(msg);
