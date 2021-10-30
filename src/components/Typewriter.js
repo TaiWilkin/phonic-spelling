@@ -4,7 +4,13 @@ import { useSelector } from "react-redux";
 
 import Keyboard from "./Keyboard";
 import Textbox from "./Textbox";
-import { pronounce, letterDescription, sortPhonemes, sortStems } from "../util";
+import {
+  pronounce,
+  letterDescription,
+  sortPhonemes,
+  sortStems,
+  getAlt,
+} from "../util";
 import stems from "../data/stems";
 
 const Typewriter = ({
@@ -22,7 +28,12 @@ const Typewriter = ({
     if (describeLetters) {
       pronounce(letterDescription(name), voice);
     }
-    setLetters([...letters, name]);
+    const alt = getAlt(name);
+    if (alt) {
+      setLetters([...letters, ...alt]);
+    } else {
+      setLetters([...letters, name]);
+    }
   };
   const handleStemKeyPress = (stem) => {
     if (describeLetters) {

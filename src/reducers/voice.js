@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const defaultVoice = "Google US English";
 
 export const voicesSlice = createSlice({
-  name: "lessonattempts",
+  name: "voice",
   initialState: {
     voice: defaultVoice,
   },

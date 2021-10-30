@@ -15,7 +15,6 @@ export const pronounce = (text, voice = "Google US English") => {
       VOICES = voices;
     }
     msg.voice = voices.find((v) => v.voiceURI === voice);
-    console.log(msg.voice, voice);
     if (!msg.voice) {
       msg.voice = voices.find((v) => v.voiceURI === "Google US English");
     }
@@ -58,6 +57,8 @@ export const calculateScore = ({ missedWords, completedWords }) =>
 export const sortPhonemes = (phonemes) => phonemes.sort(comparePhonemes);
 
 export const sortStems = (stems) => stems.sort();
+
+export const getAlt = (phoneme) => phonemes[phoneme].alt;
 
 export const getUnlockedLessons = (attempts) =>
   Object.keys(attempts).reduce(

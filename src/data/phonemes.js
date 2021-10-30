@@ -22,6 +22,11 @@ import lImg from "./images/l.png";
 import hardYImg from "./images/hard-y.png";
 import wImg from "./images/w.png";
 import vImg from "./images/v.png";
+import xImg from "./images/x.png";
+import openAImg from "./images/open-a.png";
+import doubleLImg from "./images/double-l.png";
+import quImg from "./images/qu.png";
+import zImg from "./images/z.png";
 
 const phonemes = {
   "short-a": {
@@ -167,7 +172,7 @@ const phonemes = {
   },
   "hard-y": {
     name: "hard-y",
-    letter: "Y",
+    letter: "Y (hard)",
     examples: ["yet", "young"],
     image: hardYImg,
     vowel: false,
@@ -181,9 +186,45 @@ const phonemes = {
   },
   w: {
     name: "w",
-    letter: "w",
+    letter: "W",
     examples: ["wit", "wave"],
     image: wImg,
+    vowel: false,
+  },
+  x: {
+    name: "x",
+    letter: "X",
+    examples: ["ox", "ax"],
+    image: xImg,
+    vowel: false,
+  },
+  "open-a": {
+    name: "open-a",
+    letter: "A (open)",
+    examples: ["all", "fall"],
+    image: openAImg,
+    vowel: true,
+  },
+  "double-l": {
+    name: "double-l",
+    letter: "L (doubled)",
+    examples: ["all", "fall"],
+    image: doubleLImg,
+    vowel: false,
+    alt: ["l", "l"],
+  },
+  qu: {
+    name: "qu",
+    letter: "Qu",
+    examples: ["quit", "quill"],
+    image: quImg,
+    vowel: false,
+  },
+  z: {
+    name: "z",
+    letter: "Z",
+    examples: ["zoo", "quiz"],
+    image: zImg,
     vowel: false,
   },
 };

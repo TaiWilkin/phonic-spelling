@@ -286,6 +286,136 @@ const words = {
     letters: ["w", "short-i", "n", "hard-s"],
     sentence: "My mother always 'wins' at Scrabble.",
   },
+  ax: {
+    letters: ["short-a", "x"],
+    sentence: "They cut down the oak tree with an 'ax'.",
+  },
+  Max: {
+    letters: ["m", "short-a", "x"],
+    sentence: "Max is kind to small animals.",
+  },
+  vex: {
+    letters: ["v", "short-e", "x"],
+    sentence: "Don't 'vex' the king when he is in a temper.",
+  },
+  Rex: {
+    letters: ["r", "short-e", "x"],
+    sentence: "I named my dog 'Rex' because it means king.",
+  },
+  fix: {
+    letters: ["f", "short-i", "x"],
+    sentence: "I try to 'fix' my mistakes.",
+  },
+  mix: {
+    letters: ["m", "short-i", "x"],
+    sentence: "I like to 'mix' the batter.",
+  },
+  fox: {
+    letters: ["f", "short-o", "x"],
+    sentence: "The child tamed the wild 'fox'.",
+  },
+  box: {
+    letters: ["b", "short-o", "x"],
+    sentence: "Hurry and open the 'box'!",
+  },
+  lax: {
+    letters: ["l", "short-a", "x"],
+    sentence: "The rules were unusually 'lax'.",
+  },
+  wax: {
+    letters: ["w", "short-a", "x"],
+    sentence: "Candles are made of 'wax'.",
+  },
+  call: {
+    letters: ["hard-c", "open-a", "l", "l"],
+    sentence: "'Call' the emergency number if you are in danger.",
+  },
+  all: {
+    letters: ["open-a", "l", "l"],
+    sentence: "We 'all' ate supper together.",
+  },
+  calls: {
+    letters: ["hard-c", "open-a", "l", "l", "hard-s"],
+    sentence: "He 'calls' his children in for dinner.",
+  },
+  sell: {
+    letters: ["s", "short-e", "l", "l"],
+    sentence: "She will sell seashells.",
+  },
+  fell: {
+    letters: ["f", "short-e", "l", "l"],
+    sentence: "She fell and hurt her knee.",
+  },
+  fells: {
+    letters: ["f", "short-e", "l", "l", "hard-s"],
+    sentence: "He fells a dozen trees in a day.",
+  },
+  rill: {
+    letters: ["r", "short-i", "l", "l"],
+    sentence: "A rill is a small stream.",
+  },
+  Bill: {
+    letters: ["b", "short-i", "l", "l"],
+    sentence: "Bill has a new coat.",
+  },
+  rills: {
+    letters: ["r", "short-i", "l", "l", "hard-s"],
+    sentence: "They took a hike to see the mountain rills.",
+  },
+  doll: {
+    letters: ["d", "short-o", "l", "l"],
+    sentence: "My doll has black hair.",
+  },
+  loll: {
+    letters: ["l", "short-o", "l", "l"],
+    sentence: "The cats like to loll on the sofa.",
+  },
+  dolls: {
+    letters: ["d", "short-o", "l", "l", "hard-s"],
+    sentence: "The dolls have a dollhouse.",
+  },
+  ball: {
+    letters: ["b", "open-a", "l", "l"],
+    sentence: "The old ball has a hole in it.",
+  },
+  tall: {
+    letters: ["t", "open-a", "l", "l"],
+    sentence: "The tree is very tall.",
+  },
+  balls: {
+    letters: ["b", "open-a", "l", "l", "hard-s"],
+    sentence: "The ballpit is full of balls.",
+  },
+  big: {
+    letters: ["b", "short-i", "g"],
+  },
+  fig: {
+    letters: ["f", "short-i", "g"],
+  },
+  pill: {
+    letters: ["p", "short-i", "l", "l"],
+  },
+  quill: {
+    letters: ["qu", "short-i", "l", "l"],
+  },
+  bag: {
+    letters: ["b", "short-a", "g"],
+  },
+  rag: {
+    letters: ["r", "short-a", "g"],
+  },
+  buzz: {
+    letters: ["b", "short-u", "z", "z"],
+  },
+  fuzz: {
+    letters: ["f", "short-u", "z", "z"],
+  },
+  rib: {
+    letters: ["r", "short-i", "b"],
+  },
+  bib: {
+    letters: ["b", "short-i", "b"],
+  },
 };
 
 export default words;

@@ -32,7 +32,7 @@ const WordAnalysis = ({ phonemeList, wordList }) => {
   };
   const giveInitialPrompt = () => {
     if (currentWord) {
-      const sentence = words[currentWord]?.sentence;
+      const sentence = words[currentWord]?.sentence || "Listen again: ";
       pronounce(`'${currentWord}'. ${sentence} '${currentWord}'.`, voice);
     }
   };

@@ -1,3 +1,7 @@
+import eight from "./eight";
+import nine from "./nine";
+import ten from "./ten";
+
 const lessons = {
   1: {
     newPhonemes: ["short-a", "t", "n", "f"],
@@ -288,6 +292,9 @@ const lessons = {
         "to the feeling of 'y' as a consonant in the word 'yam'.",
     ],
   },
+  8: eight,
+  9: nine,
+  10: ten,
 };
 
 export default lessons;
