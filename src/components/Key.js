@@ -1,5 +1,6 @@
 import Image from "./Image";
 import { Box } from "@chakra-ui/react";
+import { toast } from "react-toastify";
 
 import phonemes from "../data/phonemes";
 
@@ -25,8 +26,19 @@ const Key = ({ name, onClick, size, stem }) => {
         border,
       }
     : { ...baseStyle, border };
+
   return (
-    <button onClick={handleClick} className="key" style={style}>
+    <button
+      onClick={handleClick}
+      onDragStart={() =>
+        toast.error("Dragging not enabled. Click the phonemes to add them.", {
+          autoClose: 3000,
+          closeOnClick: true,
+        })
+      }
+      className="key"
+      style={style}
+    >
       <Box>
         <Image name={name} size={maxSize} />
       </Box>

@@ -20,7 +20,7 @@ const Lesson = () => {
       toast.warning(
         "You are not logged in. To save your progress, please login before you continue.",
         {
-          autoClose: false,
+          autoClose: 5000,
           closeOnClick: true,
         }
       );
