@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Select } from "@chakra-ui/react";
 import { useSelector, useDispatch } from "react-redux";
 import { setVoice } from "../reducers/voice";
@@ -13,6 +13,12 @@ const VoiceSelector = () => {
   const dispatch = useDispatch();
   const { voice } = useSelector((state) => state.voice);
   const [voices, setVoices] = useState(getVoices());
+
+  useEffect(() => {
+    setTimeout(() => {
+      setVoices(getVoices());
+    }, 500);
+  }, []);
 
   return (
     <Select
