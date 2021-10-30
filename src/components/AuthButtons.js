@@ -1,10 +1,10 @@
-import { Button, Link as ChakraLink, HStack } from "@chakra-ui/react";
+import { Button, HStack } from "@chakra-ui/react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { signout } from "../reducers/auth";
 
 const AuthButtons = () => {
-  const { user } = useSelector(state => state.auth);
+  const { user } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
 
   const handleSignout = () => dispatch(signout());
@@ -23,9 +23,9 @@ const AuthButtons = () => {
 
   return (
     <HStack>
-      <ChakraLink as={Link} to="/register" color="teal">
+      <Button as={Link} to="/register" colorScheme="teal">
         Register
-      </ChakraLink>
+      </Button>
       <Button as={Link} to="/signin" colorScheme="teal">
         Sign in
       </Button>
