@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { useRouteMatch } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { Text, Heading } from "@chakra-ui/react";
+import { Text, Heading, useDisclosure } from "@chakra-ui/react";
 import { toast } from "react-toastify";
 
 import Typewriter from "./Typewriter";
 import ProgressBar from "./ProgressBar";
 import CompletedLesson from "./CompletedLesson";
+import AttributionPopup from "./AttributionPopup";
 import { pronounce } from "../util";
 import { saveLessonAttempt } from "../reducers/lessonAttempts";
 import words from "../data/words";
@@ -17,6 +18,8 @@ const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
   const { voice } = useSelector((state) => state.voice);
   const [completedWords, setCompletedWords] = useState([]);
   const [missedWords, setMissedWords] = useState([]);
+  const [attributions, setAttributions] = useState([]);
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   const incompleteWords = wordList.filter(
     (word) => !completedWords.includes(word)
@@ -49,12 +52,17 @@ const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
     }
   };
 
-  const onSubmit = (letters) => {
+  const onSubmit = (letters, attributions) => {
     const correctLetters = words[currentWord].letters;
     if (
       correctLetters.length === letters.length &&
       correctLetters.every((l, i) => letters[i] === l)
     ) {
+      if (attributions && attributions.length) {
+        setAttributions(attributions);
+        onOpen();
+      }
+
       setCompletedWords([...completedWords, currentWord]);
       toast.success("Correct!");
     } else {
@@ -101,11 +109,19 @@ const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
         phonemeList={phonemeList}
         handleReprompt={pronounceCurrentWord}
         useInSentence={useInSentence}
+        hasSentence={!!words[currentWord].sentence}
         stemList={stemList}
         onSubmit={onSubmit}
         canSubmit
+        word={currentWord}
       />
       <ProgressBar completedWords={completedWords} wordList={wordList} />
+      <AttributionPopup
+        attributions={attributions}
+        setAttributions={setAttributions}
+        isOpen={isOpen}
+        onClose={onClose}
+      />
     </>
   );
 };

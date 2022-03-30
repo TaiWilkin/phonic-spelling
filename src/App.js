@@ -14,6 +14,7 @@ import Lesson from "./components/Lesson";
 import Lessons from "./components/Lessons";
 import Auth from "./components/Auth";
 import Attempts from "./components/Attempts";
+import Acknowledgments from "./components/Acknowledgments";
 
 import "react-toastify/dist/ReactToastify.css";
 import "./styles.css";
@@ -37,6 +38,9 @@ export default function App() {
           <Route path="/register">
             <Auth />
           </Route>
+          <PrivateRoute path="/acknowledgments">
+            <Acknowledgments />
+          </PrivateRoute>
           <PrivateRoute path="/attempts">
             <Attempts />
           </PrivateRoute>

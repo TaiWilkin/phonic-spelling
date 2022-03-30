@@ -5,7 +5,6 @@ const LessonContinueLink = ({ phonemeList, review }) => {
   let { name, id } = useParams();
 
   if (review) {
-    console.log("hi");
     return (
       <CustomLink
         text="Continue"

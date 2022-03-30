@@ -388,24 +388,31 @@ const words = {
   },
   big: {
     letters: ["b", "short-i", "g"],
+    sentence: "The dog wanted the big bone.",
   },
   fig: {
     letters: ["f", "short-i", "g"],
+    sentence: "A fig is a kind of fruit.",
   },
   pill: {
     letters: ["p", "short-i", "l", "l"],
+    sentence: "The doctor prescribed a pill.",
   },
   quill: {
     letters: ["qu", "short-i", "l", "l"],
+        sentence: "I would like to learn to write with a quill.",
   },
   bag: {
     letters: ["b", "short-a", "g"],
+    sentence: "He brought the toys in his bag.",
   },
   rag: {
     letters: ["r", "short-a", "g"],
+    sentence: "Clean the spill up with a rag.",
   },
   buzz: {
     letters: ["b", "short-u", "z", "z"],
+    sentence: "The bees all buzz loudly.",
   },
   fuzz: {
     letters: ["f", "short-u", "z", "z"],

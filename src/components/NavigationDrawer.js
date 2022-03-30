@@ -48,6 +48,9 @@ const NavigationDrawer = () => {
               <ChakraLink as={Link} to="/lessons" onClick={onClose}>
                 Home
               </ChakraLink>
+              <ChakraLink as={Link} to="/acknowledgments" onClick={onClose}>
+                Acknowledgments
+              </ChakraLink>
               {user && (
                 <ChakraLink as={Link} to="/attempts" onClick={onClose}>
                   Previous Attempts

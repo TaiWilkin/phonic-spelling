@@ -4,6 +4,8 @@ import { useSelector } from "react-redux";
 
 import Keyboard from "./Keyboard";
 import Textbox from "./Textbox";
+import Audio from "./Audio";
+
 import {
   pronounce,
   letterDescription,
@@ -19,10 +21,13 @@ const Typewriter = ({
   onSubmit,
   handleReprompt,
   useInSentence,
+  hasSentence,
   stemList = [],
+  word,
 }) => {
   const { voice } = useSelector((state) => state.voice);
   const [letters, setLetters] = useState([]);
+  const [attributions, setAttributions] = useState([]);
   const [describeLetters, setDescribeLetters] = useState(false);
   const handleKeyPress = (name) => {
     if (describeLetters) {
@@ -45,16 +50,25 @@ const Typewriter = ({
   const clearLetters = () => setLetters([]);
   const toggleLetterDescription = () => setDescribeLetters(!describeLetters);
   const handleSubmit = () => {
-    onSubmit(letters);
+    onSubmit(letters, attributions);
     clearLetters();
   };
 
   return (
     <Box>
       <HStack spacing="10px" m="10px">
-        <Button onClick={clearLetters}>Clear</Button>
-        <Button onClick={handleReprompt}>Repeat Prompt</Button>
-        <Button onClick={useInSentence}>Use in Sentence</Button>
+        <Button onClick={clearLetters} style={{ flex: 1 }}>
+          Clear
+        </Button>
+        <Button onClick={handleReprompt} style={{ flex: 1 }}>
+          Repeat Prompt
+        </Button>
+        {hasSentence && (
+          <Button onClick={useInSentence} style={{ flex: 1 }}>
+            Use in Sentence
+          </Button>
+        )}
+        <Audio word={word} setAttributions={setAttributions} />
         {canSubmit && (
           <Button
             onClick={handleSubmit}
