@@ -15,6 +15,7 @@ import Lessons from "./components/Lessons";
 import Auth from "./components/Auth";
 import Attempts from "./components/Attempts";
 import Acknowledgments from "./components/Acknowledgments";
+import Settings from "./components/Settings";
 
 import "react-toastify/dist/ReactToastify.css";
 import "./styles.css";
@@ -43,6 +44,9 @@ export default function App() {
           </PrivateRoute>
           <PrivateRoute path="/attempts">
             <Attempts />
+          </PrivateRoute>
+          <PrivateRoute path="/settings">
+            <Settings />
           </PrivateRoute>
           <PrivateRoute path="/lessons/:id">
             <Lesson />

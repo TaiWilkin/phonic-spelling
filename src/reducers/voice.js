@@ -1,6 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { toast } from "react-toastify";
 
-const defaultVoice = "Google US English";
+import { firebaseGetSettings, firebaseUpdateSettings } from "../firebase";
+
+import { defaultVoice } from "../util";
 
 export const voicesSlice = createSlice({
   name: "voice",
@@ -15,5 +18,29 @@ export const voicesSlice = createSlice({
 });
 
 export const { setVoice } = voicesSlice.actions;
+
+export const saveSettings =
+  ({ voice }) =>
+  (dispatch) => {
+    firebaseUpdateSettings({ voice })
+      .then(({ voice }) => {
+        dispatch(setVoice(voice));
+      })
+      .catch((error) => {
+        console.log(error);
+        toast.error(error.message);
+      });
+  };
+
+export const getSettings = () => (dispatch) => {
+  firebaseGetSettings()
+    .then(({ voice }) => {
+      dispatch(setVoice(voice));
+    })
+    .catch((error) => {
+      console.log(error);
+      toast.error(error.message);
+    });
+};
 
 export default voicesSlice.reducer;

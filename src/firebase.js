@@ -20,7 +20,7 @@ import {
   onAuthStateChanged,
 } from "firebase/auth";
 import { toast } from "react-toastify";
-import { calculateScore, formatDate } from "./util";
+import { calculateScore, formatDate, defaultVoice } from "./util";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -104,7 +104,7 @@ export const firebaseGetLessonAttempts = async () => {
     auth.currentUser.uid,
     "attempts"
   );
-  // const querySnapshot = await getDocs(lessonAttemptRef);
+
   const q = query(lessonAttemptRef, orderBy("date"));
 
   const querySnapshot = await getDocs(q);
@@ -123,6 +123,41 @@ export const firebaseGetLessonAttempts = async () => {
     }
   });
   return attempts;
+};
+
+export const firebaseUpdateSettings = async (settings) => {
+  if (!auth.currentUser) {
+    toast.error("Must be logged in.");
+    return;
+  }
+  const settingsRef = doc(db, "settings", auth.currentUser.uid);
+
+  await setDoc(settingsRef, settings);
+
+  const docSnap = await getDoc(settingsRef);
+
+  if (docSnap.exists()) {
+    return { ...docSnap.data(), id: docSnap.id };
+  } else {
+    toast.error("Error saving settings.");
+    return { voice: defaultVoice };
+  }
+};
+
+export const firebaseGetSettings = async () => {
+  if (!auth.currentUser) {
+    toast.error("Must be logged in.");
+    return;
+  }
+  const settingsRef = doc(db, "settings", auth.currentUser.uid);
+
+  const docSnap = await getDoc(settingsRef);
+
+  if (docSnap.exists()) {
+    return { ...docSnap.data(), id: docSnap.id };
+  } else {
+    return { voice: defaultVoice };
+  }
 };
 
 export default app;

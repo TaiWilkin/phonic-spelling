@@ -7,6 +7,7 @@ import {
   watchAuthState,
 } from "../firebase";
 import { getLessonAttempts } from "./lessonAttempts";
+import { getSettings } from "./voice";
 
 export const clearState = createAction("clearState");
 
@@ -36,6 +37,7 @@ export const register = (email, password) => (dispatch) => {
       const { uid, accessToken, email } = userCredential.user;
       dispatch(handleSignin({ uid, accessToken, email }));
       dispatch(getLessonAttempts());
+      dispatch(getSettings());
     })
     .catch((error) => {
       dispatch(handleSignout());
@@ -50,6 +52,7 @@ export const signin = (email, password) => (dispatch) => {
       const { uid, accessToken, email } = userCredential.user;
       dispatch(handleSignin({ uid, accessToken, email }));
       dispatch(getLessonAttempts());
+      dispatch(getSettings());
     })
     .catch((error) => {
       dispatch(handleSignout());
@@ -77,6 +80,7 @@ export const checkIfLoggedIn = () => (dispatch) => {
       const { uid, accessToken, email } = user;
       dispatch(handleSignin({ uid, accessToken, email }));
       dispatch(getLessonAttempts());
+      dispatch(getSettings());
     } else {
       dispatch(handleSignout());
       dispatch(clearState());

@@ -52,9 +52,14 @@ const NavigationDrawer = () => {
                 Acknowledgments
               </ChakraLink>
               {user && (
-                <ChakraLink as={Link} to="/attempts" onClick={onClose}>
-                  Previous Attempts
-                </ChakraLink>
+                <>
+                  <ChakraLink as={Link} to="/attempts" onClick={onClose}>
+                    Previous Attempts
+                  </ChakraLink>
+                  <ChakraLink as={Link} to="/settings" onClick={onClose}>
+                    Settings
+                  </ChakraLink>
+                </>
               )}
               {Object.keys(lessons).map((l) => (
                 <LessonLink l={l} onClose={onClose} key={l} />

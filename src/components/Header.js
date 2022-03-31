@@ -11,7 +11,7 @@ const Header = () => (
       Phonic Spelling
     </Heading>
     <Spacer />
-    <VoiceSelector />
+    <VoiceSelector isHidden />
     <AuthButtons />
   </HStack>
 );

@@ -3,8 +3,9 @@ import phonemes from "./data/phonemes";
 
 const SOUND_ON = process?.env?.NODE_ENV === "development" ? false : true;
 export let VOICES = window.speechSynthesis?.getVoices();
+export const defaultVoice = "Google US English";
 
-export const pronounce = (text, voice = "Google US English") => {
+export const pronounce = (text, voice = defaultVoice) => {
   if ("speechSynthesis" in window) {
     // Speech Synthesis supported 🎉
     var msg = new SpeechSynthesisUtterance();
