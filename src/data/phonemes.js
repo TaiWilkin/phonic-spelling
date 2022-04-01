@@ -1,215 +1,190 @@
-import shortAImg from "./images/short-a.png";
-import tImg from "./images/t.png";
-import nImg from "./images/n.png";
-import fImg from "./images/f.png";
-import shortIImg from "./images/short-i.png";
-import sImg from "./images/s.png";
-import mImg from "./images/m.png";
-import hardCImg from "./images/hard-c.png";
-import hardSImg from "./images/hard-s.png";
-import pImg from "./images/p.png";
-import hImg from "./images/h.png";
-import shortEImg from "./images/short-e.png";
-import shortUImg from "./images/short-u.png";
-import rImg from "./images/r.png";
-import shortOImg from "./images/short-o.png";
-import jImg from "./images/j.png";
-import dImg from "./images/d.png";
-import bImg from "./images/b.png";
-import gImg from "./images/g.png";
-import kImg from "./images/k.png";
-import lImg from "./images/l.png";
-import hardYImg from "./images/hard-y.png";
-import wImg from "./images/w.png";
-import vImg from "./images/v.png";
-import xImg from "./images/x.png";
-import openAImg from "./images/open-a.png";
-import doubleLImg from "./images/double-l.png";
-import quImg from "./images/qu.png";
-import zImg from "./images/z.png";
-
 const phonemes = {
   "short-a": {
     name: "short-a",
     letter: "A (short)",
     examples: ["an", "at"],
-    image: shortAImg,
+    image: "https://s7.gifyu.com/images/short-a.png",
     vowel: true,
   },
   t: {
     name: "t",
     letter: "T",
     examples: ["tap", "tin"],
-    image: tImg,
+    image: "https://s7.gifyu.com/images/t.png",
     vowel: false,
   },
   n: {
     name: "n",
     letter: "N",
     examples: ["nine", "no"],
-    image: nImg,
+    image: "https://s7.gifyu.com/images/n.png",
     vowel: false,
   },
-  f: { name: "f", letter: "F", examples: ["fan", "fit"], image: fImg },
+  f: {
+    name: "f",
+    letter: "F",
+    examples: ["fan", "fit"],
+    image: "https://s7.gifyu.com/images/fa17bd1d385e14114.png",
+  },
   "short-i": {
     name: "short-i",
     letter: "I (short)",
     examples: ["it", "ink"],
-    image: shortIImg,
+    image: "https://s7.gifyu.com/images/short-i.png",
     vowel: true,
   },
   m: {
     name: "m",
     letter: "M",
     examples: ["mat", "man"],
-    image: mImg,
+    image: "https://s7.gifyu.com/images/m7954d66bacb6a8d7.png",
     vowel: false,
   },
   s: {
     name: "s",
     letter: "S",
     examples: ["sit", "sink"],
-    image: sImg,
+    image: "https://s7.gifyu.com/images/s68696bd307db7d4a.png",
     vowel: false,
   },
   "hard-c": {
     name: "hard-c",
     letter: "C (hard)",
     examples: ["cat", "can"],
-    image: hardCImg,
+    image: "https://s7.gifyu.com/images/hard-c.png",
     vowel: false,
   },
   p: {
     name: "p",
     letter: "P",
     examples: ["pay", "pit"],
-    image: pImg,
+    image: "https://s7.gifyu.com/images/p385e7b84889c853c.png",
     vowel: false,
   },
   "hard-s": {
     name: "hard-s",
     letter: "S (hard)",
     examples: ["his", "as"],
-    image: hardSImg,
+    image: "https://s7.gifyu.com/images/hard-s.png",
     vowel: false,
   },
   h: {
     name: "h",
     letter: "H",
     examples: ["his", "hat"],
-    image: hImg,
+    image: "https://s7.gifyu.com/images/hee7e33945927e08f.png",
     vowel: false,
   },
   "short-e": {
     name: "short-e",
     letter: "E (short)",
     examples: ["set", "end"],
-    image: shortEImg,
+    image: "https://s7.gifyu.com/images/short-e.png",
     vowel: true,
   },
   "short-u": {
     name: "short-u",
     letter: "U (short)",
     examples: ["sun", "up"],
-    image: shortUImg,
+    image: "https://s7.gifyu.com/images/short-u.png",
     vowel: true,
   },
   r: {
     name: "r",
     letter: "R",
     examples: ["run", "rat"],
-    image: rImg,
+    image: "https://s7.gifyu.com/images/r.png",
     vowel: false,
   },
   "short-o": {
     name: "short-o",
     letter: "O (short)",
     examples: ["hop", "lot"],
-    image: shortOImg,
+    image: "https://s7.gifyu.com/images/short-o.png",
     vowel: true,
   },
   j: {
     name: "j",
     letter: "J",
     examples: ["jot", "jab"],
-    image: jImg,
+    image: "https://s7.gifyu.com/images/jfb3064534f9580d2.png",
     vowel: false,
   },
   d: {
     name: "d",
     letter: "D",
     examples: ["dip", "dog"],
-    image: dImg,
+    image: "https://s7.gifyu.com/images/dfabc16e73c02dadb.png",
     vowel: false,
   },
   b: {
     name: "b",
     letter: "B",
     examples: ["bit", "ban"],
-    image: bImg,
+    image: "https://s7.gifyu.com/images/b.png",
     vowel: false,
   },
   g: {
     name: "g",
     letter: "G",
     examples: ["go", "bag"],
-    image: gImg,
+    image: "https://s7.gifyu.com/images/gbd58e8094bdcc587.png",
     vowel: false,
   },
   k: {
     name: "k",
     letter: "K",
     examples: ["kiss", "kept"],
-    image: kImg,
+    image: "https://s7.gifyu.com/images/k.png",
     vowel: false,
   },
   l: {
     name: "l",
     letter: "L",
     examples: ["lit", "ball"],
-    image: lImg,
+    image: "https://s7.gifyu.com/images/lf8336bc18b2b6751.png",
     vowel: false,
   },
   "hard-y": {
     name: "hard-y",
     letter: "Y (hard)",
     examples: ["yet", "young"],
-    image: hardYImg,
+    image: "https://s7.gifyu.com/images/hard-y.png",
     vowel: false,
   },
   v: {
     name: "v",
     letter: "V",
     examples: ["vet", "value"],
-    image: vImg,
+    image: "https://s7.gifyu.com/images/v53042c96292e4469.png",
     vowel: false,
   },
   w: {
     name: "w",
     letter: "W",
     examples: ["wit", "wave"],
-    image: wImg,
+    image: "https://s7.gifyu.com/images/w6da2b2712690b0ec.png",
     vowel: false,
   },
   x: {
     name: "x",
     letter: "X",
     examples: ["ox", "ax"],
-    image: xImg,
+    image: "https://s7.gifyu.com/images/x08d653e7c349f7b6.png",
     vowel: false,
   },
   "open-a": {
     name: "open-a",
     letter: "A (open)",
     examples: ["all", "fall"],
-    image: openAImg,
+    image: "https://s7.gifyu.com/images/open-a.png",
     vowel: true,
   },
   "double-l": {
     name: "double-l",
     letter: "L (doubled)",
     examples: ["all", "fall"],
-    image: doubleLImg,
+    image: "https://s7.gifyu.com/images/double-l.png",
     vowel: false,
     alt: ["l", "l"],
   },
@@ -217,14 +192,14 @@ const phonemes = {
     name: "qu",
     letter: "Qu",
     examples: ["quit", "quill"],
-    image: quImg,
+    image: "https://s7.gifyu.com/images/qu.png",
     vowel: false,
   },
   z: {
     name: "z",
     letter: "Z",
     examples: ["zoo", "quiz"],
-    image: zImg,
+    image: "https://s7.gifyu.com/images/zf79e909332d533f0.png",
     vowel: false,
   },
 };
