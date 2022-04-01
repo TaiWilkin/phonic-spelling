@@ -1,35 +1,18 @@
 const functions = require("firebase-functions");
 const axios = require("axios");
 
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
-exports.giphy = functions.https.onRequest((request, response) => {
-  return axios
-    .get(
-      `https://api.giphy.com/v1/gifs/search?q=${request.params[0]}&limit=5&rating=g&api_key=${process.env.GIPHY_API_KEY}`
-    )
-    .then((apiResponse) => {
-      response.set("Access-Control-Allow-Origin", "*");
-      return response.send(apiResponse.data);
-    })
-    .catch((error) => {
-      functions.logger.info("Error: ", error);
-      return response.send("Error fetching GIF");
-    });
-});
+// https://firebase.google.com/docs/functions/write-firebase-functions
 
 exports.wordnik = functions.https.onRequest((request, response) => {
+  response.set("Access-Control-Allow-Origin", "*");
   return axios
     .get(
       `https://api.wordnik.com/v4/word.json/${request.params[0]}/audio?useCanonical=false&limit=50&api_key=${process.env.WORDNIK_API_KEY}`
     )
     .then((apiResponse) => {
-      response.set("Access-Control-Allow-Origin", "*");
       return response.send(apiResponse.data);
     })
     .catch((error) => {
-      response.set("Access-Control-Allow-Origin", "*");
       functions.logger.info("Error: ", error);
 
       let message = "";
