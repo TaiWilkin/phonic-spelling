@@ -27,7 +27,6 @@ const Typewriter = ({
 }) => {
   const { voice } = useSelector((state) => state.voice);
   const [letters, setLetters] = useState([]);
-  const [attributions, setAttributions] = useState([]);
   const [describeLetters, setDescribeLetters] = useState(false);
   const handleKeyPress = (name) => {
     if (describeLetters) {
@@ -50,7 +49,7 @@ const Typewriter = ({
   const clearLetters = () => setLetters([]);
   const toggleLetterDescription = () => setDescribeLetters(!describeLetters);
   const handleSubmit = () => {
-    onSubmit(letters, attributions);
+    onSubmit(letters);
     clearLetters();
   };
 
@@ -68,7 +67,7 @@ const Typewriter = ({
             Use in Sentence
           </Button>
         )}
-        <Audio word={word} setAttributions={setAttributions} />
+        <Audio word={word} />
         {canSubmit && (
           <Button
             onClick={handleSubmit}

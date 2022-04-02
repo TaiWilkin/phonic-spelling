@@ -400,7 +400,7 @@ const words = {
   },
   quill: {
     letters: ["qu", "short-i", "l", "l"],
-        sentence: "I would like to learn to write with a quill.",
+    sentence: "I would like to learn to write with a quill.",
   },
   bag: {
     letters: ["b", "short-a", "g"],
@@ -435,30 +435,39 @@ const words = {
   },
   tax: {
     letters: ["t", "short-a", "x"],
+    sentence: "The tax paid for new roads to be built.",
   },
   ran: {
     letters: ["r", "short-a", "n"],
+    sentence: "They ran to get out of the rain.",
   },
   him: {
     letters: ["h", "short-i", "m"],
+    sentence: "Did you ask him yet?",
   },
   fall: {
     letters: ["f", "open-a", "l", "l"],
+    sentence: "Fall is my favorite season.",
   },
   got: {
     letters: ["g", "short-o", "t"],
+    sentence: "She led the dog with the leash.",
   },
   met: {
     letters: ["m", "short-e", "t"],
+    sentence: "I met you at the park yesterday.",
   },
   bell: {
     letters: ["b", "short-e", "l", "l"],
+    sentence: "Ring a bell when class starts.",
   },
   pit: {
     letters: ["p", "short-i", "t"],
+    sentence: "The coal miner went down in the pit.",
   },
   bun: {
     letters: ["b", "short-u", "n"],
+    sentence: "Put your hair in a bun.",
   },
   did: {
     letters: ["d", "short-i", "d"],

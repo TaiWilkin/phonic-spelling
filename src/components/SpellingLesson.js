@@ -16,6 +16,7 @@ const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
   const match = useRouteMatch();
   const dispatch = useDispatch();
   const { voice } = useSelector((state) => state.voice);
+  const audio = useSelector((state) => state.audio);
   const [completedWords, setCompletedWords] = useState([]);
   const [missedWords, setMissedWords] = useState([]);
   const [attributions, setAttributions] = useState([]);
@@ -52,14 +53,15 @@ const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
     }
   };
 
-  const onSubmit = (letters, attributions) => {
+  const onSubmit = (letters) => {
     const correctLetters = words[currentWord].letters;
     if (
       correctLetters.length === letters.length &&
       correctLetters.every((l, i) => letters[i] === l)
     ) {
-      if (attributions && attributions.length) {
-        setAttributions(attributions);
+      const audioURLs = audio[currentWord]?.audioURLs;
+      if (audioURLs && audioURLs.length) {
+        setAttributions(audioURLs);
         onOpen();
       }
 

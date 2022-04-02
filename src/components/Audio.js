@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import {
   Spinner,
   useDisclosure,
@@ -11,44 +11,31 @@ import {
   Button,
   Text,
 } from "@chakra-ui/react";
-import axios from "axios";
+import { useSelector, useDispatch } from "react-redux";
 
-const WORDNIK_SEARCH =
-  "https://us-central1-phonic-spelling.cloudfunctions.net/wordnik/";
+import { getAudio } from "../reducers/audio";
 
-const Audio = ({ word, setAttributions }) => {
+const Audio = ({ word }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [audioURLs, setAudioURLs] = useState([]);
-  const [audioWord, setAudioWord] = useState(word);
-  const [error, setError] = useState(false);
+  const dispatch = useDispatch();
+  const audio = useSelector((state) => state.audio);
 
-  useEffect(() => {
-    setAttributions([]);
-  }, [word, setAttributions]);
+  let audioURLs = [];
+  let fetching = true;
+  let error = null;
+  if (audio[word]) {
+    audioURLs = audio[word].audioURLs;
+    fetching = audio[word].fetching;
+    error = audio[word].error;
+  }
 
-  const audioCount = audioURLs.length;
   useEffect(() => {
     if (!isOpen || !word) return;
-    if (word === audioWord && (!!error || !!audioCount)) return;
 
-    setAudioURLs([]);
-    setAudioWord(word);
-    axios
-      .get(`${WORDNIK_SEARCH}${word}`)
-      .then(({ data }) => {
-        if (data.length) {
-          setError(false);
-          setAudioURLs(data);
-          setAttributions(data);
-          setAudioWord(word);
-        }
-      })
-      .catch((error) => {
-        setError(error?.response?.data || "Audio not available.");
-      });
-  }, [word, isOpen, audioCount, audioWord, error, setAttributions]);
+    dispatch(getAudio(word));
+  }, [word, isOpen, dispatch]);
 
-  if (!word || !setAttributions) return null;
+  if (!word) return null;
 
   return (
     <>
@@ -61,7 +48,7 @@ const Audio = ({ word, setAttributions }) => {
         <ModalContent>
           <ModalHeader>Alternate audio</ModalHeader>
           <ModalCloseButton />
-          {audioURLs.length && !error ? (
+          {!fetching && !error ? (
             audioURLs.map(({ fileUrl, attributionText, id }, i) => (
               <ModalBody key={id}>
                 <audio controls autoPlay={i === 0}>
