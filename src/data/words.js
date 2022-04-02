@@ -487,6 +487,66 @@ const words = {
   yam: {
     letters: ["hard-y", "short-a", "m"],
   },
+  cab: {
+    letters: ["hard-c", "short-a", "b"],
+    sentence: "We took a cab to the museum.",
+  },
+  web: {
+    letters: ["w", "short-e", "b"],
+    sentence: "The spider built a web.",
+  },
+  rug: {
+    letters: ["r", "short-u", "g"],
+    sentence: "The kitten is asleep on the rug.",
+  },
+  Rob: {
+    letters: ["r", "short-o", "b"],
+    sentence: "Rob did not rob the bank.",
+  },
+  beg: {
+    letters: ["b", "short-e", "g"],
+    sentence: "My brother taught the puppy to beg for treats.",
+  },
+  nut: {
+    letters: ["n", "short-u", "t"],
+    sentence: "A peanut is not a true nut.",
+  },
+  hem: {
+    letters: ["h", "short-e", "m"],
+    sentence: "I will hem my pants tonight.",
+  },
+  hod: {
+    letters: ["h", "short-o", "d"],
+    sentence: "A hod is a kind of tray used to carry bricks and mortar.",
+  },
+  mud: {
+    letters: ["m", "short-u", "d"],
+    sentence: "Clean the mud off your boots.",
+  },
+  Tom: {
+    letters: ["t", "short-o", "m"],
+    sentence: "Tom and Jerry debuted in 1940.",
+  },
+  tub: {
+    letters: ["t", "short-u", "b"],
+    sentence: "Have you ever used a clawfoot tub?",
+  },
+  tap: {
+    letters: ["t", "short-a", "p"],
+    sentence: "The hot-water tap in the sink is broken.",
+  },
+  tip: {
+    letters: ["t", "short-i", "p"],
+    sentence: "He sharpened his pencil to a fine tip.",
+  },
+  hop: {
+    letters: ["h", "short-o", "p"],
+    sentence: "How high can you hop?",
+  },
+  sum: {
+    letters: ["s", "short-u", "m"],
+    sentence: "What is the sum of one and two?",
+  },
 };
 
 export default words;

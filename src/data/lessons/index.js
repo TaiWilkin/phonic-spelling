@@ -2,6 +2,7 @@ import eight from "./eight";
 import nine from "./nine";
 import ten from "./ten";
 import eleven from "./eleven";
+import twelve from "./twelve";
 
 const lessons = {
   1: {
@@ -297,6 +298,7 @@ const lessons = {
   9: nine,
   10: ten,
   11: eleven,
+  12: twelve,
 };
 
 export default lessons;

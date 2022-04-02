@@ -14,7 +14,7 @@ const LessonContinueLink = ({ phonemeList, review }) => {
     );
   }
 
-  if (!name) {
+  if (!name && phonemeList.length) {
     return (
       <CustomLink
         text="Continue"

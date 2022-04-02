@@ -39,7 +39,7 @@ const AttemptsTable = ({ attempts = [] }) => {
                 : "No missed words."}
             </Td>
             <Td>{s.completedWords.join(", ")}</Td>
-            <Td isNumeric>{s.score.toFixed(2)}%</Td>
+            <Td isNumeric>{(s.score * 100).toFixed(2)}%</Td>
           </Tr>
         ))}
       </Tbody>

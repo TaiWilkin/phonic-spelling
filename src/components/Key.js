@@ -15,9 +15,9 @@ const Key = ({ name, onClick, size, stem }) => {
   const isVowel = name && phonemes[name]?.vowel;
   const border = isVowel ? "1px solid #81E6D9" : "";
   const handleClick = () => onClick(name);
-  const maxSize = size > 75 ? 75 : size;
-  const height = maxSize * 1.25;
-  const width = stem ? maxSize * 2 : maxSize * 1.25;
+  const constrainedSize = Math.min(Math.max(size, 25), 75);
+  const height = constrainedSize * 1.25;
+  let width = stem ? constrainedSize * 2 : constrainedSize * 1.25;
   const style = size
     ? {
         ...baseStyle,
@@ -40,7 +40,7 @@ const Key = ({ name, onClick, size, stem }) => {
       style={style}
     >
       <Box>
-        <Image name={name} size={maxSize} />
+        <Image name={name} size={constrainedSize} />
       </Box>
     </button>
   );

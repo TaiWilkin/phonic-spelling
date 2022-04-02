@@ -13,7 +13,7 @@ const stems = {
   },
   it: {
     letters: ["short-i", "t"],
-    image: "https://s7.gifyu.com/images/itbc9c33979364a120.png",
+    image: "https://s7.gifyu.com/images/stem-it.png",
   },
   en: {
     letters: ["short-e", "n"],
@@ -102,6 +102,62 @@ const stems = {
   ib: {
     letters: ["short-i", "b"],
     image: "https://s7.gifyu.com/images/ib.png",
+  },
+  ab: {
+    letters: ["short-a", "b"],
+    image: "https://s7.gifyu.com/images/stem-ab.png",
+  },
+  eb: {
+    letters: ["short-e", "b"],
+    image: "https://s7.gifyu.com/images/stem-eb.png",
+  },
+  ug: {
+    letters: ["short-u", "g"],
+    image: "https://s7.gifyu.com/images/stem-ug.png",
+  },
+  ob: {
+    letters: ["short-o", "b"],
+    image: "https://s7.gifyu.com/images/stem-ob.png",
+  },
+  eg: {
+    letters: ["short-e", "g"],
+    image: "https://s7.gifyu.com/images/stem-eg.png",
+  },
+  em: {
+    letters: ["short-e", "m"],
+    image: "https://s7.gifyu.com/images/stem-em.png",
+  },
+  od: {
+    letters: ["short-o", "d"],
+    image: "https://s7.gifyu.com/images/stem-od.png",
+  },
+  ud: {
+    letters: ["short-u", "d"],
+    image: "https://s7.gifyu.com/images/stem-ud.png",
+  },
+  om: {
+    letters: ["short-o", "m"],
+    image: "https://s7.gifyu.com/images/stem-om.png",
+  },
+  ub: {
+    letters: ["short-u", "b"],
+    image: "https://s7.gifyu.com/images/stem-ub.png",
+  },
+  ap: {
+    letters: ["short-a", "p"],
+    image: "https://s7.gifyu.com/images/stem-ap.png",
+  },
+  ip: {
+    letters: ["short-i", "p"],
+    image: "https://s7.gifyu.com/images/stem-ip.png",
+  },
+  op: {
+    letters: ["short-o", "p"],
+    image: "https://s7.gifyu.com/images/stem-op.png",
+  },
+  um: {
+    letters: ["short-u", "m"],
+    image: "https://s7.gifyu.com/images/stem-um.png",
   },
 };
 
