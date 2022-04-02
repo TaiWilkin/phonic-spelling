@@ -80,6 +80,7 @@ const eleven = {
     "uzz",
     "ib",
   ],
+  sightwords: ["boy", "boys", "girl", "girls", "egg", "eggs", "are", "baby"],
   notes: [
     "This is a challenge lesson to review the phonic skills you've learned so far. " +
       "Some words are new, but the phonemes are the same you've learned so far. ",

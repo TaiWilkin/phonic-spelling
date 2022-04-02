@@ -21,6 +21,7 @@ const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
   const [missedWords, setMissedWords] = useState([]);
   const [attributions, setAttributions] = useState([]);
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [showAttributions, setShowAttributions] = useState(false);
 
   const incompleteWords = wordList.filter(
     (word) => !completedWords.includes(word)
@@ -60,8 +61,9 @@ const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
       correctLetters.every((l, i) => letters[i] === l)
     ) {
       const audioURLs = audio[currentWord]?.audioURLs;
-      if (audioURLs && audioURLs.length) {
+      if (audioURLs && audioURLs.length && showAttributions) {
         setAttributions(audioURLs);
+        setShowAttributions(false);
         onOpen();
       }
 
@@ -116,6 +118,7 @@ const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
         onSubmit={onSubmit}
         canSubmit
         word={currentWord}
+        setShowAttributions={setShowAttributions}
       />
       <ProgressBar completedWords={completedWords} wordList={wordList} />
       <AttributionPopup

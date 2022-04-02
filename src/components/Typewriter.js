@@ -24,6 +24,7 @@ const Typewriter = ({
   hasSentence,
   stemList = [],
   word,
+  setShowAttributions,
 }) => {
   const { voice } = useSelector((state) => state.voice);
   const [letters, setLetters] = useState([]);
@@ -67,7 +68,7 @@ const Typewriter = ({
             Use in Sentence
           </Button>
         )}
-        <Audio word={word} />
+        <Audio word={word} setShowAttributions={setShowAttributions} />
         {canSubmit && (
           <Button
             onClick={handleSubmit}

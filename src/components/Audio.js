@@ -15,7 +15,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { getAudio } from "../reducers/audio";
 
-const Audio = ({ word }) => {
+const Audio = ({ word, setShowAttributions }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const dispatch = useDispatch();
   const audio = useSelector((state) => state.audio);
@@ -32,8 +32,9 @@ const Audio = ({ word }) => {
   useEffect(() => {
     if (!isOpen || !word) return;
 
+    setShowAttributions(true);
     dispatch(getAudio(word));
-  }, [word, isOpen, dispatch]);
+  }, [word, isOpen, dispatch, setShowAttributions]);
 
   if (!word) return null;
 
