@@ -202,6 +202,48 @@ const phonemes = {
     image: "https://s7.gifyu.com/images/zf79e909332d533f0.png",
     vowel: false,
   },
+  "long-o": {
+    name: "long-o",
+    letter: "O (long)",
+    examples: ["open", "yoyo"],
+    image: "https://s7.gifyu.com/images/long-o.png",
+    vowel: true,
+  },
+  "long-e": {
+    name: "long-e",
+    letter: "E (long)",
+    examples: ["equal", "he"],
+    image: "https://s7.gifyu.com/images/long-e.png",
+    vowel: true,
+  },
+  "voiced-th": {
+    name: "voiced-th",
+    letter: "Th (voiced)",
+    examples: ["this", "weather"],
+    image: "https://s7.gifyu.com/images/voiced-th.png",
+    vowel: false,
+  },
+  "unvoiced-th": {
+    name: "unvoiced-th",
+    letter: "Th (unvoiced)",
+    examples: ["think", "with"],
+    image: "https://s7.gifyu.com/images/unvoiced-th.png",
+    vowel: false,
+  },
+  sh: {
+    name: "sh",
+    letter: "Sh",
+    examples: ["shoe", "wash"],
+    image: "https://s7.gifyu.com/images/sh06302b220ace9666.png",
+    vowel: false,
+  },
+  ch: {
+    name: "ch",
+    letter: "Ch",
+    examples: ["child", "rich"],
+    image: "https://s7.gifyu.com/images/ch.png",
+    vowel: false,
+  },
 };
 
 export default phonemes;

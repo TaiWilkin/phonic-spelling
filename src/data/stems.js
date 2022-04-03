@@ -159,6 +159,14 @@ const stems = {
     letters: ["short-u", "m"],
     image: "https://s7.gifyu.com/images/stem-um.png",
   },
+  sp: {
+    letters: ["s", "p"],
+    image: "https://s7.gifyu.com/images/sp.png",
+  },
+  st: {
+    letters: ["s", "t"],
+    image: "https://s7.gifyu.com/images/st.png",
+  },
 };
 
 export default stems;

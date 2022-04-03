@@ -547,6 +547,55 @@ const words = {
     letters: ["s", "short-u", "m"],
     sentence: "What is the sum of one and two?",
   },
+  so: {
+    letters: ["s", "long-o"],
+    sentence:
+      "She did her homework early so she could go out with her friends.",
+  },
+  go: {
+    letters: ["g", "long-o"],
+  },
+  no: {
+    letters: ["n", "long-o"],
+    sentence: "They said no when I asked.",
+  },
+  be: {
+    letters: ["b", "long-e"],
+    sentence: "I will be home soon.",
+  },
+  me: {
+    letters: ["m", "long-e"],
+  },
+  we: {
+    letters: ["w", "long-e"],
+  },
+  he: {
+    letters: ["h", "long-e"],
+  },
+  the: {
+    letters: ["voiced-th", "long-e"],
+  },
+  she: {
+    letters: ["sh", "long-e"],
+  },
+  spill: {
+    letters: ["s", "p", "short-i", "l", "l"],
+  },
+  still: {
+    letters: ["s", "t", "short-i", "l", "l"],
+  },
+  chill: {
+    letters: ["ch", "short-i", "l", "l"],
+  },
+  chip: {
+    letters: ["ch", "short-i", "p"],
+  },
+  ship: {
+    letters: ["sh", "short-i", "p"],
+  },
+  shin: {
+    letters: ["sh", "short-i", "n"],
+  },
 };
 
 export default words;
