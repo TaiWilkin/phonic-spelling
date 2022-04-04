@@ -596,6 +596,66 @@ const words = {
   shin: {
     letters: ["sh", "short-i", "n"],
   },
+  fade: {
+    letters: ["f", "long-a", "d", "silent-e"],
+  },
+  made: {
+    letters: ["m", "long-a", "d", "silent-e"],
+  },
+  wade: {
+    letters: ["w", "long-a", "d", "silent-e"],
+  },
+  wades: {
+    letters: ["w", "long-a", "d", "silent-e", "hard-s"],
+  },
+  cake: {
+    letters: ["hard-c", "long-a", "k", "silent-e"],
+  },
+  make: {
+    letters: ["m", "long-a", "k", "silent-e"],
+  },
+  rake: {
+    letters: ["r", "long-a", "k", "silent-e"],
+  },
+  cakes: {
+    letters: ["hard-c", "long-a", "k", "silent-e", "s"],
+  },
+  pale: {
+    letters: ["p", "long-a", "l", "silent-e"],
+  },
+  sale: {
+    letters: ["s", "long-a", "l", "silent-e"],
+  },
+  gale: {
+    letters: ["g", "long-a", "l", "silent-e"],
+  },
+  sales: {
+    letters: ["s", "long-a", "l", "silent-e", "hard-s"],
+  },
+  lame: {
+    letters: ["l", "long-a", "m", "silent-e"],
+  },
+  tame: {
+    letters: ["t", "long-a", "m", "silent-e"],
+  },
+  name: {
+    letters: ["n", "long-a", "m", "silent-e"],
+  },
+  names: {
+    letters: ["n", "long-a", "m", "silent-e", "hard-s"],
+  },
+  cane: {
+    letters: ["hard-c", "long-a", "n", "silent-e"],
+  },
+  lane: {
+    letters: ["l", "long-a", "n", "silent-e"],
+  },
+  mane: {
+    letters: ["m", "long-a", "n", "silent-e"],
+  },
+  canes: {
+    letters: ["hard-c", "long-a", "n", "silent-e", "hard-s"],
+  },
 };
 
 export default words;

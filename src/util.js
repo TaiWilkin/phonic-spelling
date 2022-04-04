@@ -1,7 +1,7 @@
 import { format, parse } from "date-fns";
 import phonemes from "./data/phonemes";
 
-const SOUND_ON = process?.env?.NODE_ENV === "development" ? true : true;
+const SOUND_ON = process?.env?.NODE_ENV === "development" ? false : true;
 export let VOICES = window.speechSynthesis?.getVoices();
 export const defaultVoice = "Google US English";
 

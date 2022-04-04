@@ -104,7 +104,9 @@ const eleven = {
       "of consonants. For example, 'strength' and 'I' are each one syllable long.",
     "An open syllable is a syllable which ends in a single vowel. The vowel in an " +
       "open syllable is usually a long vowel (a vowel which says its name).",
-    "We also introduce several new two-letter phonemes.",
+    "The word 'the' will be marked as containing a long E, although in most accents the vowel isn't fully pronounced.",
+    "We also introduce several new two-letter phonemes - th voiced, ch, and sh.",
+    "This is also the first lesson with phonic blends (two or more consonant phonemes 'blended' together), 'sp' and 'st'.",
   ],
 };
 

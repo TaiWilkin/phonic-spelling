@@ -13,12 +13,13 @@ const baseStyle = {
 
 const Key = ({ name, onClick, size, stem }) => {
   const isVowel = name && phonemes[name]?.vowel;
-  const border = isVowel ? "1px solid #81E6D9" : "";
+  const isSilent = name && phonemes[name]?.silent;
+  const border = isVowel ? "2px solid #81E6D9" : "";
   const handleClick = () => onClick(name);
   const constrainedSize = Math.min(Math.max(size, 25), 75);
   const height = constrainedSize * 1.25;
   let width = stem ? constrainedSize * 2 : constrainedSize * 1.25;
-  const style = size
+  let style = size
     ? {
         ...baseStyle,
         height: height,
@@ -26,6 +27,9 @@ const Key = ({ name, onClick, size, stem }) => {
         border,
       }
     : { ...baseStyle, border };
+  if (isSilent) {
+    style = { ...style, opacity: ".5" };
+  }
 
   return (
     <button

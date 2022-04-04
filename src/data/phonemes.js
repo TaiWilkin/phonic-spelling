@@ -244,6 +244,21 @@ const phonemes = {
     image: "https://s7.gifyu.com/images/ch.png",
     vowel: false,
   },
+  "silent-e": {
+    name: "silent-e",
+    letter: "E (silent)",
+    examples: ["make", "hide"],
+    image: "https://s7.gifyu.com/images/e.png",
+    vowel: true,
+    silent: true,
+  },
+  "long-a": {
+    name: "long-a",
+    letter: "A (long)",
+    examples: ["make", "ate"],
+    image: "https://s7.gifyu.com/images/long-a.png",
+    vowel: true,
+  },
 };
 
 export default phonemes;
