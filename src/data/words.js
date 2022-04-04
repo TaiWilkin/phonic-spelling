@@ -656,6 +656,51 @@ const words = {
   canes: {
     letters: ["hard-c", "long-a", "n", "silent-e", "hard-s"],
   },
+  plan: {
+    letters: ["p", "l", "short-a", "n"],
+  },
+  plum: {
+    letters: ["p", "l", "short-u", "m"],
+  },
+  plug: {
+    letters: ["p", "l", "short-u", "g"],
+  },
+  sled: {
+    letters: ["s", "l", "short-e", "d"],
+  },
+  slim: {
+    letters: ["s", "l", "short-i", "m"],
+  },
+  slab: {
+    letters: ["s", "l", "short-a", "b"],
+  },
+  flat: {
+    letters: ["f", "l", "short-a", "t"],
+  },
+  flax: {
+    letters: ["f", "l", "short-a", "x"],
+  },
+  flag: {
+    letters: ["f", "l", "short-a", "g"],
+  },
+  club: {
+    letters: ["hard-c", "l", "short-u", "b"],
+  },
+  clam: {
+    letters: ["hard-c", "l", "short-a", "m"],
+  },
+  clap: {
+    letters: ["hard-c", "l", "short-a", "p"],
+  },
+  blot: {
+    letters: ["b", "l", "short-o", "t"],
+  },
+  glad: {
+    letters: ["g", "l", "short-a", "d"],
+  },
+  slit: {
+    letters: ["s", "l", "short-i", "t"],
+  },
 };
 
 export default words;
