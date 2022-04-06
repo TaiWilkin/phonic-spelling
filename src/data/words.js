@@ -701,6 +701,66 @@ const words = {
   slit: {
     letters: ["s", "l", "short-i", "t"],
   },
+  hide: {
+    letters: ["h", "long-i", "d", "silent-e"],
+  },
+  side: {
+    letters: ["s", "long-i", "d", "silent-e"],
+  },
+  wide: {
+    letters: ["w", "long-i", "d", "silent-e"],
+  },
+  hides: {
+    letters: ["h", "long-i", "d", "silent-e", "hard-s"],
+  },
+  line: {
+    letters: ["l", "long-i", "n", "silent-e"],
+  },
+  mine: {
+    letters: ["m", "long-i", "n", "silent-e"],
+  },
+  wine: {
+    letters: ["w", "long-i", "n", "silent-e"],
+  },
+  lines: {
+    letters: ["l", "long-i", "n", "silent-e", "hard-s"],
+  },
+  file: {
+    letters: ["f", "long-i", "l", "silent-e"],
+  },
+  pile: {
+    letters: ["p", "long-i", "l", "silent-e"],
+  },
+  mile: {
+    letters: ["m", "long-i", "l", "silent-e"],
+  },
+  miles: {
+    letters: ["m", "long-i", "l", "silent-e", "hard-s"],
+  },
+  tube: {
+    letters: ["t", "long-u", "b", "silent-e"],
+  },
+  cube: {
+    letters: ["hard-c", "long-u", "b", "silent-e"],
+  },
+  tune: {
+    letters: ["t", "long-u", "n", "silent-e"],
+  },
+  tunes: {
+    letters: ["t", "long-u", "n", "silent-e", "hard-s"],
+  },
+  vine: {
+    letters: ["v", "long-i", "n", "silent-e"],
+  },
+  ride: {
+    letters: ["r", "long-i", "d", "silent-e"],
+  },
+  nine: {
+    letters: ["n", "long-i", "n", "silent-e"],
+  },
+  rides: {
+    letters: ["r", "long-i", "d", "silent-e", "hard-s"],
+  },
 };
 
 export default words;

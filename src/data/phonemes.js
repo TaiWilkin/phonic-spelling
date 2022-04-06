@@ -259,6 +259,20 @@ const phonemes = {
     image: "https://s7.gifyu.com/images/long-a.png",
     vowel: true,
   },
+  "long-i": {
+    name: "long-i",
+    letter: "I (long)",
+    examples: ["mine", "ides"],
+    image: "https://s7.gifyu.com/images/long-i.png",
+    vowel: true,
+  },
+  "long-u": {
+    name: "long-u",
+    letter: "U (long)",
+    examples: ["tube", "cube"],
+    image: "https://s7.gifyu.com/images/long-u.png",
+    vowel: true,
+  },
 };
 
 export default phonemes;

@@ -6,6 +6,7 @@ import twelve from "./twelve";
 import thirteen from "./thirteen";
 import fourteen from "./fourteen";
 import fifteen from "./fifteen";
+import sixteen from "./sixteen";
 
 const lessons = {
   1: {
@@ -305,6 +306,7 @@ const lessons = {
   13: thirteen,
   14: fourteen,
   15: fifteen,
+  16: sixteen,
 };
 
 export default lessons;
