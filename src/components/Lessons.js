@@ -1,9 +1,8 @@
 import { VStack, Heading, Box } from "@chakra-ui/react";
 import { useSelector } from "react-redux";
 
-import lessons from "../data/lessons";
 import Hero from "./Hero";
-import LessonLink from "./LessonLink";
+import LessonsAccordion from "./LessonsAccordion";
 
 const Lessons = () => {
   const { user } = useSelector((state) => state.auth);
@@ -25,9 +24,9 @@ const Lessons = () => {
         <Heading as="h2" mb="5">
           Lessons
         </Heading>
-        {Object.keys(lessons).map((l) => (
-          <LessonLink l={l} key={l} />
-        ))}
+        <Box maxW="500px">
+          <LessonsAccordion />
+        </Box>
       </VStack>
     </Box>
   );

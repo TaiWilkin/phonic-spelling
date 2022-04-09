@@ -15,8 +15,12 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-import lessons from "../data/lessons";
-import LessonLink from "./LessonLink";
+import LessonsAccordion from "./LessonsAccordion";
+
+const linkStyle = {
+  width: "100%",
+  padding: "2px 16px 2px 16px",
+};
 
 const NavigationDrawer = () => {
   const { user } = useSelector((state) => state.auth);
@@ -45,25 +49,35 @@ const NavigationDrawer = () => {
 
           <DrawerBody>
             <VStack>
-              <ChakraLink as={Link} to="/lessons" onClick={onClose}>
-                Home
-              </ChakraLink>
-              <ChakraLink as={Link} to="/acknowledgments" onClick={onClose}>
-                Acknowledgments
-              </ChakraLink>
+              <LessonsAccordion onClose={onClose} />
               {user && (
                 <>
-                  <ChakraLink as={Link} to="/attempts" onClick={onClose}>
+                  <ChakraLink
+                    as={Link}
+                    to="/attempts"
+                    onClick={onClose}
+                    style={linkStyle}
+                  >
                     Previous Attempts
                   </ChakraLink>
-                  <ChakraLink as={Link} to="/settings" onClick={onClose}>
+                  <ChakraLink
+                    as={Link}
+                    to="/settings"
+                    onClick={onClose}
+                    style={linkStyle}
+                  >
                     Settings
                   </ChakraLink>
                 </>
               )}
-              {Object.keys(lessons).map((l) => (
-                <LessonLink l={l} onClose={onClose} key={l} />
-              ))}
+              <ChakraLink
+                as={Link}
+                to="/acknowledgments"
+                onClick={onClose}
+                style={linkStyle}
+              >
+                Acknowledgments
+              </ChakraLink>
             </VStack>
           </DrawerBody>
         </DrawerContent>
