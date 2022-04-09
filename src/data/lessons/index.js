@@ -10,6 +10,9 @@ import sixteen from "./sixteen";
 import seventeen from "./seventeen";
 import eighteen from "./eighteen";
 import nineteen from "./nineteen";
+import twenty from "./twenty";
+import twentyone from "./twentyone";
+import twentytwo from "./twentytwo";
 
 const lessons = {
   1: {
@@ -313,6 +316,9 @@ const lessons = {
   17: seventeen,
   18: eighteen,
   19: nineteen,
+  20: twenty,
+  21: twentyone,
+  22: twentytwo,
 };
 
 export default lessons;

@@ -84,6 +84,9 @@ const eleven = {
   notes: [
     "This is a challenge lesson to review the phonic skills you've learned so far. " +
       "Some words are new, but the phonemes are the same you've learned so far. ",
+    "You will also memorize some words. These are words that are useful to know how " +
+      "to spell early in your education, but follow advanced phonic rules you " +
+      "won't learn until later.",
   ],
   review: true,
 };

@@ -920,6 +920,97 @@ const words = {
   stove: {
     letters: ["s", "t", "long-o", "v", "silent-e"],
   },
+  sly: {
+    letters: ["s", "l", "long-y"],
+  },
+  well: {
+    letters: ["w", "short-e", "l", "l"],
+  },
+  pod: {
+    letters: ["p", "short-o", "d"],
+  },
+  wall: {
+    letters: ["w", "short-a", "l", "l"],
+  },
+  but: {
+    letters: ["b", "short-u", "t"],
+  },
+  wake: {
+    letters: ["w", "long-a", "k", "silent-e"],
+  },
+  nag: {
+    letters: ["n", "short-a", "g"],
+  },
+  log: {
+    letters: ["l", "short-o", "g"],
+  },
+  gum: {
+    letters: ["g", "short-u", "m"],
+  },
+  chin: {
+    letters: ["ch", "short-i", "n"],
+  },
+  kite: {
+    letters: ["k", "long-i", "t", "silent-e"],
+  },
+  than: {
+    letters: ["voiced-th", "short-a", "n"],
+    sentence: "I am taller than Tara.",
+  },
+  drum: {
+    letters: ["d", "r", "short-u", "m"],
+  },
+  six: {
+    letters: ["s", "short-i", "x"],
+  },
+  bud: {
+    letters: ["b", "short-u", "d"],
+  },
+  play: {
+    letters: ["p", "l", "long-a", "silent-y"],
+  },
+  leg: {
+    letters: ["l", "short-e", "g"],
+  },
+  crib: {
+    letters: ["c", "r", "short-i", "b"],
+  },
+  crab: {
+    letters: ["c", "r", "short-a", "b"],
+  },
+  spell: {
+    letters: ["s", "p", "short-e", "l", "l"],
+  },
+  Jane: {
+    letters: ["j", "long-a", "n", "silent-e"],
+  },
+  globe: {
+    letters: ["g", "l", "long-o", "b", "silent-e"],
+  },
+  life: {
+    letters: ["l", "long-i", "f", "silent-e"],
+  },
+  slate: {
+    letters: ["s", "l", "long-a", "t", "silent-e"],
+  },
+  bug: {
+    letters: ["b", "short-u", "g"],
+  },
+  slide: {
+    letters: ["s", "l", "long-i", "d", "silent-e"],
+  },
+  rod: {
+    letters: ["r", "short-o", "d"],
+  },
+  rob: {
+    letters: ["r", "short-o", "b"],
+  },
+  them: {
+    letters: ["voiced-th", "short-e", "m"],
+  },
+  frame: {
+    letters: ["f", "r", "short-a", "m", "silent-e"],
+  },
 };
 
 export default words;
