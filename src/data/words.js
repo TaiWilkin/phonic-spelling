@@ -875,6 +875,51 @@ const words = {
   holes: {
     letters: ["h", "long-o", "l", "silent-e", "hard-s"],
   },
+  late: {
+    letters: ["l", "long-a", "t", "silent-e"],
+  },
+  wife: {
+    letters: ["w", "long-i", "f", "silent-e"],
+  },
+  bone: {
+    letters: ["b", "long-o", "n", "silent-e"],
+  },
+  time: {
+    letters: ["t", "long-i", "m", "silent-e"],
+  },
+  safe: {
+    letters: ["s", "long-a", "f", "silent-e"],
+  },
+  rope: {
+    letters: ["r", "long-o", "p", "silent-e"],
+  },
+  home: {
+    letters: ["h", "long-o", "m", "silent-e"],
+  },
+  babe: {
+    letters: ["b", "long-a", "b", "silent-e"],
+  },
+  cute: {
+    letters: ["c", "long-u", "t", "silent-e"],
+  },
+  robe: {
+    letters: ["r", "long-o", "b", "silent-e"],
+  },
+  bite: {
+    letters: ["b", "long-i", "t", "silent-e"],
+  },
+  rose: {
+    letters: ["r", "long-o", "hard-s", "silent-e"],
+  },
+  rode: {
+    letters: ["r", "long-o", "d", "silent-e"],
+  },
+  hive: {
+    letters: ["h", "long-i", "v", "silent-e"],
+  },
+  stove: {
+    letters: ["s", "t", "long-o", "v", "silent-e"],
+  },
 };
 
 export default words;

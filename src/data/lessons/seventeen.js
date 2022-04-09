@@ -1,4 +1,4 @@
-const sixteen = {
+const seventeen = {
   newPhonemes: ["long-y", "silent-y"],
   allPhonemes: [
     "short-a",
@@ -148,4 +148,4 @@ const sixteen = {
   ],
 };
 
-export default sixteen;
+export default seventeen;

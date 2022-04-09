@@ -279,6 +279,66 @@ const stems = {
     letters: ["long-o", "l", "silent-e"],
     image: "https://s7.gifyu.com/images/stem-ole.png",
   },
+  ate: {
+    letters: ["long-a", "t", "silent-e"],
+    image: "https://s7.gifyu.com/images/stem-ate.png",
+  },
+  ife: {
+    letters: ["long-i", "f", "silent-e"],
+    image: "https://s7.gifyu.com/images/stem-ife.png",
+  },
+  one: {
+    letters: ["long-o", "n", "silent-e"],
+    image: "https://s7.gifyu.com/images/stem-one.png",
+  },
+  ime: {
+    letters: ["long-i", "m", "silent-e"],
+    image: "https://s7.gifyu.com/images/stem-ime.png",
+  },
+  afe: {
+    letters: ["long-a", "f", "silent-e"],
+    image: "https://s7.gifyu.com/images/stem-afe.png",
+  },
+  ope: {
+    letters: ["long-o", "p", "silent-e"],
+    image: "https://s7.gifyu.com/images/stem-ope.png",
+  },
+  ome: {
+    letters: ["long-o", "m", "silent-e"],
+    image: "https://s7.gifyu.com/images/stem-ome.png",
+  },
+  abe: {
+    letters: ["long-a", "b", "silent-e"],
+    image: "https://s7.gifyu.com/images/stem-abe.png",
+  },
+  ute: {
+    letters: ["long-u", "t", "silent-e"],
+    image: "https://s7.gifyu.com/images/stem-ute.png",
+  },
+  obe: {
+    letters: ["long-o", "b", "silent-e"],
+    image: "https://s7.gifyu.com/images/stem-obe.png",
+  },
+  ite: {
+    letters: ["long-i", "t", "silent-e"],
+    image: "https://s7.gifyu.com/images/stem-ite.png",
+  },
+  ose: {
+    letters: ["long-o", "hard-s", "silent-e"],
+    image: "https://s7.gifyu.com/images/stem-ose.png",
+  },
+  ode: {
+    letters: ["long-o", "d", "silent-e"],
+    image: "https://s7.gifyu.com/images/stem-ode.png",
+  },
+  ive: {
+    letters: ["long-i", "v", "silent-e"],
+    image: "https://s7.gifyu.com/images/stem-ive.png",
+  },
+  ove: {
+    letters: ["long-o", "v", "silent-e"],
+    image: "https://s7.gifyu.com/images/stem-ove.png",
+  },
 };
 
 export default stems;
