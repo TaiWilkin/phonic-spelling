@@ -815,6 +815,66 @@ const words = {
   try: {
     letters: ["t", "r", "long-y"],
   },
+  joke: {
+    letters: ["j", "long-o", "k", "silent-e"],
+  },
+  poke: {
+    letters: ["p", "long-o", "k", "silent-e"],
+  },
+  woke: {
+    letters: ["w", "long-o", "k", "silent-e"],
+  },
+  jokes: {
+    letters: ["j", "long-o", "k", "silent-e", "s"],
+  },
+  save: {
+    letters: ["s", "long-a", "v", "silent-e"],
+  },
+  wave: {
+    letters: ["s", "long-a", "v", "silent-e"],
+  },
+  pave: {
+    letters: ["s", "long-a", "v", "silent-e"],
+  },
+  waves: {
+    letters: ["s", "long-a", "v", "silent-e", "hard-s"],
+  },
+  wipe: {
+    letters: ["w", "long-i", "p", "silent-e"],
+  },
+  ripe: {
+    letters: ["r", "long-i", "p", "silent-e"],
+  },
+  pipe: {
+    letters: ["p", "long-i", "p", "silent-e"],
+  },
+  pipes: {
+    letters: ["p", "long-i", "p", "silent-e", "s"],
+  },
+  tape: {
+    letters: ["t", "long-a", "p", "silent-e"],
+  },
+  shape: {
+    letters: ["sh", "long-a", "p", "silent-e"],
+  },
+  grape: {
+    letters: ["g", "r", "long-a", "p", "silent-e"],
+  },
+  tapes: {
+    letters: ["t", "long-a", "p", "silent-e", "s"],
+  },
+  mole: {
+    letters: ["m", "long-o", "l", "silent-e"],
+  },
+  pole: {
+    letters: ["p", "long-o", "l", "silent-e"],
+  },
+  hole: {
+    letters: ["h", "long-o", "l", "silent-e"],
+  },
+  holes: {
+    letters: ["h", "long-o", "l", "silent-e", "hard-s"],
+  },
 };
 
 export default words;

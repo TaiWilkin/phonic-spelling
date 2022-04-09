@@ -259,6 +259,26 @@ const stems = {
     letters: ["p", "r"],
     image: "https://s7.gifyu.com/images/stem-pr.png",
   },
+  oke: {
+    letters: ["long-o", "k", "silent-e"],
+    image: "https://s7.gifyu.com/images/stem-oke.png",
+  },
+  ave: {
+    letters: ["long-a", "v", "silent-e"],
+    image: "https://s7.gifyu.com/images/stem-ave.png",
+  },
+  ipe: {
+    letters: ["long-i", "p", "silent-e"],
+    image: "https://s7.gifyu.com/images/stem-ipe.png",
+  },
+  ape: {
+    letters: ["long-a", "p", "silent-e"],
+    image: "https://s7.gifyu.com/images/stem-ape.png",
+  },
+  ole: {
+    letters: ["long-o", "l", "silent-e"],
+    image: "https://s7.gifyu.com/images/stem-ole.png",
+  },
 };
 
 export default stems;
