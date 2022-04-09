@@ -273,6 +273,21 @@ const phonemes = {
     image: "https://s7.gifyu.com/images/long-u.png",
     vowel: true,
   },
+  "long-y": {
+    name: "long-y",
+    letter: "Y (long)",
+    examples: ["by", "fly"],
+    image: "https://s7.gifyu.com/images/long-y.png",
+    vowel: true,
+  },
+  "silent-y": {
+    name: "silent-y",
+    letter: "Y (silent)",
+    examples: ["say", "away"],
+    image: "https://s7.gifyu.com/images/ydc5c934b8fb65514.png",
+    vowel: true,
+    silent: true,
+  },
 };
 
 export default phonemes;

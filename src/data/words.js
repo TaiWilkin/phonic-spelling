@@ -761,6 +761,60 @@ const words = {
   rides: {
     letters: ["r", "long-i", "d", "silent-e", "hard-s"],
   },
+  by: {
+    letters: ["b", "long-y"],
+  },
+  my: {
+    letters: ["m", "long-y"],
+  },
+  cry: {
+    letters: ["hard-c", "r", "long-y"],
+  },
+  may: {
+    letters: ["m", "long-a", "silent-y"],
+  },
+  ray: {
+    letters: ["r", "long-a", "silent-y"],
+  },
+  gray: {
+    letters: ["g", "r", "long-a", "silent-y"],
+  },
+  rays: {
+    letters: ["r", "long-a", "silent-y", "hard-s"],
+  },
+  way: {
+    letters: ["w", "long-a", "silent-y"],
+  },
+  pry: {
+    letters: ["p", "r", "long-y"],
+  },
+  pray: {
+    letters: ["p", "r", "long-a", "silent-y"],
+  },
+  ways: {
+    letters: ["w", "long-a", "silent-y", "hard-s"],
+  },
+  say: {
+    letters: ["s", "long-a", "silent-y"],
+  },
+  day: {
+    letters: ["d", "long-a", "silent-y"],
+  },
+  dray: {
+    letters: ["d", "r", "long-a", "silent-y"],
+  },
+  days: {
+    letters: ["d", "long-a", "silent-y", "hard-s"],
+  },
+  dry: {
+    letters: ["d", "r", "long-y"],
+  },
+  fry: {
+    letters: ["f", "r", "long-y"],
+  },
+  try: {
+    letters: ["t", "r", "long-y"],
+  },
 };
 
 export default words;

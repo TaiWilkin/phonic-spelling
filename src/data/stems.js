@@ -231,6 +231,34 @@ const stems = {
     letters: ["long-u", "n", "silent-e"],
     image: "https://s7.gifyu.com/images/stem-une.png",
   },
+  ay: {
+    letters: ["long-a", "silent-y"],
+    image: "https://s7.gifyu.com/images/stem-ay.png",
+  },
+  cr: {
+    letters: ["hard-c", "r"],
+    image: "https://s7.gifyu.com/images/stem-cr.png",
+  },
+  gr: {
+    letters: ["g", "r"],
+    image: "https://s7.gifyu.com/images/stem-gr.png",
+  },
+  dr: {
+    letters: ["d", "r"],
+    image: "https://s7.gifyu.com/images/stem-dr.png",
+  },
+  fr: {
+    letters: ["f", "r"],
+    image: "https://s7.gifyu.com/images/stem-fr.png",
+  },
+  tr: {
+    letters: ["t", "r"],
+    image: "https://s7.gifyu.com/images/stem-tr.png",
+  },
+  pr: {
+    letters: ["p", "r"],
+    image: "https://s7.gifyu.com/images/stem-pr.png",
+  },
 };
 
 export default stems;
