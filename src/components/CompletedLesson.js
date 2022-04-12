@@ -3,6 +3,22 @@ import CustomLink from "./CustomLink";
 import { calculateScore } from "../util";
 
 const CompletedLesson = ({ lesson, missedWords, completedWords }) => {
+  if (!missedWords.length && !completedWords.length) {
+    return (
+      <Box m="5">
+        <Heading as="h2" mt="5" size="md">
+          Lesson {lesson}
+        </Heading>
+        <Text m="5">Lesson attempt completed.</Text>
+        <CustomLink
+          text="Continue to next lesson"
+          link={`/lessons/${parseInt(lesson) + 1}`}
+          color="teal"
+        />
+      </Box>
+    );
+  }
+
   const score = calculateScore({ missedWords, completedWords });
   const percent = score * 100;
   if (score < 0.8) {

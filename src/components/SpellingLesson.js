@@ -77,7 +77,7 @@ const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
   };
 
   useEffect(() => {
-    if (!currentWord) {
+    if (!currentWord && wordList.length) {
       dispatch(
         saveLessonAttempt({
           missedWords,

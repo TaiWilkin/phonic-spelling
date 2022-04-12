@@ -40,7 +40,7 @@ const SightWords = ({ sightwords = [] }) => {
 
   const handleSubmit = () => {
     const formattedAnswer = answer.trim().toLowerCase();
-    if (formattedAnswer === currentWord) {
+    if (formattedAnswer === currentWord.trim().toLowerCase()) {
       if (showAnswer) {
         setShowAnswer(false);
       } else {
