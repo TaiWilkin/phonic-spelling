@@ -900,7 +900,7 @@ const words = {
     letters: ["b", "long-a", "b", "silent-e"],
   },
   cute: {
-    letters: ["c", "long-u", "t", "silent-e"],
+    letters: ["hard-c", "long-u", "t", "silent-e"],
   },
   robe: {
     letters: ["r", "long-o", "b", "silent-e"],
@@ -930,7 +930,7 @@ const words = {
     letters: ["p", "short-o", "d"],
   },
   wall: {
-    letters: ["w", "short-a", "l", "l"],
+    letters: ["w", "open-a", "l", "l"],
   },
   but: {
     letters: ["b", "short-u", "t"],
@@ -973,10 +973,10 @@ const words = {
     letters: ["l", "short-e", "g"],
   },
   crib: {
-    letters: ["c", "r", "short-i", "b"],
+    letters: ["hard-c", "r", "short-i", "b"],
   },
   crab: {
-    letters: ["c", "r", "short-a", "b"],
+    letters: ["hard-c", "r", "short-a", "b"],
   },
   spell: {
     letters: ["s", "p", "short-e", "l", "l"],
@@ -1009,7 +1009,53 @@ const words = {
     letters: ["voiced-th", "short-e", "m"],
   },
   frame: {
-    letters: ["f", "r", "short-a", "m", "silent-e"],
+    letters: ["f", "r", "long-a", "m", "silent-e"],
+  },
+  kin: {
+    letters: ["k", "short-i", "n"],
+  },
+  skin: {
+    letters: ["s", "k", "short-i", "n"],
+  },
+  spin: {
+    letters: ["s", "p", "short-i", "n"],
+  },
+  pen: {
+    letters: ["p", "short-e", "n"],
+  },
+  then: {
+    letters: ["voiced-th", "short-e", "n"],
+    sentence: "I will go to the park and then to the movies.",
+  },
+  when: {
+    letters: ["wh", "short-e", "n"],
+  },
+  ban: {
+    letters: ["b", "short-a", "n"],
+  },
+  span: {
+    letters: ["s", "p", "short-a", "n"],
+  },
+  scan: {
+    letters: ["s", "hard-c", "short-a", "n"],
+  },
+  trim: {
+    letters: ["t", "r", "short-i", "m"],
+  },
+  skim: {
+    letters: ["s", "k", "short-i", "m"],
+  },
+  swim: {
+    letters: ["s", "w", "short-i", "m"],
+  },
+  den: {
+    letters: ["d", "short-e", "n"],
+  },
+  clan: {
+    letters: ["hard-c", "l", "short-a", "n"],
+  },
+  rim: {
+    letters: ["r", "short-i", "m"],
   },
 };
 

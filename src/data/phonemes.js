@@ -288,6 +288,12 @@ const phonemes = {
     vowel: true,
     silent: true,
   },
+  wh: {
+    name: "wh",
+    letter: "Wh",
+    examples: ["which", "who"],
+    image: "https://s7.gifyu.com/images/phoneme-wh.png",
+  },
 };
 
 export default phonemes;

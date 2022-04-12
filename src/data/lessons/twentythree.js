@@ -1,5 +1,5 @@
-const twentyone = {
-  newPhonemes: [],
+const twentythree = {
+  newPhonemes: ["wh"],
   allPhonemes: [
     "short-a",
     "t",
@@ -41,8 +41,31 @@ const twentyone = {
     "long-u",
     "long-y",
     "silent-y",
+    "wh",
   ],
-  words: [],
+  words: [
+    "kin",
+    "skin",
+    "spin",
+    "pen",
+    "then",
+    "when",
+    "ban",
+    "span",
+    "scan",
+    "trim",
+    "skim",
+    "swim",
+    "shin",
+    "chin",
+    "den",
+    "men",
+    "clan",
+    "dim",
+    "rim",
+    "vim",
+    "than",
+  ],
   stems: [
     "at",
     "an",
@@ -129,30 +152,26 @@ const twentyone = {
     "ode",
     "ive",
     "ove",
-  ],
-  sightwords: [
-    "of",
-    "her",
-    "bird",
-    "hurt",
-    "for",
-    "was",
-    "you",
-    "good",
-    "your",
-    "yes",
-    "on",
-    "I",
-    "use",
+    "sk",
+    "sc",
+    "sw",
   ],
   notes: [
-    "This is a challenge lesson to review the phonic skills you've learned so far. " +
-      "The words are new, but the phonemes are the same you've learned so far. ",
-    "You will also memorize some words. These are words that are useful to know how " +
-      "to spell early in your education, but follow advanced phonic rules you " +
-      "won't learn until later.",
+    "'C' borrows its two sounds from 's' and 'k'.",
+    "The 'k' sound is usually made by 'c' instead of 'k', unless it is " +
+      "followed by a letter that would make the 'c' soft.",
+    "As a rule, " +
+      "'C' is soft as in 's' before 'e', 'i', and 'y'. It is hard before " +
+      "'a', 'o', and 'u'. It is also hard at the end of a syllable, unless " +
+      "followed by 'e', 'i', or 'y'. It is hard before consonants (except in " +
+      "'ch').",
+    "The two-letter phoneme, 'wh', has a distinct sound in some accents, " +
+      "and is pronounced as 'w' or 'h' in others. If it lacks a distinct sound in " +
+      "your accent, some memorization will be required to determine which words " +
+      "use this digraph instead of just 'w' or 'h'. 'Wh' is never used at the end of " +
+      "a syllable or as part of a consonant blend.",
   ],
   review: true,
 };
 
-export default twentyone;
+export default twentythree;
