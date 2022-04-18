@@ -1032,6 +1032,7 @@ const words = {
   },
   ban: {
     letters: ["b", "short-a", "n"],
+    sentences: "Is there ever a good reason to ban a book?",
   },
   span: {
     letters: ["s", "p", "short-a", "n"],

@@ -175,7 +175,6 @@ const twentythree = {
       "use this digraph instead of just 'w' or 'h'. 'Wh' is never used at the end of " +
       "a syllable or as part of a consonant blend.",
   ],
-  review: true,
 };
 
 export default twentythree;

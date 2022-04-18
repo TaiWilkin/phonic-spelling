@@ -163,7 +163,6 @@ const twentyfour = {
     "You'll work with new consonant blends ('str', 'sn', 'br', and 'sm') " +
       "combined with familiar word endings in this lesson.",
   ],
-  review: true,
 };
 
 export default twentyfour;

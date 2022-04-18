@@ -7,7 +7,7 @@ import VoiceSelector from "./VoiceSelector";
 const Header = () => (
   <HStack p="10px" bg="black">
     <NavigationDrawer />
-    <Heading pl="5" color="white" size="lg">
+    <Heading pl="5" color="white" size="md">
       Phonic Spelling
     </Heading>
     <Spacer />
