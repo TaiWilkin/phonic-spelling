@@ -29,6 +29,7 @@ const Typewriter = ({
   completedWords,
   wordList,
   analysis,
+  showAnswer,
 }) => {
   const { voice } = useSelector((state) => state.voice);
   const [letters, setLetters] = useState([]);
@@ -83,7 +84,7 @@ const Typewriter = ({
           </Button>
         )}
       </HStack>
-      <Textbox letters={letters} />
+      <Textbox letters={showAnswer ? showAnswer : letters} />
       <VStack display="flex" p="10px" height={analysis ? "200px" : "320px"}>
         <Keyboard
           keys={sortPhonemes(phonemeList)}

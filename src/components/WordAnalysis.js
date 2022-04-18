@@ -12,6 +12,7 @@ const WordAnalysis = ({ phonemeList, wordList }) => {
   let match = useRouteMatch();
   const { voice } = useSelector((state) => state.voice);
   const [completedWords, setCompletedWords] = useState([]);
+  const [showAnswer, setShowAnswer] = useState(false);
   const incompleteWords = wordList.filter(
     (word) => !completedWords.includes(word)
   );
@@ -44,6 +45,10 @@ const WordAnalysis = ({ phonemeList, wordList }) => {
       setCompletedWords([...completedWords, currentWord]);
       toast.success("Correct!");
     } else {
+      setShowAnswer(true);
+      setTimeout(() => {
+        setShowAnswer(false);
+      }, 1000);
       pronounceCurrentWord();
       toast.error("Try again");
     }
@@ -78,6 +83,7 @@ const WordAnalysis = ({ phonemeList, wordList }) => {
         completedWords={completedWords}
         wordList={wordList}
         analysis
+        showAnswer={showAnswer && words[currentWord]?.letters}
       />
     </>
   );

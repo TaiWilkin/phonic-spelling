@@ -1087,7 +1087,7 @@ const words = {
     letters: ["d", "r", "short-i", "p"],
   },
   yell: {
-    letters: ["y", "short-e", "l", "l"],
+    letters: ["hard-y", "short-e", "l", "l"],
   },
   shell: {
     letters: ["sh", "short-e", "l", "l"],
