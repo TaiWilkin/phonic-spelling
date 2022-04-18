@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { Box, Button, HStack } from "@chakra-ui/react";
+import { Box, Button, HStack, VStack } from "@chakra-ui/react";
 import { useSelector } from "react-redux";
 
 import Keyboard from "./Keyboard";
 import Textbox from "./Textbox";
 import Audio from "./Audio";
+import ProgressBar from "./ProgressBar";
 
 import {
   pronounce,
@@ -25,6 +26,9 @@ const Typewriter = ({
   stemList = [],
   word,
   setShowAttributions,
+  completedWords,
+  wordList,
+  analysis,
 }) => {
   const { voice } = useSelector((state) => state.voice);
   const [letters, setLetters] = useState([]);
@@ -55,7 +59,7 @@ const Typewriter = ({
   };
 
   return (
-    <Box>
+    <Box height="100%">
       <HStack spacing="10px" m="10px">
         <Button onClick={clearLetters} style={{ flex: 1 }}>
           Clear
@@ -80,25 +84,28 @@ const Typewriter = ({
         )}
       </HStack>
       <Textbox letters={letters} />
-      <Keyboard
-        keys={sortPhonemes(phonemeList)}
-        handleKeyPress={handleKeyPress}
-        tooltip="Click a phoneme key to add a phoneme."
-      />
-      {!!stemList.length && (
+      <VStack display="flex" p="10px" height={analysis ? "200px" : "320px"}>
         <Keyboard
-          keys={sortStems(stemList)}
-          handleKeyPress={handleStemKeyPress}
-          stem
-          tooltip="Click a stem key to add multiple phonemes."
+          keys={sortPhonemes(phonemeList)}
+          handleKeyPress={handleKeyPress}
+          tooltip="Click a phoneme key to add a phoneme."
         />
-      )}
+        {!!stemList.length && (
+          <Keyboard
+            keys={sortStems(stemList)}
+            handleKeyPress={handleStemKeyPress}
+            stem
+            tooltip="Click a stem key to add multiple phonemes."
+          />
+        )}
+      </VStack>
       <HStack spacing="10px" m="10px">
-        <Button onClick={toggleLetterDescription}>
+        <Button onClick={toggleLetterDescription} style={{ flex: 1 }}>
           {describeLetters
             ? "Turn off phoneme descriptions"
             : "Turn on phoneme descriptions"}
         </Button>
+        <ProgressBar completedWords={completedWords} wordList={wordList} />
       </HStack>
     </Box>
   );

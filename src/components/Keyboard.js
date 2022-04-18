@@ -31,14 +31,15 @@ const Keyboard = ({
         bg="rgba(0, 0, 0, 0.1)"
         border="1px solid rgba(0, 0, 0, 0.2)"
         minHeight="75px"
-        m="10px"
+        flex="1"
         spacing="10px"
+        overflow="scroll"
       >
         {keys.length > 20 && (
           <Input
             variant="filled"
             bg="white"
-            placeholder="Type to filter keys"
+            placeholder="Type to filter keys (some may be hidden)"
             size="sm"
             value={filter}
             onChange={(e) => setFilter(e.target.value)}

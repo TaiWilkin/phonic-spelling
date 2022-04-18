@@ -6,7 +6,7 @@ import phonemes from "../data/phonemes";
 
 const baseStyle = {
   display: "flex",
-  margin: "10px auto",
+  margin: "5px auto",
   alignItems: "center",
   justifyContent: "center",
 };

@@ -1013,6 +1013,7 @@ const words = {
   },
   kin: {
     letters: ["k", "short-i", "n"],
+    sentence: "He visited his kin in the country each summer.",
   },
   skin: {
     letters: ["s", "k", "short-i", "n"],

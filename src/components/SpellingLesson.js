@@ -5,7 +5,6 @@ import { Text, Heading, useDisclosure } from "@chakra-ui/react";
 import { toast } from "react-toastify";
 
 import Typewriter from "./Typewriter";
-import ProgressBar from "./ProgressBar";
 import AttributionPopup from "./AttributionPopup";
 import { pronounce } from "../util";
 import { saveLessonAttempt } from "../reducers/lessonAttempts";
@@ -112,8 +111,9 @@ const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
         canSubmit
         word={currentWord}
         setShowAttributions={setShowAttributions}
+        completedWords={completedWords}
+        wordList={wordList}
       />
-      <ProgressBar completedWords={completedWords} wordList={wordList} />
       <AttributionPopup
         attributions={attributions}
         setAttributions={setAttributions}

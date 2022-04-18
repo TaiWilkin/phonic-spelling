@@ -6,7 +6,7 @@ const ProgressBar = ({ completedWords, wordList }) => {
   )}%`;
 
   return completedWords.length > 0 ? (
-    <Box className="progress-outer">
+    <Box className="progress-outer" style={{ flex: 2 }}>
       <Box className="progress" style={{ width: percent }} overflow="hidden">
         <Text>{percent}</Text>
       </Box>

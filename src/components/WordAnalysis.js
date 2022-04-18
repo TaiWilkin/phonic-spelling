@@ -5,7 +5,6 @@ import { Text, Box, Heading } from "@chakra-ui/react";
 import { toast } from "react-toastify";
 
 import Typewriter from "./Typewriter";
-import ProgressBar from "./ProgressBar";
 import { pronounce } from "../util";
 import words from "../data/words";
 
@@ -76,8 +75,10 @@ const WordAnalysis = ({ phonemeList, wordList }) => {
         onSubmit={onSubmit}
         handleReprompt={pronounceCurrentWord}
         useInSentence={useInSentence}
+        completedWords={completedWords}
+        wordList={wordList}
+        analysis
       />
-      <ProgressBar completedWords={completedWords} wordList={wordList} />
     </>
   );
 };

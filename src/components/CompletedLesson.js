@@ -1,4 +1,4 @@
-import { Text, Box, Heading } from "@chakra-ui/react";
+import { Text, Box, Heading, Spinner } from "@chakra-ui/react";
 import { Redirect } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -9,6 +9,10 @@ import lessons from "../data/lessons";
 const CompletedLesson = ({ lesson }) => {
   const { attempts, loading } = useSelector((state) => state.lessonAttempts);
   const attemptList = attempts[lesson];
+
+  if (loading) {
+    return <Spinner />;
+  }
 
   if (!attemptList && !loading) {
     return <Redirect to={`/lessons`} />;
