@@ -1057,6 +1057,63 @@ const words = {
   rim: {
     letters: ["r", "short-i", "m"],
   },
+  chap: {
+    letters: ["ch", "short-a", "p"],
+  },
+  trap: {
+    letters: ["t", "r", "short-a", "p"],
+  },
+  strap: {
+    letters: ["s", "t", "r", "short-a", "p"],
+  },
+  brag: {
+    letters: ["b", "r", "short-a", "g"],
+  },
+  drag: {
+    letters: ["d", "r", "short-a", "g"],
+  },
+  stag: {
+    letters: ["s", "t", "short-a", "g"],
+  },
+  snip: {
+    letters: ["s", "n", "short-i", "p"],
+  },
+  trip: {
+    letters: ["t", "r", "short-i", "p"],
+  },
+  drip: {
+    letters: ["d", "r", "short-i", "p"],
+  },
+  yell: {
+    letters: ["y", "short-e", "l", "l"],
+  },
+  shell: {
+    letters: ["sh", "short-e", "l", "l"],
+  },
+  smell: {
+    letters: ["s", "m", "short-e", "l", "l"],
+  },
+  cap: {
+    letters: ["hard-c", "short-a", "p"],
+  },
+  map: {
+    letters: ["m", "short-a", "p"],
+  },
+  snap: {
+    letters: ["s", "n", "short-a", "p"],
+  },
+  snag: {
+    letters: ["s", "n", "short-a", "g"],
+  },
+  skip: {
+    letters: ["s", "k", "short-i", "p"],
+  },
+  strip: {
+    letters: ["s", "t", "r", "short-i", "p"],
+  },
+  swell: {
+    letters: ["s", "w", "short-e", "l", "l"],
+  },
 };
 
 export default words;

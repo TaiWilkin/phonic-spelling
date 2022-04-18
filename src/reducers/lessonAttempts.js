@@ -10,6 +10,7 @@ export const lessonAttemptsSlice = createSlice({
   name: "lessonattempts",
   initialState: {
     attempts: {},
+    loading: false,
   },
   reducers: {
     saveLessonAttemptSuccess: (state, { payload }) => {
@@ -19,9 +20,17 @@ export const lessonAttemptsSlice = createSlice({
       } else {
         state.attempts[payload.lesson] = [...existingAttempts, payload];
       }
+      state.loading = false;
+    },
+    beginSaveLessonAttempt: (state) => {
+      state.loading = true;
     },
     getLessonAttemptsSuccess: (state, { payload }) => {
       state.attempts = payload;
+      state.loading = false;
+    },
+    beginGetLessonAttempts: (state) => {
+      state.loading = true;
     },
   },
   extraReducers: {
@@ -29,13 +38,30 @@ export const lessonAttemptsSlice = createSlice({
   },
 });
 
-export const { saveLessonAttemptSuccess, getLessonAttemptsSuccess } =
-  lessonAttemptsSlice.actions;
+export const {
+  saveLessonAttemptSuccess,
+  getLessonAttemptsSuccess,
+  beginGetLessonAttempts,
+  beginSaveLessonAttempt,
+} = lessonAttemptsSlice.actions;
 
 export const saveLessonAttempt =
-  ({ lesson, missedWords, completedWords }) =>
+  ({
+    lesson,
+    missedWords,
+    completedWords,
+    missedSightWords,
+    completedSightWords,
+  }) =>
   (dispatch) => {
-    firebaseAddLessonAttempt({ lesson, missedWords, completedWords })
+    dispatch(beginSaveLessonAttempt());
+    firebaseAddLessonAttempt({
+      lesson,
+      missedWords,
+      completedWords,
+      missedSightWords,
+      completedSightWords,
+    })
       .then((attempt) => {
         dispatch(saveLessonAttemptSuccess(attempt));
       })
@@ -46,6 +72,7 @@ export const saveLessonAttempt =
   };
 
 export const getLessonAttempts = () => (dispatch) => {
+  dispatch(beginGetLessonAttempts());
   firebaseGetLessonAttempts()
     .then((attempts) => {
       dispatch(getLessonAttemptsSuccess(attempts));

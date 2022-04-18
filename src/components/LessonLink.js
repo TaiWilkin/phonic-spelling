@@ -9,6 +9,7 @@ const LessonLink = ({ l, onClose = () => {} }) => {
   const { attempts } = useSelector((state) => state.lessonAttempts);
   const unlockedLessons = getUnlockedLessons(attempts);
   const completedLessons = getCompletedLessons(attempts);
+
   return unlockedLessons[l] ? (
     <ChakraLink as={Link} to={`/lessons/${l}`} onClick={onClose} key={l}>
       <Checkbox isChecked={completedLessons[l]} colorScheme="teal">

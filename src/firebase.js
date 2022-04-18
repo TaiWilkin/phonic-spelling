@@ -57,8 +57,10 @@ export const getCurrentUser = () => auth.currentUser;
 export const watchAuthState = (callback) => onAuthStateChanged(auth, callback);
 
 export const firebaseAddLessonAttempt = async ({
-  missedWords,
-  completedWords,
+  missedWords = [],
+  completedWords = [],
+  missedSightWords = [],
+  completedSightWords = [],
   lesson,
 }) => {
   if (!auth.currentUser) {
@@ -69,12 +71,19 @@ export const firebaseAddLessonAttempt = async ({
     collection(db, "lessons", auth.currentUser.uid, "attempts")
   );
   const score = calculateScore({ completedWords, missedWords });
+  const sightScore = calculateScore({
+    completedWords: completedSightWords,
+    missedWords: missedSightWords,
+  });
   const data = {
     date: new Date(),
     lesson,
     score,
     missedWords,
     completedWords,
+    sightScore,
+    missedSightWords,
+    completedSightWords,
     user: auth.currentUser.uid,
   };
   await setDoc(newLessonAttemptRef, data);

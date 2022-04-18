@@ -351,6 +351,22 @@ const stems = {
     letters: ["s", "w"],
     image: "https://s7.gifyu.com/images/stem-sw.png",
   },
+  sm: {
+    letters: ["s", "m"],
+    image: "https://s7.gifyu.com/images/stem-sm.png",
+  },
+  sn: {
+    letters: ["s", "n"],
+    image: "https://s7.gifyu.com/images/stem-sn.png",
+  },
+  br: {
+    letters: ["b", "r"],
+    image: "https://s7.gifyu.com/images/stem-br.png",
+  },
+  str: {
+    letters: ["s", "t", "r"],
+    image: "https://s7.gifyu.com/images/stem-str.png",
+  },
 };
 
 export default stems;

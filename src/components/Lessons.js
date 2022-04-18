@@ -1,4 +1,4 @@
-import { VStack, Heading, Box } from "@chakra-ui/react";
+import { VStack, Heading, Box, Text } from "@chakra-ui/react";
 import { useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
 
@@ -32,6 +32,14 @@ const Lessons = () => {
           Lessons
         </Heading>
         <Box maxW="500px">
+          <Box mb="5">
+            <Text>
+              Some lessons might be skipped based on your pretest scores. You
+              can also skip ahead in the course by successfully completing a
+              review lesson. You are limited to one pretest attempt, and to one
+              early attempt per review.
+            </Text>
+          </Box>
           <LessonsAccordion />
         </Box>
       </VStack>

@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
-import { useRouteMatch } from "react-router-dom";
+import { useRouteMatch, Redirect } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { Text, Heading, useDisclosure } from "@chakra-ui/react";
 import { toast } from "react-toastify";
 
 import Typewriter from "./Typewriter";
 import ProgressBar from "./ProgressBar";
-import CompletedLesson from "./CompletedLesson";
 import AttributionPopup from "./AttributionPopup";
 import { pronounce } from "../util";
 import { saveLessonAttempt } from "../reducers/lessonAttempts";
@@ -91,13 +90,7 @@ const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
   }, [currentWord]);
 
   if (!currentWord) {
-    return (
-      <CompletedLesson
-        lesson={lesson}
-        missedWords={missedWords}
-        completedWords={completedWords}
-      />
-    );
+    return <Redirect to={`/lessons/${match.params.id}/completed`} />;
   }
 
   return (

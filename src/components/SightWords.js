@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { useRouteMatch } from "react-router-dom";
 import {
   VStack,
   HStack,
@@ -13,6 +14,7 @@ import {
 import LessonContinueLink from "./LessonContinueLink";
 
 import { pronounce } from "../util";
+import { saveLessonAttempt } from "../reducers/lessonAttempts";
 
 const getRandomWord = (words = []) => {
   return words[Math.floor(Math.random() * words.length)];
@@ -26,16 +28,30 @@ const formatWordList = (words) => {
 };
 
 const SightWords = ({ sightwords = [] }) => {
+  const match = useRouteMatch();
+  const lesson = match.params.id;
+  const dispatch = useDispatch();
   const { voice } = useSelector((state) => state.voice);
   const [words, setWords] = useState(sightwords);
   const [answer, setAnswer] = useState("");
+  const [missedWords, setMissedWords] = useState([]);
+  const [completedWords, setCompletedWords] = useState([]);
   const [currentWord, setCurrentWord] = useState(getRandomWord(words));
   const [showAnswer, setShowAnswer] = useState(false);
 
   useEffect(() => {
-    if (currentWord) {
+    if (!currentWord && sightwords.length) {
+      dispatch(
+        saveLessonAttempt({
+          lesson: lesson,
+          missedSightWords: missedWords,
+          completedSightWords: completedWords,
+        })
+      );
+    } else {
       pronounce(currentWord, voice);
     }
+    // eslint-disable-next-line
   }, [currentWord, voice]);
 
   const handleSubmit = () => {
@@ -44,12 +60,14 @@ const SightWords = ({ sightwords = [] }) => {
       if (showAnswer) {
         setShowAnswer(false);
       } else {
+        setCompletedWords([...completedWords, currentWord]);
         setWords(words.filter((w) => w !== currentWord));
       }
       const newWord = getRandomWord(words.filter((w) => w !== currentWord));
       setCurrentWord(newWord);
       setAnswer("");
     } else {
+      setMissedWords([...missedWords, currentWord]);
       setShowAnswer(true);
     }
   };

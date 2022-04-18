@@ -8,6 +8,7 @@ import App from "./App";
 
 import store from "./store";
 import "./firebase";
+import "./data/testData";
 
 let persistor = persistStore(store);
 

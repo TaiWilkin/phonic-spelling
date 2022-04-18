@@ -1,5 +1,5 @@
-const twentythree = {
-  newPhonemes: ["wh"],
+const twentyfour = {
+  newPhonemes: [],
   allPhonemes: [
     "short-a",
     "t",
@@ -44,27 +44,30 @@ const twentythree = {
     "wh",
   ],
   words: [
-    "kin",
-    "skin",
-    "spin",
-    "pen",
-    "then",
-    "when",
-    "ban",
-    "span",
-    "scan",
-    "trim",
-    "skim",
-    "swim",
-    "shin",
-    "chin",
-    "den",
-    "men",
-    "clan",
-    "dim",
-    "rim",
-    "vim",
-    "than",
+    "chap",
+    "trap",
+    "strap",
+    "brag",
+    "drag",
+    "stag",
+    "snip",
+    "trip",
+    "drip",
+    "yell",
+    "shell",
+    "smell",
+    "cap",
+    "map",
+    "snap",
+    "bag",
+    "snag",
+    "flag",
+    "ship",
+    "skip",
+    "strip",
+    "well",
+    "spell",
+    "swell",
   ],
   stems: [
     "at",
@@ -155,27 +158,12 @@ const twentythree = {
     "sk",
     "sc",
     "sw",
-    "sm",
-    "sn",
-    "br",
-    "str",
   ],
   notes: [
-    "'C' borrows its two sounds from 's' and 'k'.",
-    "The 'k' sound is usually made by 'c' instead of 'k', unless it is " +
-      "followed by a letter that would make the 'c' soft.",
-    "As a rule, " +
-      "'C' is soft as in 's' before 'e', 'i', and 'y'. It is hard before " +
-      "'a', 'o', and 'u'. It is also hard at the end of a syllable, unless " +
-      "followed by 'e', 'i', or 'y'. It is hard before consonants (except in " +
-      "'ch').",
-    "The two-letter phoneme, 'wh', has a distinct sound in some accents, " +
-      "and is pronounced as 'w' or 'h' in others. If it lacks a distinct sound in " +
-      "your accent, some memorization will be required to determine which words " +
-      "use this digraph instead of just 'w' or 'h'. 'Wh' is never used at the end of " +
-      "a syllable or as part of a consonant blend.",
+    "You'll work with new consonant blends ('str', 'sn', 'br', and 'sm') " +
+      "combined with familiar word endings in this lesson.",
   ],
   review: true,
 };
 
-export default twentythree;
+export default twentyfour;

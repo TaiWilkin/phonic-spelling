@@ -11,6 +11,7 @@ import PhonemeIntroduction from "./PhonemeIntroduction";
 import LessonContinueLink from "./LessonContinueLink";
 import LessonIntroduction from "./LessonIntroduction";
 import SightWords from "./SightWords";
+import CompletedLesson from "./CompletedLesson";
 
 const Lesson = () => {
   let match = useRouteMatch();
@@ -57,6 +58,9 @@ const Lesson = () => {
             wordList={wordList}
             stemList={stems}
           />
+        </Route>
+        <Route path={`${match.path}/completed`}>
+          <CompletedLesson lesson={match.params.id} />
         </Route>
         <Route path={match.path}>
           <LessonIntroduction

@@ -1,5 +1,6 @@
 import { format, parse } from "date-fns";
 import phonemes from "./data/phonemes";
+import lessons from "./data/lessons";
 
 const SOUND_ON = process?.env?.NODE_ENV === "development" ? false : true;
 export let VOICES = window.speechSynthesis?.getVoices();
@@ -52,7 +53,7 @@ const comparePhonemes = (a, b) => {
   return 0;
 };
 
-export const calculateScore = ({ missedWords, completedWords }) =>
+export const calculateScore = ({ missedWords = [], completedWords = [] }) =>
   completedWords.length / (missedWords.length + completedWords.length);
 
 export const sortPhonemes = (phonemes) => phonemes.sort(comparePhonemes);
@@ -61,21 +62,35 @@ export const sortStems = (stems) => stems.sort();
 
 export const getAlt = (phoneme) => phonemes[phoneme].alt;
 
+export const hasPassedAnAttempt = (lessonAttempts = [], lesson) => {
+  if (!lesson || !lessons[lesson] || !lessonAttempts.length) return false;
+  const { sightwords = [], words = [] } = lessons[lesson];
+  const hasPassedSightWords =
+    !sightwords.length ||
+    lessonAttempts.some((attempt) => attempt.sightScore > 0.8);
+  const hasPassedPhonicWords =
+    !words.length || lessonAttempts.some((attempt) => attempt.score > 0.8);
+  return hasPassedSightWords && hasPassedPhonicWords;
+};
+
 export const getUnlockedLessons = (attempts) =>
-  Object.keys(attempts).reduce(
+  Object.keys(lessons).reduce(
     (unlocked, lesson) => {
-      const isUnlocked = attempts[lesson].some(
-        (attempt) => attempt.score > 0.8
-      );
-      return { ...unlocked, [parseInt(lesson) + 1]: isUnlocked };
+      const isValidReview = lessons[lesson].review && !attempts[lesson];
+      const isCompleted = hasPassedAnAttempt(attempts[lesson], lesson);
+      return {
+        ...unlocked,
+        [lesson]: isCompleted || isValidReview || unlocked[lesson],
+        [parseInt(lesson) + 1]: isCompleted,
+      };
     },
     { 1: true }
   );
 
 export const getCompletedLessons = (attempts) =>
   Object.keys(attempts).reduce((unlocked, lesson) => {
-    const isCompletes = attempts[lesson].some((attempt) => attempt.score > 0.8);
-    return { ...unlocked, [lesson]: isCompletes };
+    const isCompleted = hasPassedAnAttempt(attempts[lesson], lesson);
+    return { ...unlocked, [lesson]: isCompleted };
   }, {});
 
 const dateFormat = "M/d/yy h:mm aaa";
