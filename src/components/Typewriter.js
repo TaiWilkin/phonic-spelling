@@ -30,10 +30,11 @@ const Typewriter = ({
   wordList,
   analysis,
   showAnswer,
+  isPretest,
 }) => {
   const { voice } = useSelector((state) => state.voice);
   const [letters, setLetters] = useState([]);
-  const [describeLetters, setDescribeLetters] = useState(false);
+  const [describeLetters, setDescribeLetters] = useState(isPretest);
   const handleKeyPress = (name) => {
     if (describeLetters) {
       pronounce(letterDescription(name), voice);

@@ -183,6 +183,7 @@ const Pretest = () => {
         canSubmit
         word={currentWord}
         setShowAttributions={setShowAttributions}
+        isPretest
       />
       <ProgressBar completedWords={completedWords} wordList={wordList} />
       <AttributionPopup
