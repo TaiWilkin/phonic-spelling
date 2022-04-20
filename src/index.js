@@ -12,6 +12,8 @@ import "./data/testData";
 
 let persistor = persistStore(store);
 
+console.log(process.env);
+
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
