@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "phonic-spelling"
+  },
+  "targets": {
+    "phonic-spelling": {
+      "hosting": {
+        "phonic-spelling": [
+          "phonic-spelling"
+        ],
+        "mcguffey": [
+          "mcguffey"
+        ]
+      }
+    }
   }
 }
