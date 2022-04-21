@@ -39,6 +39,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:phonics": "REACT_APP_SITE=phonics react-scripts build",
+    "build:mcguffey": "REACT_APP_SITE=mcguffey react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
