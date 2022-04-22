@@ -1,6 +1,5 @@
 import { format, parse } from "date-fns";
-import phonemes from "./data/phonemes";
-import lessons from "./data/lessons";
+import { phonemes, lessons } from "./data";
 
 const SOUND_ON = process?.env?.NODE_ENV === "development" ? false : true;
 export let VOICES = window.speechSynthesis?.getVoices();

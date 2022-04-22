@@ -5,7 +5,7 @@ import { VStack, Text, Heading } from "@chakra-ui/react";
 
 import Key from "./Key";
 import { pronounce, letterDescription } from "../util";
-import phonemes from "../data/phonemes";
+import { phonemes } from "../data";
 
 const style = {
   padding: "5px",

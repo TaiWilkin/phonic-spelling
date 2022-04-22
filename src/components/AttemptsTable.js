@@ -31,6 +31,10 @@ const renderAttempt = ({
   score = 0,
   sightScore = 0,
 }) => {
+  const formattedScore = isNaN(score) ? "N/A" : `${(score * 100).toFixed(2)}%`;
+  const formattedSightScore = isNaN(sightScore)
+    ? "N/A"
+    : `${(sightScore * 100).toFixed(2)}%`;
   return (
     <Tr key={id}>
       <Td>{date}</Td>
@@ -45,8 +49,8 @@ const renderAttempt = ({
           : "No missed sight words."}
       </Td>
       <Td>{completedWords.concat(completedSightWords).join(", ")}</Td>
-      <Td isNumeric>{(score * 100).toFixed(2)}%</Td>
-      <Td isNumeric>{(sightScore * 100).toFixed(2)}%</Td>
+      <Td isNumeric>{formattedScore}</Td>
+      <Td isNumeric>{formattedSightScore}</Td>
     </Tr>
   );
 };

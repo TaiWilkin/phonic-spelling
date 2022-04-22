@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import CustomLink from "./CustomLink";
+import { content } from "../data";
 
 const LessonContinueLink = ({
   phonemeList = [],
@@ -14,7 +15,7 @@ const LessonContinueLink = ({
         <CustomLink
           text="Continue"
           link={`/lessons/${id}/sightwords`}
-          color="teal"
+          color={`${content.color}.500`}
         />
       );
     }
@@ -22,7 +23,7 @@ const LessonContinueLink = ({
       <CustomLink
         text="Continue"
         link={`/lessons/${id}/spelling`}
-        color="teal"
+        color={`${content.color}.500`}
       />
     );
   }
@@ -32,7 +33,7 @@ const LessonContinueLink = ({
       <CustomLink
         text="Continue"
         link={`/lessons/${id}/phoneme/${phonemeList[0]}`}
-        color="teal"
+        color={`${content.color}.500`}
       />
     );
   }
@@ -45,7 +46,9 @@ const LessonContinueLink = ({
     link = `/lessons/${id}/sightwords`;
   }
 
-  return <CustomLink text="Continue" link={link} color="teal" />;
+  return (
+    <CustomLink text="Continue" link={link} color={`${content.color}.500`} />
+  );
 };
 
 export default LessonContinueLink;

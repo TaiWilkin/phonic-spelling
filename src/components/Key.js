@@ -2,7 +2,7 @@ import Image from "./Image";
 import { Box } from "@chakra-ui/react";
 import { toast } from "react-toastify";
 
-import phonemes from "../data/phonemes";
+import { phonemes } from "../data";
 
 const baseStyle = {
   display: "flex",

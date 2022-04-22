@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { useSelector } from "react-redux";
 
-import lessons from "../data/lessons";
+import { lessons } from "../data";
 import AttemptsTable from "./AttemptsTable";
 
 const getAttemptsText = (attemptsCount) => {

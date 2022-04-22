@@ -14,7 +14,7 @@ import {
   sortStems,
   getAlt,
 } from "../util";
-import stems from "../data/stems";
+import { stems } from "../data";
 
 const Typewriter = ({
   phonemeList,

@@ -16,6 +16,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 import LessonsAccordion from "./LessonsAccordion";
+import { content } from "../data";
 
 const linkStyle = {
   width: "100%",
@@ -33,7 +34,7 @@ const NavigationDrawer = () => {
         aria-label="Open menu"
         icon={<HamburgerIcon />}
         ref={btnRef}
-        colorScheme="teal"
+        colorScheme={content.color}
         onClick={onOpen}
       />
       <Drawer
@@ -45,7 +46,7 @@ const NavigationDrawer = () => {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Phonic Spelling</DrawerHeader>
+          <DrawerHeader>{content.title}</DrawerHeader>
 
           <DrawerBody>
             <VStack>

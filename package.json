@@ -38,6 +38,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:phonics": "REACT_APP_SITE=phonics react-scripts start",
+    "start:mcguffey": "REACT_APP_SITE=mcguffey react-scripts start",
     "build": "react-scripts build",
     "build:phonics": "REACT_APP_SITE=phonics react-scripts build",
     "build:mcguffey": "REACT_APP_SITE=mcguffey react-scripts build",

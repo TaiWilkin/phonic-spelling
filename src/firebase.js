@@ -21,6 +21,7 @@ import {
 } from "firebase/auth";
 import { toast } from "react-toastify";
 import { calculateScore, formatDate, defaultVoice } from "./util";
+import { course } from "./data";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -68,7 +69,14 @@ export const firebaseAddLessonAttempt = async ({
     return;
   }
   const newLessonAttemptRef = doc(
-    collection(db, "lessons", auth.currentUser.uid, "attempts")
+    collection(
+      db,
+      "course",
+      course,
+      "lessons",
+      auth.currentUser.uid,
+      "attempts"
+    )
   );
   const score = calculateScore({ completedWords, missedWords });
   const sightScore = calculateScore({
@@ -109,6 +117,8 @@ export const firebaseGetLessonAttempts = async () => {
   }
   const lessonAttemptRef = collection(
     db,
+    "course",
+    course,
     "lessons",
     auth.currentUser.uid,
     "attempts"
@@ -139,7 +149,13 @@ export const firebaseUpdateSettings = async (settings) => {
     toast.error("Must be logged in.");
     return;
   }
-  const settingsRef = doc(db, "settings", auth.currentUser.uid);
+  const settingsRef = doc(
+    db,
+    "course",
+    course,
+    "settings",
+    auth.currentUser.uid
+  );
 
   await setDoc(settingsRef, settings);
 
@@ -158,7 +174,13 @@ export const firebaseGetSettings = async () => {
     toast.error("Must be logged in.");
     return;
   }
-  const settingsRef = doc(db, "settings", auth.currentUser.uid);
+  const settingsRef = doc(
+    db,
+    "course",
+    course,
+    "settings",
+    auth.currentUser.uid
+  );
 
   const docSnap = await getDoc(settingsRef);
 

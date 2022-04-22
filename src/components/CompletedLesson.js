@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 
 import CustomLink from "./CustomLink";
 import { hasPassedAnAttempt } from "../util";
-import lessons from "../data/lessons";
+import { lessons, content } from "../data";
 
 const CompletedLesson = ({ lesson }) => {
   const { attempts, loading } = useSelector((state) => state.lessonAttempts);
@@ -17,16 +17,16 @@ const CompletedLesson = ({ lesson }) => {
   if (!attemptList && !loading) {
     return <Redirect to={`/lessons`} />;
   }
-  console.log(attemptList);
+
   const isCompleted = hasPassedAnAttempt(attemptList, lesson);
   const phonicScores = attemptList
     .map(({ score }) => score)
     .filter((s) => !Number.isNaN(s));
-  const maxPhonicScore = Math.max(phonicScores);
+  const maxPhonicScore = Math.max(...phonicScores);
   const sightScores = attemptList
     .map(({ sightScore }) => sightScore)
     .filter((s) => !Number.isNaN(s));
-  const maxSightScore = Math.max(sightScores);
+  const maxSightScore = Math.max(...sightScores);
   const formattedPhonicScore = `${(maxPhonicScore * 100).toFixed(2)}%`;
   const formattedSightScore = `${(maxSightScore * 100).toFixed(2)}%`;
 
@@ -53,13 +53,13 @@ const CompletedLesson = ({ lesson }) => {
           <CustomLink
             text="Return to lessons home"
             link={`/lessons`}
-            color="teal"
+            color={`${content.color}.500`}
           />
         ) : (
           <CustomLink
             text="Try again?"
             link={`/lessons/${parseInt(lesson)}`}
-            color="teal"
+            color={`${content.color}.500`}
           />
         )}
       </Box>
@@ -75,12 +75,12 @@ const CompletedLesson = ({ lesson }) => {
       <CustomLink
         text="Continue to next lesson"
         link={`/lessons/${parseInt(lesson) + 1}`}
-        color="teal"
+        color={`${content.color}.500`}
       />
       <CustomLink
         text="Return to lessons home"
         link={`/lessons`}
-        color="teal"
+        color={`${content.color}.500`}
       />
     </Box>
   );

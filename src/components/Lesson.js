@@ -4,7 +4,7 @@ import { Text, Box } from "@chakra-ui/react";
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
 
-import lessons from "../data/lessons";
+import { lessons } from "../data";
 import SpellingLesson from "./SpellingLesson";
 import WordAnalysis from "./WordAnalysis";
 import PhonemeIntroduction from "./PhonemeIntroduction";

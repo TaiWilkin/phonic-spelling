@@ -7,12 +7,14 @@ import {
   InputRightElement,
   VStack,
   Text,
+  Link,
 } from "@chakra-ui/react";
 import { Switch, Route, useHistory, useLocation } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
 import CustomLink from "./CustomLink";
 import { register, signin } from "../reducers/auth";
+import { content } from "../data";
 
 const Auth = () => {
   const { user } = useSelector((state) => state.auth);
@@ -46,6 +48,20 @@ const Auth = () => {
             <Text fontSize="xl">Register</Text>
           </Route>
         </Switch>
+        <Text>
+          Accounts for either of the sibling sites,{" "}
+          <Link to="https://mcguffey.web.app" color={`${content.color}.500`}>
+            Phonic Spelling
+          </Link>{" "}
+          or{" "}
+          <Link
+            to="https://phonic-spelling.web.app"
+            color={`${content.color}.500`}
+          >
+            McGuffey Spelling
+          </Link>
+          , can be used here.
+        </Text>
         <Input
           placeholder="Email"
           value={email}
@@ -72,14 +88,18 @@ const Auth = () => {
               <CustomLink
                 text="Register instead."
                 link="/register"
-                color="teal"
+                color={`${content.color}.500`}
               />
             </>
           </Route>
           <Route path="/register">
             <>
               <Button onClick={handleRegister}>Register</Button>
-              <CustomLink text="Sign in instead." link="/signin" color="teal" />
+              <CustomLink
+                text="Sign in instead."
+                link="/signin"
+                color={`${content.color}.500`}
+              />
             </>
           </Route>
         </Switch>
