@@ -10,14 +10,25 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: yarn install && yarn build:phonics
-      - run: firebase deploy --only hosting:phonics
-      - run: yarn install && yarn build:mcguffey
-      - run: firebase deploy --only hosting:mcguffey
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - name: Build Phonics
+        run: yarn install && yarn build:phonics
+      - name: Deploy Phonics
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_PHONIC_SPELLING }}"
           channelId: live
           projectId: phonic-spelling
+          target: phonic-spelling
+      - name: Build McGuffey
+        run: yarn install && yarn build:mcguffey
+      - name: Deploy McGuffey
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_PHONIC_SPELLING }}"
+          channelId: live
+          projectId: phonic-spelling
+          target: mcguffey
