@@ -10,8 +10,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-import lessons from "../data/lessons";
-import levels from "../data/levels";
+import { lessons, levels } from "../data";
 import LessonLink from "./LessonLink";
 
 const LessonsAccordion = ({ onClose = () => {} }) => {

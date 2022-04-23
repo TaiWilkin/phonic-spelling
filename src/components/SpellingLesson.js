@@ -8,7 +8,7 @@ import Typewriter from "./Typewriter";
 import AttributionPopup from "./AttributionPopup";
 import { pronounce } from "../util";
 import { saveLessonAttempt } from "../reducers/lessonAttempts";
-import words from "../data/words";
+import { words } from "../data";
 
 const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
   const match = useRouteMatch();

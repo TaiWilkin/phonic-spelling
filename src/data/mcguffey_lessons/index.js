@@ -1,0 +1,60 @@
+const lessons = {
+  1: {
+    newPhonemes: ["short-a", "hard-c", "d", "n", "r", "t"],
+    allPhonemes: ["short-a", "hard-c", "d", "n", "r", "t"],
+    words: ["a", "and", "cat", "rat"],
+    notes: [],
+    dictation: ["A cat and a rat.", "A rat and a cat."],
+    dictationImage: "https://s10.gifyu.com/images/mprimer_1.png",
+  },
+  2: {
+    newPhonemes: ["h", "voiced-th", "hard-s"],
+    allPhonemes: [
+      "short-a",
+      "hard-c",
+      "d",
+      "n",
+      "r",
+      "t",
+      "h",
+      "voiced-th",
+      "hard-s",
+    ],
+    words: ["at", "ran", "has", "Ann"],
+    notes: [],
+    sightwords: ["the"],
+    dictation: [
+      "The cat has a rat.",
+      "The rat ran at Ann.",
+      "Ann has a cat.",
+      "The cat ran at the rat.",
+    ],
+    dictationImage: "https://s10.gifyu.com/images/mprimer_2.png",
+  },
+  3: {
+    newPhonemes: ["h", "voiced-th", "hard-s", "f"],
+    allPhonemes: [
+      "short-a",
+      "hard-c",
+      "d",
+      "n",
+      "r",
+      "t",
+      "h",
+      "voiced-th",
+      "hard-s",
+      "f",
+    ],
+    words: ["Nat", "hat", "fan", "can"],
+    notes: [],
+    dictation: [
+      "Ann and Nat.",
+      "Ann has a fan.",
+      "Nat has a hat.",
+      "Ann can fan Nat.",
+    ],
+    dictationImage: "https://s10.gifyu.com/images/mprimer_3.png",
+  },
+};
+
+export default lessons;

@@ -1,5 +1,4 @@
-import phonemes from "../data/phonemes";
-import stems from "../data/stems";
+import { phonemes, stems } from "../data";
 
 const Image = ({ name, size = 75 }) => {
   if (!name) return null;

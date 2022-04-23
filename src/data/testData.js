@@ -1,7 +1,4 @@
-import lessons from "./lessons";
-import words from "./words";
-import phonemes from "./phonemes";
-import stems from "./stems";
+import { lessons, words, phonemes, stems } from "./index";
 
 const testData = () => {
   if (process.env.NODE_ENV !== "development") return;

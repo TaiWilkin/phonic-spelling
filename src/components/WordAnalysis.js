@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 
 import Typewriter from "./Typewriter";
 import { pronounce } from "../util";
-import words from "../data/words";
+import { words } from "../data";
 
 const WordAnalysis = ({ phonemeList, wordList }) => {
   let match = useRouteMatch();

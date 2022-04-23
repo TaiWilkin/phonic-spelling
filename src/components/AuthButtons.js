@@ -2,6 +2,7 @@ import { Button, HStack } from "@chakra-ui/react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { signout } from "../reducers/auth";
+import { content } from "../data";
 
 const AuthButtons = () => {
   const { user } = useSelector((state) => state.auth);
@@ -14,7 +15,7 @@ const AuthButtons = () => {
   if (user) {
     return (
       <HStack>
-        <Button onClick={handleSignout} colorScheme="teal">
+        <Button onClick={handleSignout} colorScheme={content.color}>
           Sign out
         </Button>
       </HStack>
@@ -23,10 +24,10 @@ const AuthButtons = () => {
 
   return (
     <HStack>
-      <Button as={Link} to="/register" colorScheme="teal">
+      <Button as={Link} to="/register" colorScheme={content.color}>
         Register
       </Button>
-      <Button as={Link} to="/signin" colorScheme="teal">
+      <Button as={Link} to="/signin" colorScheme={content.color}>
         Sign in
       </Button>
     </HStack>

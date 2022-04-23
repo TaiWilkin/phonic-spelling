@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 import { getUnlockedLessons, getCompletedLessons } from "../util";
+import { content } from "../data";
 
 const LessonLink = ({ l, onClose = () => {} }) => {
   const { attempts } = useSelector((state) => state.lessonAttempts);
@@ -12,7 +13,7 @@ const LessonLink = ({ l, onClose = () => {} }) => {
 
   return unlockedLessons[l] ? (
     <ChakraLink as={Link} to={`/lessons/${l}`} onClick={onClose} key={l}>
-      <Checkbox isChecked={completedLessons[l]} colorScheme="teal">
+      <Checkbox isChecked={completedLessons[l]} colorScheme={content.color}>
         Lesson {l}
       </Checkbox>
     </ChakraLink>

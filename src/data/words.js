@@ -1116,6 +1116,22 @@ const words = {
   swell: {
     letters: ["s", "w", "short-e", "l", "l"],
   },
+  a: {
+    letters: ["short-a"],
+    sentence: "I have 'a' cat.",
+  },
+  and: {
+    letters: ["short-a", "n", "d"],
+    sentence: "Jack 'and' Jill went up the hill.",
+  },
+  Ann: {
+    letters: ["short-a", "n", "n"],
+    sentence: "'Ann' can climb very tall trees.",
+  },
+  hat: {
+    letters: ["h", "short-a", "t"],
+    sentence: "Can I borrow your 'hat'?",
+  },
 };
 
 export default words;

@@ -5,11 +5,10 @@ import { toast } from "react-toastify";
 import { Redirect } from "react-router-dom";
 
 import Typewriter from "./Typewriter";
-import ProgressBar from "./ProgressBar";
 import AttributionPopup from "./AttributionPopup";
 import { pronounce } from "../util";
 import { saveLessonAttempt } from "../reducers/lessonAttempts";
-import words from "../data/words";
+import { words, content } from "../data";
 
 const phonemeList = [
   "short-a",
@@ -53,27 +52,7 @@ const phonemeList = [
   "long-y",
   "silent-y",
 ];
-const wordList = [
-  "tan",
-  "sits",
-  "his",
-  "cup",
-  "jam",
-  "bog",
-  "yet",
-  "vex",
-  "balls",
-  "quill",
-  "bell",
-  "hop",
-  "she",
-  "names",
-  "flag",
-  "cube",
-  "cry",
-  "grape",
-  "stove",
-];
+const wordList = content.pretest;
 
 const Pretest = () => {
   const dispatch = useDispatch();
@@ -184,8 +163,9 @@ const Pretest = () => {
         word={currentWord}
         setShowAttributions={setShowAttributions}
         isPretest
+        completedWords={completedWords}
+        wordList={wordList}
       />
-      <ProgressBar completedWords={completedWords} wordList={wordList} />
       <AttributionPopup
         attributions={attributions}
         setAttributions={setAttributions}
