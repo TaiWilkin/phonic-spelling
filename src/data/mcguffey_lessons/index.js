@@ -32,7 +32,7 @@ const lessons = {
     dictationImage: "https://s10.gifyu.com/images/mprimer_2.png",
   },
   3: {
-    newPhonemes: ["h", "voiced-th", "hard-s", "f"],
+    newPhonemes: ["f"],
     allPhonemes: [
       "short-a",
       "hard-c",

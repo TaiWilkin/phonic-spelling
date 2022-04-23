@@ -12,6 +12,7 @@ import LessonContinueLink from "./LessonContinueLink";
 import LessonIntroduction from "./LessonIntroduction";
 import SightWords from "./SightWords";
 import CompletedLesson from "./CompletedLesson";
+import Dictation from "./Dictation";
 
 const Lesson = () => {
   let match = useRouteMatch();
@@ -37,8 +38,17 @@ const Lesson = () => {
         </Text>
       </Box>
     );
-  const { newPhonemes, allPhonemes, words, stems, notes, review, sightwords } =
-    lessons[match.params.id];
+  const {
+    newPhonemes,
+    allPhonemes,
+    words,
+    stems,
+    notes,
+    review,
+    sightwords,
+    dictation,
+    dictationImage,
+  } = lessons[match.params.id];
   const wordList = words.sort(() => (Math.random() > 0.5 ? 1 : -1));
   return (
     <div>
@@ -57,6 +67,13 @@ const Lesson = () => {
             phonemeList={allPhonemes}
             wordList={wordList}
             stemList={stems}
+          />
+        </Route>
+        <Route path={`${match.path}/dictation`}>
+          <Dictation
+            lesson={match.params.id}
+            dictation={dictation}
+            dictationImage={dictationImage}
           />
         </Route>
         <Route path={`${match.path}/completed`}>
