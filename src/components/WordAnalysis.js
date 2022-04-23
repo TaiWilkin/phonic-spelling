@@ -7,6 +7,7 @@ import { toast } from "react-toastify";
 import Typewriter from "./Typewriter";
 import { pronounce } from "../util";
 import { words } from "../data";
+import getNextStepLink from "../getNextStepLink";
 
 const WordAnalysis = ({ phonemeList, wordList }) => {
   let match = useRouteMatch();
@@ -58,8 +59,10 @@ const WordAnalysis = ({ phonemeList, wordList }) => {
 
     // eslint-disable-next-line
   }, [currentWord]);
+
   if (!currentWord) {
-    return <Redirect to={`/lessons/${match.params.id}/spelling`} />;
+    const link = getNextStepLink({ id: match.params.id, path: match.path });
+    return <Redirect to={link} />;
   }
 
   return (

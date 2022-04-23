@@ -72,17 +72,10 @@ const Lesson = () => {
       </Switch>
       <Switch>
         <Route path={`${match.path}/phoneme/:name`}>
-          <LessonContinueLink
-            phonemeList={newPhonemes}
-            sightwords={sightwords}
-          />
+          <LessonContinueLink />
         </Route>
         <Route path={`${match.path}`} exact>
-          <LessonContinueLink
-            phonemeList={newPhonemes}
-            sightwords={sightwords}
-            review={review}
-          />
+          <LessonContinueLink />
         </Route>
       </Switch>
     </div>

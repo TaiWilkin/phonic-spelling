@@ -9,6 +9,7 @@ import AttributionPopup from "./AttributionPopup";
 import { pronounce } from "../util";
 import { saveLessonAttempt } from "../reducers/lessonAttempts";
 import { words } from "../data";
+import getNextStepLink from "../getNextStepLink";
 
 const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
   const match = useRouteMatch();
@@ -89,7 +90,8 @@ const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
   }, [currentWord]);
 
   if (!currentWord) {
-    return <Redirect to={`/lessons/${match.params.id}/completed`} />;
+    const link = getNextStepLink({ id: match.params.id, path: match.path });
+    return <Redirect to={link} />;
   }
 
   return (
