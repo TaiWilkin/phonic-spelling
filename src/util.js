@@ -63,22 +63,16 @@ export const sortStems = (stems) => stems.sort();
 
 export const getAlt = (phoneme) => phonemes[phoneme].alt;
 
-export const hasPassedAnAttempt = (lessonAttempts = [], lesson) => {
-  if (!lesson || !lessons[lesson] || !lessonAttempts.length) return false;
-  const { sightwords = [], words = [] } = lessons[lesson];
-  const hasPassedSightWords =
-    !sightwords.length ||
-    lessonAttempts.some((attempt) => attempt.sightScore > 0.8);
-  const hasPassedPhonicWords =
-    !words.length || lessonAttempts.some((attempt) => attempt.score > 0.8);
-  return hasPassedSightWords && hasPassedPhonicWords;
+export const hasPassedAnAttempt = (lessonAttempts = []) => {
+  if (!lessonAttempts.length) return false;
+  return lessonAttempts.some((attempt) => attempt.score > 0.8);
 };
 
 export const getUnlockedLessons = (attempts) =>
   Object.keys(lessons).reduce(
     (unlocked, lesson) => {
       const isValidReview = lessons[lesson].review && !attempts[lesson];
-      const isCompleted = hasPassedAnAttempt(attempts[lesson], lesson);
+      const isCompleted = hasPassedAnAttempt(attempts[lesson]);
       return {
         ...unlocked,
         [lesson]: isCompleted || isValidReview || unlocked[lesson],
@@ -90,7 +84,7 @@ export const getUnlockedLessons = (attempts) =>
 
 export const getCompletedLessons = (attempts) =>
   Object.keys(attempts).reduce((unlocked, lesson) => {
-    const isCompleted = hasPassedAnAttempt(attempts[lesson], lesson);
+    const isCompleted = hasPassedAnAttempt(attempts[lesson]);
     return { ...unlocked, [lesson]: isCompleted };
   }, {});
 

@@ -21,9 +21,10 @@ const getRandomWord = (words = []) => {
 
 const formatWordList = (words) => {
   if (!words.length) return "";
-  if (words.length === 1) return words[0];
-  if (words.length === 2) return `${words[0]} and ${words[1]}`;
-  return `${words.slice(0, -1).join(", ")}, and ${words[words.length - 1]}`;
+  const sw = words.map((w) => `'${w}'`);
+  if (sw.length === 1) return sw[0];
+  if (sw.length === 2) return `${sw[0]} and ${sw[1]}`;
+  return `${sw.slice(0, -1).join(", ")}, and ${sw[sw.length - 1]}`;
 };
 
 const SightWords = ({ sightwords = [] }) => {

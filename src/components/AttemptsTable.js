@@ -13,44 +13,34 @@ import {
 const HeaderRow = () => (
   <Tr>
     <Th>Date</Th>
-    <Th>Misspelled Phonic Words</Th>
-    <Th>Misspelled Sight Words</Th>
-    <Th>Completed Words</Th>
-    <Th isNumeric>Phonic Score</Th>
-    <Th isNumeric>Sight Score</Th>
+    <Th>Incorrect Answers</Th>
+    <Th>Correct Answers</Th>
+    <Th isNumeric>Score</Th>
   </Tr>
 );
 
 const renderAttempt = ({
   id,
   date,
-  missedWords = [],
-  missedSightWords = [],
-  completedWords = [],
-  completedSightWords = [],
+  incorrectAnswers = [],
+  correctAnswers = [],
   score = 0,
-  sightScore = 0,
 }) => {
   const formattedScore = isNaN(score) ? "N/A" : `${(score * 100).toFixed(2)}%`;
-  const formattedSightScore = isNaN(sightScore)
-    ? "N/A"
-    : `${(sightScore * 100).toFixed(2)}%`;
   return (
     <Tr key={id}>
       <Td>{date}</Td>
       <Td>
-        {missedWords?.length
-          ? missedWords.join(", ")
-          : "No missed phonic words."}
+        {incorrectAnswers?.length
+          ? incorrectAnswers.map((w) => `'${w}'`).join(", ")
+          : "No incorrect answers."}
       </Td>
       <Td>
-        {missedSightWords?.length
-          ? missedWords.join(", ")
-          : "No missed sight words."}
+        {correctAnswers?.length
+          ? correctAnswers.map((w) => `'${w}'`).join(", ")
+          : "No correct answers"}
       </Td>
-      <Td>{completedWords.concat(completedSightWords).join(", ")}</Td>
       <Td isNumeric>{formattedScore}</Td>
-      <Td isNumeric>{formattedSightScore}</Td>
     </Tr>
   );
 };

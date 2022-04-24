@@ -83,7 +83,7 @@ const lessons = {
     ],
   },
   5: {
-    newPhonemes: ["l", "m", "p", "s"],
+    newPhonemes: [],
     allPhonemes: [
       "short-a",
       "hard-c",
@@ -113,6 +113,7 @@ const lessons = {
       "Has Ann a hat?",
       "Ann has a hat and a fan.",
     ],
+    dictationImage: "https://s7.gifyu.com/images/mprimer_5.png",
     review: true,
   },
 };

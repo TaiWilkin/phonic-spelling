@@ -50,6 +50,9 @@ const NavigationDrawer = () => {
 
           <DrawerBody>
             <VStack>
+              <ChakraLink as={Link} to="/" onClick={onClose} style={linkStyle}>
+                Home
+              </ChakraLink>
               <LessonsAccordion onClose={onClose} />
               {user && (
                 <>

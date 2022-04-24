@@ -23,34 +23,19 @@ const CompletedLesson = ({ lesson }) => {
     return <Spinner />;
   }
 
-  if (!attemptList && !loading) {
+  if (!attemptList) {
     return <Redirect to={`/lessons`} />;
   }
 
-  const isCompleted = hasPassedAnAttempt(attemptList, lesson);
-  const phonicScores = attemptList
+  const isCompleted = hasPassedAnAttempt(attemptList);
+  const scores = attemptList
     .map(({ score }) => score)
     .filter((s) => !Number.isNaN(s));
-  const maxPhonicScore = Math.max(...phonicScores);
-  const sightScores = attemptList
-    .map(({ sightScore }) => sightScore)
-    .filter((s) => !Number.isNaN(s));
-  const maxSightScore = Math.max(...sightScores);
-  const formattedPhonicScore = `${(maxPhonicScore * 100).toFixed(2)}%`;
-  const formattedSightScore = `${(maxSightScore * 100).toFixed(2)}%`;
+  const maxScore = Math.max(...scores);
+  const formattedScore = `${(maxScore * 100).toFixed(2)}%`;
 
-  let text = "Lesson attempt completed";
-  if (phonicScores.length && sightScores.length) {
-    text =
-      text +
-      ` with a phonic score of ${formattedPhonicScore} and a sight word score of ${formattedSightScore}`;
-  } else if (sightScores.length) {
-    text = text + ` with a sight word score of ${formattedSightScore}`;
-  } else if (phonicScores.length) {
-    text = text + ` with a phonic score of ${formattedPhonicScore}`;
-  }
+  const text = `Your top score for this lesson is ${formattedScore}.`;
 
-  text = text + ".";
   if (!isCompleted) {
     return (
       <Box m="5">
@@ -80,7 +65,9 @@ const CompletedLesson = ({ lesson }) => {
       <Heading as="h2" mt="5" size="md">
         Lesson {lesson}
       </Heading>
-      <Text m="5">{text}</Text>
+      <Text m="5">
+        Congratulations! {text} You are ready to proceed to the next lesson.
+      </Text>
       <CustomLink
         text="Continue to next lesson"
         link={`/lessons/${parseInt(lesson) + 1}`}
