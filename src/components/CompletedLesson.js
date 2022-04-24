@@ -1,14 +1,23 @@
+import { useEffect } from "react";
 import { Text, Box, Heading, Spinner } from "@chakra-ui/react";
 import { Redirect } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 import CustomLink from "./CustomLink";
+import { saveLessonAttempt } from "../reducers/lessonAttempts";
 import { hasPassedAnAttempt } from "../util";
 import { lessons, content } from "../data";
 
 const CompletedLesson = ({ lesson }) => {
+  const dispatch = useDispatch();
   const { attempts, loading } = useSelector((state) => state.lessonAttempts);
+  const lessonAttempt = useSelector((state) => state.lessonAttempt);
   const attemptList = attempts[lesson];
+
+  useEffect(() => {
+    dispatch(saveLessonAttempt(lessonAttempt));
+    // eslint-disable-next-line
+  }, []);
 
   if (loading) {
     return <Spinner />;

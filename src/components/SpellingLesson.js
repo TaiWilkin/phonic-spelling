@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 import Typewriter from "./Typewriter";
 import AttributionPopup from "./AttributionPopup";
 import { pronounce } from "../util";
-import { saveLessonAttempt } from "../reducers/lessonAttempts";
+import { updateLessonAttempt } from "../reducers/lessonAttempt";
 import { words } from "../data";
 import getNextStepLink from "../getNextStepLink";
 
@@ -15,6 +15,7 @@ const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
   const match = useRouteMatch();
   const dispatch = useDispatch();
   const { voice } = useSelector((state) => state.voice);
+  const { lesson } = useSelector((state) => state.lessonAttempt);
   const audio = useSelector((state) => state.audio);
   const [completedWords, setCompletedWords] = useState([]);
   const [missedWords, setMissedWords] = useState([]);
@@ -26,7 +27,6 @@ const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
     (word) => !completedWords.includes(word)
   );
   const currentWord = incompleteWords[0];
-  const lesson = match.params.id;
 
   const pronounceCurrentWord = () => {
     if (currentWord) pronounce(currentWord, voice);
@@ -78,16 +78,19 @@ const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
   useEffect(() => {
     if (!currentWord && wordList.length) {
       dispatch(
-        saveLessonAttempt({
-          missedWords,
-          completedWords,
-          lesson: lesson,
+        updateLessonAttempt({
+          incorrectAnswers: missedWords,
+          correctAnswers: completedWords,
         })
       );
     }
     giveInitialPrompt();
     // eslint-disable-next-line
   }, [currentWord]);
+
+  if (!lesson) {
+    return <Redirect to={"/lessons"} />;
+  }
 
   if (!currentWord) {
     const link = getNextStepLink({ id: match.params.id, path: match.path });

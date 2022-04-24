@@ -5,29 +5,42 @@ import { saveLessonAttemptSuccess } from "./lessonAttempts";
 export const lessonAttemptSlice = createSlice({
   name: "lessonattempt",
   initialState: {
+    lesson: null,
     incorrectAnswers: [],
     correctAnswers: [],
   },
   reducers: {
     updateLessonAttempt: (state, { payload }) => {
-      state.incorrectAnswers =
-        state.incorrectAnswers + payload.incorrectAnswers;
-      state.correctAnswers = state.correctAnswers + payload.correctAnswers;
+      state.incorrectAnswers = [
+        ...state.incorrectAnswers,
+        ...payload.incorrectAnswers,
+      ];
+      state.correctAnswers = [
+        ...state.correctAnswers,
+        ...payload.correctAnswers,
+      ];
     },
-    startNewLessonAttempt: (state) => ({
+    startNewLessonAttempt: (state, { payload }) => ({
+      lesson: payload,
       incorrectAnswers: [],
       correctAnswers: [],
     }),
   },
   extraReducers: {
-    [clearState]: (state) => ({ incorrectAnswers: [], correctAnswers: [] }),
+    [clearState]: (state) => ({
+      lesson: null,
+      incorrectAnswers: [],
+      correctAnswers: [],
+    }),
     [saveLessonAttemptSuccess]: (state) => ({
+      lesson: null,
       incorrectAnswers: [],
       correctAnswers: [],
     }),
   },
 });
 
-export const { updateLessonAttempt } = lessonAttemptSlice.actions;
+export const { updateLessonAttempt, startNewLessonAttempt } =
+  lessonAttemptSlice.actions;
 
 export default lessonAttemptSlice.reducer;

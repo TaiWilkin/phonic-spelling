@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import {
   VStack,
   Heading,
@@ -10,9 +10,9 @@ import {
   Input,
   Button,
 } from "@chakra-ui/react";
-import { toast } from "react-toastify";
 
 import { pronounce } from "../util";
+import { updateLessonAttempt } from "../reducers/lessonAttempt";
 import LessonContinueLink from "./LessonContinueLink";
 
 const getRandomSentence = (sentences = []) => {
@@ -27,6 +27,7 @@ const clean = (str) =>
     .toLowerCase();
 
 const Dictation = ({ lesson, dictation, dictationImage }) => {
+  const dispatch = useDispatch();
   const { voice } = useSelector((state) => state.voice);
   const [sentences, setSentences] = useState(dictation);
   const [answer, setAnswer] = useState("");
@@ -39,7 +40,12 @@ const Dictation = ({ lesson, dictation, dictationImage }) => {
 
   useEffect(() => {
     if (!currentSentence && dictation.length) {
-      toast.success("Success!");
+      dispatch(
+        updateLessonAttempt({
+          incorrectAnswers: missedSentences,
+          correctAnswers: completedSentences,
+        })
+      );
     } else {
       pronounce(currentSentence, voice);
     }

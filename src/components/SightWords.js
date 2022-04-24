@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { useRouteMatch } from "react-router-dom";
 import {
   VStack,
   HStack,
@@ -14,7 +13,7 @@ import {
 import LessonContinueLink from "./LessonContinueLink";
 
 import { pronounce } from "../util";
-import { saveLessonAttempt } from "../reducers/lessonAttempts";
+import { updateLessonAttempt } from "../reducers/lessonAttempt";
 
 const getRandomWord = (words = []) => {
   return words[Math.floor(Math.random() * words.length)];
@@ -28,8 +27,6 @@ const formatWordList = (words) => {
 };
 
 const SightWords = ({ sightwords = [] }) => {
-  const match = useRouteMatch();
-  const lesson = match.params.id;
   const dispatch = useDispatch();
   const { voice } = useSelector((state) => state.voice);
   const [words, setWords] = useState(sightwords);
@@ -42,10 +39,9 @@ const SightWords = ({ sightwords = [] }) => {
   useEffect(() => {
     if (!currentWord && sightwords.length) {
       dispatch(
-        saveLessonAttempt({
-          lesson: lesson,
-          missedSightWords: missedWords,
-          completedSightWords: completedWords,
+        updateLessonAttempt({
+          incorrectAnswers: missedWords,
+          correctAnswers: completedWords,
         })
       );
     } else {

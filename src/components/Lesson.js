@@ -39,7 +39,6 @@ const Lesson = () => {
       </Box>
     );
   const {
-    newPhonemes,
     allPhonemes,
     words,
     stems,
@@ -80,11 +79,7 @@ const Lesson = () => {
           <CompletedLesson lesson={match.params.id} />
         </Route>
         <Route path={match.path}>
-          <LessonIntroduction
-            notes={notes}
-            phonemeList={newPhonemes}
-            review={review}
-          />
+          <LessonIntroduction notes={notes} lesson={match.params.id} />
         </Route>
       </Switch>
       <Switch>

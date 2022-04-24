@@ -1,6 +1,15 @@
+import { useEffect } from "react";
 import { VStack, Text, Heading, Box } from "@chakra-ui/react";
+import { useDispatch } from "react-redux";
+import { startNewLessonAttempt } from "../reducers/lessonAttempt";
 
-const LessonIntroduction = ({ notes }) => {
+const LessonIntroduction = ({ notes, lesson }) => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(startNewLessonAttempt(lesson));
+  }, [dispatch, lesson]);
+
   return (
     <VStack>
       <Heading as="h2" mt="5" mb="5" size="lg">
