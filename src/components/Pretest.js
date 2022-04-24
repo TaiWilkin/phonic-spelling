@@ -116,19 +116,19 @@ const Pretest = () => {
       onOpen();
     }
     let results = {
-      missedWords: [],
-      completedWords: [],
+      incorrectAnswers: [],
+      correctAnswers: [],
       lesson: wordList.findIndex((w) => w === currentWord) + 1,
     };
     if (
       correctLetters.length === letters.length &&
       correctLetters.every((l, i) => letters[i] === l)
     ) {
-      results.completedWords = [currentWord];
+      results.correctAnswers = [currentWord];
       setCompletedWords([...completedWords, currentWord]);
       toast.success(`Correct! Lesson ${results.lesson} skipped.`);
     } else {
-      results.missedWords = [currentWord];
+      results.incorrectAnswers = [currentWord];
       setCompletedWords(wordList);
       toast.error("Incorrect.");
     }

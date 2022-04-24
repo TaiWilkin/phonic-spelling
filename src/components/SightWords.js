@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { useRouteMatch } from "react-router-dom";
 import {
   VStack,
   HStack,
@@ -14,7 +13,7 @@ import {
 import LessonContinueLink from "./LessonContinueLink";
 
 import { pronounce } from "../util";
-import { saveLessonAttempt } from "../reducers/lessonAttempts";
+import { updateLessonAttempt } from "../reducers/lessonAttempt";
 
 const getRandomWord = (words = []) => {
   return words[Math.floor(Math.random() * words.length)];
@@ -22,14 +21,13 @@ const getRandomWord = (words = []) => {
 
 const formatWordList = (words) => {
   if (!words.length) return "";
-  if (words.length === 1) return words[0];
-  if (words.length === 2) return `${words[0]} and ${words[1]}`;
-  return `${words.slice(0, -1).join(", ")}, and ${words[words.length - 1]}`;
+  const sw = words.map((w) => `'${w}'`);
+  if (sw.length === 1) return sw[0];
+  if (sw.length === 2) return `${sw[0]} and ${sw[1]}`;
+  return `${sw.slice(0, -1).join(", ")}, and ${sw[sw.length - 1]}`;
 };
 
 const SightWords = ({ sightwords = [] }) => {
-  const match = useRouteMatch();
-  const lesson = match.params.id;
   const dispatch = useDispatch();
   const { voice } = useSelector((state) => state.voice);
   const [words, setWords] = useState(sightwords);
@@ -42,10 +40,9 @@ const SightWords = ({ sightwords = [] }) => {
   useEffect(() => {
     if (!currentWord && sightwords.length) {
       dispatch(
-        saveLessonAttempt({
-          lesson: lesson,
-          missedSightWords: missedWords,
-          completedSightWords: completedWords,
+        updateLessonAttempt({
+          incorrectAnswers: missedWords,
+          correctAnswers: completedWords,
         })
       );
     } else {

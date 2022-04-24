@@ -7,12 +7,14 @@ import thunk from "redux-thunk";
 
 import authReducer from "./reducers/auth";
 import lessonAttemptsReducer from "./reducers/lessonAttempts";
+import lessonAttemptReducer from "./reducers/lessonAttempt";
 import voiceReducer from "./reducers/voice";
 import audioReducer from "./reducers/audio";
 
 const reducers = combineReducers({
   auth: authReducer,
   lessonAttempts: lessonAttemptsReducer,
+  lessonAttempt: lessonAttemptReducer,
   voice: voiceReducer,
   audio: audioReducer,
 });
