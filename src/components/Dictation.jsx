@@ -72,11 +72,13 @@ const Dictation = ({ lesson, dictation, dictationImage }) => {
         <Heading as="h2" mt="5" size="lg">
           Dictation
         </Heading>
-        <img
-          src={dictationImage}
-          alt="Dictation"
-          style={{ maxHeight: `400px` }}
-        />
+        {dictationImage && (
+          <img
+            src={dictationImage}
+            alt="Dictation"
+            style={{ maxHeight: `400px` }}
+          />
+        )}
         <Container pb={10} pt={5}>
           {dictation.map((d) => (
             <Text key={d} fontSize="lg">

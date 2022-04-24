@@ -1132,6 +1132,12 @@ const words = {
     letters: ["h", "short-a", "t"],
     sentence: "Can I borrow your 'hat'?",
   },
+  lad: {
+    letters: ["l", "short-a", "d"],
+  },
+  sat: {
+    letters: ["s", "short-a", "t"],
+  },
 };
 
 export default words;
