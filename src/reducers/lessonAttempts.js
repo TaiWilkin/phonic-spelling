@@ -46,21 +46,13 @@ export const {
 } = lessonAttemptsSlice.actions;
 
 export const saveLessonAttempt =
-  ({
-    lesson,
-    missedWords,
-    completedWords,
-    missedSightWords,
-    completedSightWords,
-  }) =>
+  ({ lesson, incorrectAnswers, correctAnswers }) =>
   (dispatch) => {
     dispatch(beginSaveLessonAttempt());
     firebaseAddLessonAttempt({
       lesson,
-      missedWords,
-      completedWords,
-      missedSightWords,
-      completedSightWords,
+      incorrectAnswers,
+      correctAnswers,
     })
       .then((attempt) => {
         dispatch(saveLessonAttemptSuccess(attempt));

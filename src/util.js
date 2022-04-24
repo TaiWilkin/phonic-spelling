@@ -52,8 +52,10 @@ const comparePhonemes = (a, b) => {
   return 0;
 };
 
-export const calculateScore = ({ missedWords = [], completedWords = [] }) =>
-  completedWords.length / (missedWords.length + completedWords.length);
+export const calculateScore = ({
+  incorrectAnswers = [],
+  correctAnswers = [],
+}) => correctAnswers.length / (incorrectAnswers.length + correctAnswers.length);
 
 export const sortPhonemes = (phonemes) => phonemes.sort(comparePhonemes);
 
