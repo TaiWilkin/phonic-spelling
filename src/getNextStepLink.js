@@ -11,9 +11,9 @@ const steps = [
   {
     name: "Phonemes",
     createLink: (id, phoneme) => `/lessons/${id}/phoneme/${phoneme}`,
-    shouldVisit: ({ id, newPhonemes }) => newPhonemes.length,
-    shouldStay: ({ id, newPhonemes, phonemeIndex }) =>
-      newPhonemes.length && phonemeIndex < newPhonemes.length,
+    shouldVisit: ({ newPhonemes }) => newPhonemes.length,
+    shouldStay: ({ newPhonemes, phonemeIndex }) =>
+      newPhonemes?.length && phonemeIndex < newPhonemes.length,
     path: "/lessons/:id/phoneme/:name",
   },
   {
@@ -70,7 +70,7 @@ const getNextStep = ({ name, id, path }) => {
 
   const step = steps.find(
     (step, i) =>
-      (i === currentStep && step.shouldStay({ ...lesson, id })) ||
+      (i === currentStep && step.shouldStay({ ...lesson, id, phonemeIndex })) ||
       (i > currentStep && step.shouldVisit({ ...lesson, id }))
   );
 
