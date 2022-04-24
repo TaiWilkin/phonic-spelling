@@ -1138,6 +1138,33 @@ const words = {
   sat: {
     letters: ["s", "short-a", "t"],
   },
+  dog: {
+    letters: ["d", "short-o", "g"],
+  },
+  Rab: {
+    letters: ["r", "short-a", "b"],
+  },
+  see: {
+    letters: ["s", "long-e", "silent-e"],
+  },
+  sees: {
+    letters: ["s", "long-e", "silent-e", "hard-s"],
+  },
+  frog: {
+    letters: ["f", "r", "short-o", "g"],
+  },
+  on: {
+    letters: ["short-o", "n"],
+  },
+  stand: {
+    letters: ["s", "t", "short-a", "n", "d"],
+  },
+  lamp: {
+    letters: ["l", "short-a", "m", "p"],
+  },
+  catch: {
+    letters: ["hard-c", "short-a", "t", "ch"],
+  },
 };
 
 export default words;
