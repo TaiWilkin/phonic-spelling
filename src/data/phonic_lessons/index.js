@@ -1,20 +1,25 @@
-import eight from "./eight";
-import nine from "./nine";
-import ten from "./ten";
-import eleven from "./eleven";
-import twelve from "./twelve";
-import thirteen from "./thirteen";
-import fourteen from "./fourteen";
-import fifteen from "./fifteen";
-import sixteen from "./sixteen";
-import seventeen from "./seventeen";
-import eighteen from "./eighteen";
-import nineteen from "./nineteen";
-import twenty from "./twenty";
-import twentyone from "./twentyone";
-import twentytwo from "./twentytwo";
-import twentythree from "./twentythree";
-import twentyfour from "./twentyfour";
+import eight from "./08";
+import nine from "./09";
+import ten from "./10";
+import eleven from "./11";
+import twelve from "./12";
+import thirteen from "./13";
+import fourteen from "./14";
+import fifteen from "./15";
+import sixteen from "./16";
+import seventeen from "./17";
+import eighteen from "./18";
+import nineteen from "./19";
+import twenty from "./20";
+import twentyone from "./21";
+import twentytwo from "./22";
+import twentythree from "./23";
+import twentyfour from "./24";
+import twentyfive from "./25";
+import twentysix from "./26";
+import twentyseven from "./27";
+import twentyeight from "./28";
+import twentynine from "./29";
 
 const lessons = {
   1: {
@@ -323,6 +328,11 @@ const lessons = {
   22: twentytwo,
   23: twentythree,
   24: twentyfour,
+  25: twentyfive,
+  26: twentysix,
+  27: twentyseven,
+  28: twentyeight,
+  29: twentynine,
 };
 
 export default lessons;
