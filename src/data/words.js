@@ -1165,6 +1165,136 @@ const words = {
   catch: {
     letters: ["hard-c", "short-a", "t", "ch"],
   },
+  bit: { letters: ["b", "short-i", "t"] },
+  spit: { letters: ["s", "p", "short-i", "t"] },
+  flit: { letters: ["f", "l", "short-i", "t"] },
+  split: { letters: ["s", "p", "l", "short-i", "t"] },
+  Fred: { letters: ["f", "r", "short-e", "d"] },
+  bled: { letters: ["b", "l", "short-e", "d"] },
+  shed: { letters: ["sh", "short-e", "d"] },
+  shred: { letters: ["sh", "r", "short-e", "d"] },
+  shy: { letters: ["sh", "long-y"] },
+  sty: { letters: ["s", "t", "long-y"] },
+  why: { letters: ["wh", "long-y"] },
+  spry: { letters: ["s", "p", "r", "long-y"] },
+  hub: { letters: ["h", "short-u", "b"] },
+  rub: { letters: ["r", "short-u", "b"] },
+  scrub: { letters: ["s", "hard-c", "r", "short-u", "b"] },
+  shrub: { letters: ["sh", "r", "short-u", "b"] },
+  bran: { letters: ["b", "r", "short-a", "n"] },
+  pig: { letters: ["p", "short-i", "g"] },
+  stun: { letters: ["s", "t", "short-u", "n"] },
+  will: { letters: ["w", "short-i", "l", "l"] },
+  shot: { letters: ["sh", "short-o", "t"] },
+  trot: { letters: ["t", "r", "short-o", "t"] },
+  plot: { letters: ["p", "l", "short-o", "t"] },
+  spot: { letters: ["s", "p", "short-o", "t"] },
+  tug: { letters: ["t", "short-u", "g"] },
+  jug: { letters: ["j", "short-u", "g"] },
+  mug: { letters: ["m", "short-u", "g"] },
+  snug: { letters: ["s", "n", "short-u", "g"] },
+  hay: { letters: ["h", "long-a", "silent-y"] },
+  pay: { letters: ["p", "long-a", "silent-y"] },
+  stay: { letters: ["s", "t", "long-a", "silent-y"] },
+  spray: { letters: ["s", "p", "r", "long-a", "silent-y"] },
+  chop: { letters: ["ch", "short-o", "p"] },
+  drop: { letters: ["d", "r", "short-o", "p"] },
+  slop: { letters: ["s", "l", "short-o", "p"] },
+  stop: { letters: ["s", "t", "short-o", "p"] },
+  fog: { letters: ["f", "short-o", "g"] },
+  clog: { letters: ["hard-c", "l", "short-o", "g"] },
+  hid: { letters: ["h", "short-i", "d"] },
+  stud: { letters: ["s", "t", "short-u", "d"] },
+  till: { letters: ["t", "short-i", "l", "l"] },
+  tell: { letters: ["t", "short-e", "l", "l"] },
+  cub: { letters: ["hard-c", "short-u", "b"] },
+  fate: { letters: ["f", "long-a", "t", "silent-e"] },
+  pine: { letters: ["p", "long-i", "n", "silent-e"] },
+  note: { letters: ["n", "long-o", "t", "silent-e"] },
+  hope: { letters: ["h", "long-o", "p", "silent-e"] },
+  rip: { letters: ["r", "short-i", "p"] },
+  pane: {
+    letters: ["p", "long-a", "n", "silent-e"],
+    sentence: "There is a pane of colored glass in the window.",
+  },
+  hate: { letters: ["h", "long-a", "t", "silent-e"] },
+  fine: { letters: ["f", "long-i", "n", "silent-e"] },
+  spite: { letters: ["s", "p", "long-i", "t", "silent-e"] },
+  mad: { letters: ["m", "short-a", "d"] },
+  cut: { letters: ["c", "short-u", "t"] },
+  slid: {
+    letters: ["s", "l", "short-i", "d"],
+    sentence: "He slid down the muddy bank.",
+  },
+  slime: { letters: ["s", "l", "long-i", "m", "silent-e"] },
+  bay: { letters: ["b", "long-a", "silent-y"] },
+  gay: { letters: ["g", "long-a", "silent-y"] },
+  clay: { letters: ["hard-c", "l", "long-a", "silent-y"] },
+  chum: { letters: ["ch", "short-u", "m"] },
+  spy: {
+    letters: ["s", "p", "long-y"],
+    sentence: "This book was written by Ben Franklin.",
+  },
+  sped: {
+    letters: ["s", "p", "short-e", "d"],
+  },
+  spun: {
+    letters: ["s", "p", "short-u", "n"],
+  },
+  slip: {
+    letters: ["s", "l", "short-i", "p"],
+  },
+  slap: {
+    letters: ["s", "l", "short-a", "p"],
+  },
+  chat: {
+    letters: ["ch", "short-a", "t"],
+  },
+  cot: {
+    letters: ["hard-c", "short-o", "t"],
+  },
+  cob: {
+    letters: ["hard-c", "short-o", "b"],
+  },
+  like: {
+    letters: ["l", "long-i", "k", "silent-e"],
+  },
+  pike: {
+    letters: ["p", "long-i", "k", "silent-e"],
+  },
+  spike: {
+    letters: ["s", "p", "long-i", "k", "silent-e"],
+  },
+  strike: {
+    letters: ["s", "t", "r", "long-i", "k", "silent-e"],
+  },
+  nose: {
+    letters: ["n", "long-o", "hard-s", "silent-e"],
+  },
+  those: {
+    letters: ["voiced-th", "long-o", "hard-s", "silent-e"],
+  },
+  close: {
+    letters: ["hard-c", "l", "long-o", "hard-s", "silent-e"],
+  },
+  take: {
+    letters: ["t", "long-a", "k", "silent-e"],
+  },
+  sake: {
+    letters: ["s", "long-a", "k", "silent-e"],
+  },
+  snake: {
+    letters: ["s", "n", "long-a", "k", "silent-e"],
+  },
+  shake: {
+    letters: ["sh", "long-a", "k", "silent-e"],
+  },
+  shave: {
+    letters: ["sh", "long-a", "v", "silent-e"],
+  },
+  brave: {
+    letters: ["b", "r", "long-a", "v", "silent-e"],
+  },
 };
 
 export default words;

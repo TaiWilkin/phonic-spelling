@@ -1,4 +1,5 @@
-const twentyfour = {
+const twentynine = {
+  name: "Second Grade, Seventh Week",
   newPhonemes: [],
   allPhonemes: [
     "short-a",
@@ -44,31 +45,23 @@ const twentyfour = {
     "wh",
   ],
   words: [
-    "chap",
-    "trap",
-    "strap",
-    "brag",
-    "drag",
-    "stag",
-    "snip",
-    "trip",
-    "drip",
-    "yell",
-    "shell",
-    "smell",
-    "cap",
-    "map",
-    "snap",
-    "bag",
-    "snag",
-    "flag",
-    "ship",
-    "skip",
-    "strip",
-    "well",
-    "spell",
-    "swell",
+    "like",
+    "pike",
+    "spike",
+    "strike",
+    "rose",
+    "nose",
+    "those",
+    "close",
+    "take",
+    "sake",
+    "snake",
+    "shake",
+    "pave",
+    "shave",
+    "brave",
   ],
+  sightwords: [],
   stems: [
     "at",
     "an",
@@ -158,11 +151,28 @@ const twentyfour = {
     "sk",
     "sc",
     "sw",
+    "str",
+    "br",
+    "sn",
+    "sm",
+    "spr",
+    "shr",
+    "spl",
+    "scr",
+    "ike",
+    "ose",
+    "ake",
+    "ave",
   ],
   notes: [
-    "You'll work with new consonant blends ('str', 'sn', 'br', and 'sm') " +
-      "combined with familiar word endings in this lesson.",
+    "You will work with stems following the VCe pattern in this lesson.",
+    "Note that in the stem 'ose' the S is pronounced as Z.",
+    "The words in this lesson containing 'ave' have a long A, following the " +
+      "usual VCe pattern. The word 'have', which you learned by memorization in " +
+      "the previous lesson, is an exception to this pattern. At one time, " +
+      "the word 'have' likely rhymed with these other words, but the pronunciation " +
+      "has shifted over time.",
   ],
 };
 
-export default twentyfour;
+export default twentynine;

@@ -31,6 +31,7 @@ const Keyboard = ({
         bg="rgba(0, 0, 0, 0.1)"
         border="1px solid rgba(0, 0, 0, 0.2)"
         minHeight="75px"
+        width="100%"
         flex="1"
         spacing="10px"
         overflow="scroll"
