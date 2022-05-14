@@ -1376,6 +1376,39 @@ const words = {
   chug: {
     letters: ["ch", "short-u", "g"],
   },
+  cape: {
+    letters: ["hard-c", "long-a", "p", "silent-e"],
+  },
+  dime: {
+    letters: ["d", "long-i", "m", "silent-e"],
+  },
+  din: {
+    letters: ["d", "short-i", "n"],
+  },
+  dine: {
+    letters: ["d", "long-i", "n", "silent-e"],
+  },
+  rid: {
+    letters: ["r", "short-i", "d"],
+  },
+  rate: {
+    letters: ["r", "long-a", "t", "silent-e"],
+  },
+  spine: {
+    letters: ["s", "p", "long-i", "n", "silent-e"],
+  },
+  thus: {
+    letters: ["unvoiced-th", "short-u", "s"],
+  },
+  that: {
+    letters: ["voiced-th", "short-a", "t"],
+  },
+  this: {
+    letters: ["voiced-th", "short-i", "s"],
+  },
+  slay: {
+    letters: ["s", "l", "long-a", "silent-y"],
+  },
 };
 
 export default words;
