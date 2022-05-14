@@ -324,8 +324,12 @@ const stems = {
     image: "https://s7.gifyu.com/images/stem-ite.png",
   },
   ose: {
-    letters: ["long-o", "hard-s", "silent-e"],
+    letters: ["long-o", "soft-s", "silent-e"],
     image: "https://s7.gifyu.com/images/stem-ose.png",
+  },
+  "ose-hard": {
+    letters: ["long-o", "hard-s", "silent-e"],
+    image: "https://s8.gifyu.com/images/stem-ose.png",
   },
   ode: {
     letters: ["long-o", "d", "silent-e"],
@@ -369,19 +373,19 @@ const stems = {
   },
   spr: {
     letters: ["s", "p", "r"],
-    image: "https://s7.gifyu.com/images/stem-spr.png",
+    image: "https://s8.gifyu.com/images/stem-spr.png",
   },
   shr: {
     letters: ["sh", "r"],
-    image: "https://s7.gifyu.com/images/stem-shr.png",
+    image: "https://s8.gifyu.com/images/stem-shr.png",
   },
   spl: {
     letters: ["s", "p", "l"],
-    image: "https://s7.gifyu.com/images/stem-spl.png",
+    image: "https://s8.gifyu.com/images/stem-spl.png",
   },
   scr: {
     letters: ["s", "hard-c", "r"],
-    image: "https://s7.gifyu.com/images/stem-scr.png",
+    image: "https://s8.gifyu.com/images/stem-scr.png",
   },
   ike: {
     letters: ["long-i", "k", "silent-e"],
