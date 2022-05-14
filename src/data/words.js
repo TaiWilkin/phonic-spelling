@@ -1283,6 +1283,7 @@ const words = {
   },
   sake: {
     letters: ["s", "long-a", "k", "silent-e"],
+    sentence: "They did it for his sake.",
   },
   snake: {
     letters: ["s", "n", "long-a", "k", "silent-e"],
