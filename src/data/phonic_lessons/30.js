@@ -1,4 +1,4 @@
-const twentynine = {
+const thirty = {
   name: "Second Grade, Review A",
   newPhonemes: [],
   allPhonemes: [
@@ -266,8 +266,12 @@ const twentynine = {
     "ike",
     "ose-hard",
   ],
-  notes: ["This lesson will review the words studied so far in this level."],
+  notes: [
+    "This lesson will review the words studied so far in this level, " +
+      "excluding words only covered in blend drill. You'll be surprised by " +
+      "how many words you've learned!",
+  ],
   review: true,
 };
 
-export default twentynine;
+export default thirty;

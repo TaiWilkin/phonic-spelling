@@ -1319,6 +1319,63 @@ const words = {
   bet: {
     letters: ["b", "short-e", "t"],
   },
+  broke: {
+    letters: ["b", "r", "long-o", "k", "silent-e"],
+  },
+  smoke: {
+    letters: ["s", "m", "long-o", "k", "silent-e"],
+  },
+  stroke: {
+    letters: ["s", "t", "r", "long-o", "k", "silent-e"],
+  },
+  dive: {
+    letters: ["d", "long-i", "v", "silent-e"],
+  },
+  five: {
+    letters: ["f", "long-i", "v", "silent-e"],
+  },
+  drive: {
+    letters: ["d", "r", "long-i", "v", "silent-e"],
+  },
+  cove: {
+    letters: ["c", "long-o", "v", "silent-e"],
+  },
+  rove: {
+    letters: ["r", "long-o", "v", "silent-e"],
+  },
+  drove: {
+    letters: ["d", "r", "long-o", "v", "silent-e"],
+  },
+  clove: {
+    letters: ["c", "l", "long-o", "v", "silent-e"],
+  },
+  cone: {
+    letters: ["c", "long-o", "n", "silent-e"],
+  },
+  tone: {
+    letters: ["t", "long-o", "n", "silent-e"],
+  },
+  stone: {
+    letters: ["s", "t", "long-o", "n", "silent-e"],
+  },
+  drone: {
+    letters: ["d", "r", "long-o", "n", "silent-e"],
+  },
+  plod: {
+    letters: ["p", "l", "short-o", "d"],
+  },
+  hip: {
+    letters: ["h", "short-i", "p"],
+  },
+  fob: {
+    letters: ["f", "short-o", "b"],
+  },
+  fad: {
+    letters: ["f", "short-a", "d"],
+  },
+  chug: {
+    letters: ["ch", "short-u", "g"],
+  },
 };
 
 export default words;
