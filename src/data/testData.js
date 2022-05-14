@@ -42,6 +42,30 @@ const testData = () => {
         );
       }
     });
+
+    lesson.blenddrill?.phonemes?.forEach((np) => {
+      if (!phonemes[np]) {
+        console.warn(
+          `Lesson ${l} blend drill includes phoneme ${np} but this phoneme is undefined`
+        );
+      }
+    });
+
+    lesson.blenddrill?.stems?.forEach((stem) => {
+      if (!stems[stem]) {
+        console.warn(
+          `Lesson ${l} blend drill includes stem ${stem} but this stem is undefined`
+        );
+      }
+    });
+
+    lesson.blenddrill?.words?.forEach((word) => {
+      if (!words[word]) {
+        console.warn(
+          `Lesson ${l} blend drill includes word ${word} but this word is undefined`
+        );
+      }
+    });
   });
 };
 

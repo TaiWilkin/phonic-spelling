@@ -1,4 +1,5 @@
 const twentysix = {
+  name: "Second Grade, Fourth Week",
   newPhonemes: [],
   allPhonemes: [
     "short-a",
@@ -73,6 +74,24 @@ const twentysix = {
     "till",
     "tell",
   ],
+  blenddrill: {
+    phonemes: ["b", "f", "h", "m", "t"],
+    stems: ["og", "cl", "im", "em", "id", "ud", "st", "all", "ill", "ell"],
+    words: [
+      "bog",
+      "fog",
+      "clog",
+      "him",
+      "hem",
+      "hid",
+      "bud",
+      "mud",
+      "stud",
+      "tall",
+      "till",
+      "tell",
+    ],
+  },
   stems: [
     "at",
     "an",

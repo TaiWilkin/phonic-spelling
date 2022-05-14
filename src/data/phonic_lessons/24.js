@@ -1,4 +1,5 @@
 const twentyfour = {
+  name: "Second Grade, Second Week",
   newPhonemes: [],
   allPhonemes: [
     "short-a",
@@ -56,18 +57,6 @@ const twentyfour = {
     "yell",
     "shell",
     "smell",
-    "cap",
-    "map",
-    "snap",
-    "bag",
-    "snag",
-    "flag",
-    "ship",
-    "skip",
-    "strip",
-    "well",
-    "spell",
-    "swell",
   ],
   stems: [
     "at",
@@ -163,6 +152,24 @@ const twentyfour = {
     "sn",
     "sm",
   ],
+  blenddrill: {
+    phonemes: ["hard-c", "m", "b", "sh", "w"],
+    stems: ["sn", "sk", "str", "sp", "sw", "ap", "ag", "ip", "ell", "fl"],
+    words: [
+      "cap",
+      "map",
+      "snap",
+      "bag",
+      "snag",
+      "flag",
+      "ship",
+      "skip",
+      "strip",
+      "well",
+      "spell",
+      "swell",
+    ],
+  },
   notes: [
     "You'll work with new consonant blends ('str', 'sn', 'br', and 'sm') " +
       "combined with familiar word endings in this lesson.",

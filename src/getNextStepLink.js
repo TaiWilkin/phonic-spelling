@@ -31,6 +31,13 @@ const steps = [
     createLink: (id) => `/lessons/${id}/spelling`,
   },
   {
+    name: "Blend Drill",
+    path: "/lessons/:id/blenddrill",
+    shouldVisit: ({ blenddrill }) => blenddrill?.words?.length,
+    shouldStay: () => false,
+    createLink: (id) => `/lessons/${id}/blenddrill`,
+  },
+  {
     name: "Sight Words",
     path: "/lessons/:id/sightwords",
     shouldVisit: ({ sightwords }) => sightwords && sightwords.length,

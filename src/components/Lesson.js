@@ -11,6 +11,7 @@ import PhonemeIntroduction from "./PhonemeIntroduction";
 import LessonContinueLink from "./LessonContinueLink";
 import LessonIntroduction from "./LessonIntroduction";
 import SightWords from "./SightWords";
+import BlendDrill from "./BlendDrill";
 import CompletedLesson from "./CompletedLesson";
 import Dictation from "./Dictation";
 
@@ -47,6 +48,7 @@ const Lesson = () => {
     sightwords,
     dictation,
     dictationImage,
+    blenddrill,
   } = lessons[match.params.id];
   const wordList = words.sort(() => (Math.random() > 0.5 ? 1 : -1));
   return (
@@ -66,6 +68,14 @@ const Lesson = () => {
             phonemeList={allPhonemes}
             wordList={wordList}
             stemList={stems}
+          />
+        </Route>
+        <Route path={`${match.path}/blenddrill`}>
+          <BlendDrill
+            phonemeList={blenddrill?.phonemes}
+            wordList={blenddrill?.words}
+            stemList={blenddrill?.stems}
+            lesson={match.params.id}
           />
         </Route>
         <Route path={`${match.path}/dictation`}>
