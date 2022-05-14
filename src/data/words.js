@@ -763,6 +763,7 @@ const words = {
   },
   by: {
     letters: ["b", "long-y"],
+    sentence: "This book was written by Ben Franklin.",
   },
   my: {
     letters: ["m", "long-y"],
@@ -1052,6 +1053,7 @@ const words = {
   },
   den: {
     letters: ["d", "short-e", "n"],
+    sentence: "The bears hibernated in their den.",
   },
   clan: {
     letters: ["hard-c", "l", "short-a", "n"],
@@ -1233,7 +1235,6 @@ const words = {
   chum: { letters: ["ch", "short-u", "m"] },
   spy: {
     letters: ["s", "p", "long-y"],
-    sentence: "This book was written by Ben Franklin.",
   },
   sped: {
     letters: ["s", "p", "short-e", "d"],
@@ -1294,6 +1295,28 @@ const words = {
   },
   brave: {
     letters: ["b", "r", "long-a", "v", "silent-e"],
+  },
+  thin: {
+    letters: ["unvoiced-th", "short-i", "n"],
+  },
+  Ben: {
+    letters: ["b", "short-e", "n"],
+    sentence: "This book was written by Ben Franklin.",
+  },
+  slam: {
+    letters: ["s", "l", "short-a", "m"],
+  },
+  slot: {
+    letters: ["s", "l", "short-o", "t"],
+  },
+  hot: {
+    letters: ["h", "short-o", "t"],
+  },
+  dram: {
+    letters: ["d", "r", "short-a", "m"],
+  },
+  bet: {
+    letters: ["b", "short-e", "t"],
   },
 };
 
