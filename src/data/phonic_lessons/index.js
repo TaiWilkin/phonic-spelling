@@ -25,6 +25,7 @@ import thirtyone from "./31";
 import thirtytwo from "./32";
 import thirtythree from "./33";
 import thirtyfour from "./34";
+import thirtyfive from "./35";
 
 const lessons = {
   1: {
@@ -343,6 +344,7 @@ const lessons = {
   32: thirtytwo,
   33: thirtythree,
   34: thirtyfour,
+  35: thirtyfive,
 };
 
 export default lessons;

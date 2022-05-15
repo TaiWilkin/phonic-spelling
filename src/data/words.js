@@ -1531,6 +1531,69 @@ const words = {
     letters: ["g", "r", "long-a", "t", "silent-e"],
     sentence: "Please grate the cheese.",
   },
+  Bess: {
+    letters: ["b", "short-e", "s", "s"],
+  },
+  Jess: {
+    letters: ["j", "short-e", "s", "s"],
+  },
+  bless: {
+    letters: ["b", "l", "short-e", "s", "s"],
+  },
+  dress: {
+    letters: ["d", "r", "short-e", "s", "s"],
+  },
+  miss: {
+    letters: ["m", "short-i", "s", "s"],
+  },
+  hiss: {
+    letters: ["h", "short-i", "s", "s"],
+  },
+  kiss: {
+    letters: ["k", "short-i", "s", "s"],
+  },
+  bliss: {
+    letters: ["b", "l", "short-i", "s", "s"],
+  },
+  boss: {
+    letters: ["b", "intermediate-o", "s", "s"],
+  },
+  toss: {
+    letters: ["t", "intermediate-o", "s", "s"],
+  },
+  moss: {
+    letters: ["m", "intermediate-o", "s", "s"],
+  },
+  cross: {
+    letters: ["hard-c", "r", "intermediate-o", "s", "s"],
+  },
+  muss: {
+    letters: ["m", "short-u", "s", "s"],
+  },
+  fuss: {
+    letters: ["f", "short-u", "s", "s"],
+  },
+  loss: {
+    letters: ["l", "intermediate-o", "s", "s"],
+  },
+  press: {
+    letters: ["p", "r", "short-e", "s", "s"],
+  },
+  stem: {
+    letters: ["s", "t", "short-e", "m"],
+  },
+  stub: {
+    letters: ["s", "t", "short-u", "b"],
+  },
+  plate: {
+    letters: ["p", "l", "long-a", "t", "silent-e"],
+  },
+  quell: {
+    letters: ["qu", "short-e", "l", "l"],
+  },
+  fill: {
+    letters: ["f", "short-i", "l", "l"],
+  },
 };
 
 export default words;
