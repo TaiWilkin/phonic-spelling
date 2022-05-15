@@ -622,6 +622,7 @@ const words = {
   },
   pale: {
     letters: ["p", "long-a", "l", "silent-e"],
+    sentence: "She turned pale as a ghost.",
   },
   sale: {
     letters: ["s", "long-a", "l", "silent-e"],
@@ -1318,6 +1319,147 @@ const words = {
   },
   bet: {
     letters: ["b", "short-e", "t"],
+  },
+  broke: {
+    letters: ["b", "r", "long-o", "k", "silent-e"],
+  },
+  smoke: {
+    letters: ["s", "m", "long-o", "k", "silent-e"],
+  },
+  stroke: {
+    letters: ["s", "t", "r", "long-o", "k", "silent-e"],
+  },
+  dive: {
+    letters: ["d", "long-i", "v", "silent-e"],
+  },
+  five: {
+    letters: ["f", "long-i", "v", "silent-e"],
+  },
+  drive: {
+    letters: ["d", "r", "long-i", "v", "silent-e"],
+  },
+  cove: {
+    letters: ["c", "long-o", "v", "silent-e"],
+  },
+  rove: {
+    letters: ["r", "long-o", "v", "silent-e"],
+  },
+  drove: {
+    letters: ["d", "r", "long-o", "v", "silent-e"],
+  },
+  clove: {
+    letters: ["c", "l", "long-o", "v", "silent-e"],
+  },
+  cone: {
+    letters: ["c", "long-o", "n", "silent-e"],
+  },
+  tone: {
+    letters: ["t", "long-o", "n", "silent-e"],
+  },
+  stone: {
+    letters: ["s", "t", "long-o", "n", "silent-e"],
+  },
+  drone: {
+    letters: ["d", "r", "long-o", "n", "silent-e"],
+  },
+  plod: {
+    letters: ["p", "l", "short-o", "d"],
+  },
+  hip: {
+    letters: ["h", "short-i", "p"],
+  },
+  fob: {
+    letters: ["f", "short-o", "b"],
+  },
+  fad: {
+    letters: ["f", "short-a", "d"],
+  },
+  chug: {
+    letters: ["ch", "short-u", "g"],
+  },
+  cape: {
+    letters: ["hard-c", "long-a", "p", "silent-e"],
+  },
+  dime: {
+    letters: ["d", "long-i", "m", "silent-e"],
+  },
+  din: {
+    letters: ["d", "short-i", "n"],
+  },
+  dine: {
+    letters: ["d", "long-i", "n", "silent-e"],
+  },
+  rid: {
+    letters: ["r", "short-i", "d"],
+  },
+  rate: {
+    letters: ["r", "long-a", "t", "silent-e"],
+  },
+  spine: {
+    letters: ["s", "p", "long-i", "n", "silent-e"],
+  },
+  thus: {
+    letters: ["unvoiced-th", "short-u", "s"],
+  },
+  that: {
+    letters: ["voiced-th", "short-a", "t"],
+  },
+  this: {
+    letters: ["voiced-th", "short-i", "s"],
+  },
+  slay: {
+    letters: ["s", "l", "long-a", "silent-y"],
+  },
+  drug: {
+    letters: ["d", "r", "short-u", "g"],
+  },
+  crop: {
+    letters: ["hard-c", "r", "short-o", "p"],
+  },
+  snub: {
+    letters: ["s", "n", "short-u", "b"],
+  },
+  brim: {
+    letters: ["b", "r", "short-i", "m"],
+  },
+  whip: {
+    letters: ["wh", "short-i", "p"],
+  },
+  fled: {
+    letters: ["f", "l", "short-e", "d"],
+  },
+  spade: {
+    letters: ["s", "p", "long-a", "d", "silent-e"],
+  },
+  spoke: {
+    letters: ["s", "p", "long-o", "k", "silent-e"],
+  },
+  grove: {
+    letters: ["g", "r", "long-o", "v", "silent-e"],
+  },
+  crane: {
+    letters: ["hard-c", "r", "long-a", "n", "silent-e"],
+  },
+  grave: {
+    letters: ["g", "r", "long-a", "v", "silent-e"],
+  },
+  scrap: {
+    letters: ["s", "hard-c", "r", "a", "p"],
+  },
+  skate: {
+    letters: ["s", "k", "long-a", "t", "silent-e"],
+  },
+  choke: {
+    letters: ["ch", "long-o", "k", "silent-e"],
+  },
+  flog: {
+    letters: ["f", "l", "short-o", "g"],
+  },
+  flame: {
+    letters: ["f", "l", "long-a", "m", "silent-e"],
+  },
+  lake: {
+    letters: ["l", "long-a", "k", "silent-e"],
   },
 };
 
