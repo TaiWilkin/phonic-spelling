@@ -1461,6 +1461,76 @@ const words = {
   lake: {
     letters: ["l", "long-a", "k", "silent-e"],
   },
+  must: {
+    letters: ["m", "short-u", "s", "t"],
+  },
+  dust: {
+    letters: ["d", "short-u", "s", "t"],
+  },
+  rust: {
+    letters: ["r", "short-u", "s", "t"],
+  },
+  crust: {
+    letters: ["hard-c", "r", "short-u", "s", "t"],
+  },
+  best: {
+    letters: ["b", "short-e", "s", "t"],
+  },
+  nest: {
+    letters: ["n", "short-e", "s", "t"],
+  },
+  rest: {
+    letters: ["r", "short-e", "s", "t"],
+  },
+  chest: {
+    letters: ["ch", "short-e", "s", "t"],
+  },
+  fist: {
+    letters: ["f", "short-i", "s", "t"],
+  },
+  list: {
+    letters: ["l", "short-i", "s", "t"],
+  },
+  mist: {
+    letters: ["m", "short-i", "s", "t"],
+  },
+  twist: {
+    letters: ["t", "w", "short-i", "s", "t"],
+  },
+  cost: {
+    letters: ["hard-c", "intermediate-o", "s", "t"],
+  },
+  lost: {
+    letters: ["l", "intermediate-o", "s", "t"],
+  },
+  frost: {
+    letters: ["f", "r", "intermediate-o", "s", "t"],
+  },
+  just: {
+    letters: ["j", "short-u", "s", "t"],
+  },
+  while: {
+    letters: ["wh", "long-i", "l", "silent-e"],
+  },
+  white: {
+    letters: ["wh", "long-i", "t", "silent-e"],
+  },
+  scab: {
+    letters: ["s", "hard-c", "short-a", "b"],
+  },
+  scum: {
+    letters: ["s", "hard-c", "short-u", "m"],
+  },
+  scat: {
+    letters: ["s", "hard-c", "short-a", "t"],
+  },
+  grime: {
+    letters: ["g", "r", "long-i", "m", "silent-e"],
+  },
+  grate: {
+    letters: ["g", "r", "long-a", "t", "silent-e"],
+    sentence: "Please grate the cheese.",
+  },
 };
 
 export default words;

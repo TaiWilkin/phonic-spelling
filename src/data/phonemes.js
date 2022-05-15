@@ -294,6 +294,12 @@ const phonemes = {
     examples: ["which", "who"],
     image: "https://s7.gifyu.com/images/phoneme-wh.png",
   },
+  "intermediate-o": {
+    name: "intermediate-o",
+    letter: "O (intermediate)",
+    examples: ["cost", "toss"],
+    image: "https://s1.gifyu.com/images/intermediate-o.png",
+  },
 };
 
 export default phonemes;
