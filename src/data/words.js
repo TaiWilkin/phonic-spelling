@@ -1594,6 +1594,55 @@ const words = {
   fill: {
     letters: ["f", "short-i", "l", "l"],
   },
+  band: {
+    letters: ["b", "short-a", "n", "d"],
+    sentence: "The band began to play.",
+  },
+  mend: {
+    letters: ["m", "short-e", "n", "d"],
+  },
+  spend: {
+    letters: ["s", "p", "short-e", "n", "d"],
+  },
+  spent: {
+    letters: ["s", "p", "short-e", "n", "t"],
+  },
+  mint: {
+    letters: ["m", "short-i", "n", "t"],
+  },
+  print: {
+    letters: ["p", "r", "short-i", "n", "t"],
+  },
+  fond: {
+    letters: ["f", "short-o", "n", "d"],
+  },
+  pond: {
+    letters: ["p", "short-o", "n", "d"],
+  },
+  find: {
+    letters: ["f", "long-i", "n", "d"],
+  },
+  blind: {
+    letters: ["b", "l", "long-i", "n", "d"],
+  },
+  hunt: {
+    letters: ["h", "short-u", "n", "t"],
+  },
+  grunt: {
+    letters: ["g", "r", "short-u", "n", "t"],
+  },
+  plant: {
+    letters: ["p", "l", "short-a", "n", "t"],
+  },
+  scant: {
+    letters: ["s", "hard-c", "short-a", "n", "t"],
+  },
+  fret: {
+    letters: ["f", "r", "short-e", "t"],
+  },
+  grin: {
+    letters: ["g", "r", "short-i", "n"],
+  },
 };
 
 export default words;

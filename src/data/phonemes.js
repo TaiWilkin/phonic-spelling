@@ -304,7 +304,7 @@ const phonemes = {
     name: "double-s",
     letter: "S (doubled)",
     examples: ["mess", "moss"],
-    image: "https://s1.gifyu.com/images/stem-s.png",
+    image: "https://s1.gifyu.com/images/stem-ss.png",
     vowel: false,
     alt: ["s", "s"],
   },
