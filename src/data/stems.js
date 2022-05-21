@@ -391,6 +391,79 @@ const stems = {
     letters: ["long-i", "k", "silent-e"],
     image: "https://s8.gifyu.com/images/stem-ike.png",
   },
+  ost: {
+    letters: ["intermediate-o", "s", "t"],
+    image: "https://s1.gifyu.com/images/stem-ost.png",
+  },
+  ist: {
+    letters: ["short-i", "s", "t"],
+    image: "https://s1.gifyu.com/images/stem-ist.png",
+  },
+  est: {
+    letters: ["short-e", "s", "t"],
+    image: "https://s1.gifyu.com/images/stem-est.png",
+  },
+  ust: {
+    letters: ["short-u", "s", "t"],
+    image: "https://s1.gifyu.com/images/stem-ust.png",
+  },
+  tw: {
+    letters: ["t", "w"],
+    image: "https://s1.gifyu.com/images/stem-tw.png",
+  },
+  ess: {
+    letters: ["short-e", "s", "s"],
+    image: "https://s1.gifyu.com/images/stem-ess.png",
+  },
+  iss: {
+    letters: ["short-i", "s", "s"],
+    image: "https://s1.gifyu.com/images/stem-iss.png",
+  },
+  oss: {
+    letters: ["intermediate-o", "s", "s"],
+    image: "https://s1.gifyu.com/images/stem-oss.png",
+  },
+  uss: {
+    letters: ["short-u", "s", "s"],
+    image: "https://s1.gifyu.com/images/stem-uss.png",
+  },
+  nd: {
+    letters: ["n", "d"],
+    image: "https://s8.gifyu.com/images/stem-nd.png",
+  },
+  nt: { letters: ["n", "t"], image: "https://s8.gifyu.com/images/stem-nt.png" },
+  and: {
+    letters: ["short-a", "n", "d"],
+    image: "https://s8.gifyu.com/images/stem-and.png",
+  },
+  ent: {
+    letters: ["short-e", "n", "t"],
+    image: "https://s8.gifyu.com/images/stem-ent.png",
+  },
+  ond: {
+    letters: ["short-o", "n", "d"],
+    image: "https://s8.gifyu.com/images/stem-ond.png",
+  },
+  unt: {
+    letters: ["short-u", "n", "t"],
+    image: "https://s8.gifyu.com/images/stem-unt.png",
+  },
+  end: {
+    letters: ["short-e", "n", "d"],
+    image: "https://s8.gifyu.com/images/stem-end.png",
+  },
+  int: {
+    letters: ["short-i", "n", "t"],
+    image: "https://s8.gifyu.com/images/stem-int.png",
+  },
+  ind: {
+    letters: ["long-i", "n", "d"],
+    image: "https://s8.gifyu.com/images/stem-ind.png",
+  },
+  ant: {
+    letters: ["short-a", "n", "t"],
+    image: "https://s8.gifyu.com/images/stem-ant.png",
+  },
 };
 
 export default stems;

@@ -1461,6 +1461,223 @@ const words = {
   lake: {
     letters: ["l", "long-a", "k", "silent-e"],
   },
+  must: {
+    letters: ["m", "short-u", "s", "t"],
+  },
+  dust: {
+    letters: ["d", "short-u", "s", "t"],
+  },
+  rust: {
+    letters: ["r", "short-u", "s", "t"],
+  },
+  crust: {
+    letters: ["hard-c", "r", "short-u", "s", "t"],
+  },
+  best: {
+    letters: ["b", "short-e", "s", "t"],
+  },
+  nest: {
+    letters: ["n", "short-e", "s", "t"],
+  },
+  rest: {
+    letters: ["r", "short-e", "s", "t"],
+  },
+  chest: {
+    letters: ["ch", "short-e", "s", "t"],
+  },
+  fist: {
+    letters: ["f", "short-i", "s", "t"],
+  },
+  list: {
+    letters: ["l", "short-i", "s", "t"],
+  },
+  mist: {
+    letters: ["m", "short-i", "s", "t"],
+  },
+  twist: {
+    letters: ["t", "w", "short-i", "s", "t"],
+  },
+  cost: {
+    letters: ["hard-c", "intermediate-o", "s", "t"],
+  },
+  lost: {
+    letters: ["l", "intermediate-o", "s", "t"],
+  },
+  frost: {
+    letters: ["f", "r", "intermediate-o", "s", "t"],
+  },
+  just: {
+    letters: ["j", "short-u", "s", "t"],
+  },
+  while: {
+    letters: ["wh", "long-i", "l", "silent-e"],
+  },
+  white: {
+    letters: ["wh", "long-i", "t", "silent-e"],
+  },
+  scab: {
+    letters: ["s", "hard-c", "short-a", "b"],
+  },
+  scum: {
+    letters: ["s", "hard-c", "short-u", "m"],
+  },
+  scat: {
+    letters: ["s", "hard-c", "short-a", "t"],
+  },
+  grime: {
+    letters: ["g", "r", "long-i", "m", "silent-e"],
+  },
+  grate: {
+    letters: ["g", "r", "long-a", "t", "silent-e"],
+    sentence: "Please grate the cheese.",
+  },
+  Bess: {
+    letters: ["b", "short-e", "s", "s"],
+  },
+  Jess: {
+    letters: ["j", "short-e", "s", "s"],
+  },
+  bless: {
+    letters: ["b", "l", "short-e", "s", "s"],
+  },
+  dress: {
+    letters: ["d", "r", "short-e", "s", "s"],
+  },
+  miss: {
+    letters: ["m", "short-i", "s", "s"],
+  },
+  hiss: {
+    letters: ["h", "short-i", "s", "s"],
+  },
+  kiss: {
+    letters: ["k", "short-i", "s", "s"],
+  },
+  bliss: {
+    letters: ["b", "l", "short-i", "s", "s"],
+  },
+  boss: {
+    letters: ["b", "intermediate-o", "s", "s"],
+  },
+  toss: {
+    letters: ["t", "intermediate-o", "s", "s"],
+  },
+  moss: {
+    letters: ["m", "intermediate-o", "s", "s"],
+  },
+  cross: {
+    letters: ["hard-c", "r", "intermediate-o", "s", "s"],
+  },
+  muss: {
+    letters: ["m", "short-u", "s", "s"],
+  },
+  fuss: {
+    letters: ["f", "short-u", "s", "s"],
+  },
+  loss: {
+    letters: ["l", "intermediate-o", "s", "s"],
+  },
+  press: {
+    letters: ["p", "r", "short-e", "s", "s"],
+  },
+  stem: {
+    letters: ["s", "t", "short-e", "m"],
+  },
+  stub: {
+    letters: ["s", "t", "short-u", "b"],
+  },
+  plate: {
+    letters: ["p", "l", "long-a", "t", "silent-e"],
+  },
+  quell: {
+    letters: ["qu", "short-e", "l", "l"],
+  },
+  fill: {
+    letters: ["f", "short-i", "l", "l"],
+  },
+  band: {
+    letters: ["b", "short-a", "n", "d"],
+    sentence: "The band began to play.",
+  },
+  mend: {
+    letters: ["m", "short-e", "n", "d"],
+    sentence: "Can you mend your torn shirt?",
+  },
+  spend: {
+    letters: ["s", "p", "short-e", "n", "d"],
+  },
+  spent: {
+    letters: ["s", "p", "short-e", "n", "t"],
+  },
+  mint: {
+    letters: ["m", "short-i", "n", "t"],
+    sentence: "I drink mint tea.",
+  },
+  print: {
+    letters: ["p", "r", "short-i", "n", "t"],
+  },
+  fond: {
+    letters: ["f", "short-o", "n", "d"],
+    sentence: "She was fond of her little sister.",
+  },
+  pond: {
+    letters: ["p", "short-o", "n", "d"],
+    sentence: "They went ice-skating on the pond.",
+  },
+  find: {
+    letters: ["f", "long-i", "n", "d"],
+  },
+  blind: {
+    letters: ["b", "l", "long-i", "n", "d"],
+  },
+  hunt: {
+    letters: ["h", "short-u", "n", "t"],
+  },
+  grunt: {
+    letters: ["g", "r", "short-u", "n", "t"],
+    sentence: "The pig answered with a grunt.",
+  },
+  plant: {
+    letters: ["p", "l", "short-a", "n", "t"],
+  },
+  scant: {
+    letters: ["s", "hard-c", "short-a", "n", "t"],
+  },
+  fret: {
+    letters: ["f", "r", "short-e", "t"],
+    sentence: "Never fret and never worry. ",
+  },
+  grin: {
+    letters: ["g", "r", "short-i", "n"],
+  },
+  wise: {
+    letters: ["w", "long-i", "hard-s", "silent-e"],
+  },
+  wove: {
+    letters: ["w", "long-o", "v", "silent-e"],
+  },
+  grab: {
+    letters: ["g", "r", "short-a", "b"],
+  },
+  grub: {
+    letters: ["g", "r", "short-u", "b"],
+  },
+  grit: {
+    letters: ["g", "r", "short-i", "t"],
+  },
+  bray: {
+    letters: ["b", "r", "long-a", "silent-y"],
+    silent: "Listen to that donkey bray!",
+  },
+  brake: {
+    letters: ["b", "r", "long-a", "k", "silent-e"],
+    sentence: "Use your parking brake.",
+  },
+  trod: {
+    letters: ["t", "r", "short-o", "d"],
+  },
+  trust: {
+    letters: ["t", "r", "short-u", "s", "t"],
+  },
 };
 
 export default words;
