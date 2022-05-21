@@ -1600,6 +1600,7 @@ const words = {
   },
   mend: {
     letters: ["m", "short-e", "n", "d"],
+    sentence: "Can you mend your torn shirt?",
   },
   spend: {
     letters: ["s", "p", "short-e", "n", "d"],
@@ -1609,15 +1610,18 @@ const words = {
   },
   mint: {
     letters: ["m", "short-i", "n", "t"],
+    sentence: "I drink mint tea.",
   },
   print: {
     letters: ["p", "r", "short-i", "n", "t"],
   },
   fond: {
     letters: ["f", "short-o", "n", "d"],
+    sentence: "She was fond of her little sister.",
   },
   pond: {
     letters: ["p", "short-o", "n", "d"],
+    sentence: "They went ice-skating on the pond.",
   },
   find: {
     letters: ["f", "long-i", "n", "d"],
@@ -1630,6 +1634,7 @@ const words = {
   },
   grunt: {
     letters: ["g", "r", "short-u", "n", "t"],
+    sentence: "The pig answered with a grunt.",
   },
   plant: {
     letters: ["p", "l", "short-a", "n", "t"],
@@ -1639,9 +1644,39 @@ const words = {
   },
   fret: {
     letters: ["f", "r", "short-e", "t"],
+    sentence: "Never fret and never worry. ",
   },
   grin: {
     letters: ["g", "r", "short-i", "n"],
+  },
+  wise: {
+    letters: ["w", "long-i", "hard-s", "silent-e"],
+  },
+  wove: {
+    letters: ["w", "long-o", "v", "silent-e"],
+  },
+  grab: {
+    letters: ["g", "r", "short-a", "b"],
+  },
+  grub: {
+    letters: ["g", "r", "short-u", "b"],
+  },
+  grit: {
+    letters: ["g", "r", "short-i", "t"],
+  },
+  bray: {
+    letters: ["b", "r", "long-a", "silent-y"],
+    silent: "Listen to that donkey bray!",
+  },
+  brake: {
+    letters: ["b", "r", "long-a", "k", "silent-e"],
+    sentence: "Use your parking brake.",
+  },
+  trod: {
+    letters: ["t", "r", "short-o", "d"],
+  },
+  trust: {
+    letters: ["t", "r", "short-u", "s", "t"],
   },
 };
 
