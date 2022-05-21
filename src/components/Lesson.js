@@ -89,7 +89,11 @@ const Lesson = () => {
           <CompletedLesson lesson={match.params.id} />
         </Route>
         <Route path={match.path}>
-          <LessonIntroduction notes={notes} lesson={match.params.id} />
+          <LessonIntroduction
+            notes={notes}
+            sightwords={sightwords}
+            lesson={match.params.id}
+          />
         </Route>
       </Switch>
       <Switch>
