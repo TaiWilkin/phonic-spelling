@@ -1,5 +1,6 @@
 const phonemes = {
   "short-a": {
+    value: "a",
     name: "short-a",
     letter: "A (short)",
     examples: ["an", "at"],
@@ -27,6 +28,7 @@ const phonemes = {
     image: "https://s7.gifyu.com/images/fa17bd1d385e14114.png",
   },
   "short-i": {
+    value: "i",
     name: "short-i",
     letter: "I (short)",
     examples: ["it", "ink"],
@@ -48,6 +50,7 @@ const phonemes = {
     vowel: false,
   },
   "hard-c": {
+    value: "c",
     name: "hard-c",
     letter: "C (hard)",
     examples: ["cat", "can"],
@@ -62,6 +65,7 @@ const phonemes = {
     vowel: false,
   },
   "hard-s": {
+    value: "s",
     name: "hard-s",
     letter: "S (hard)",
     examples: ["his", "as"],
@@ -76,6 +80,7 @@ const phonemes = {
     vowel: false,
   },
   "short-e": {
+    value: "e",
     name: "short-e",
     letter: "E (short)",
     examples: ["set", "end"],
@@ -83,6 +88,7 @@ const phonemes = {
     vowel: true,
   },
   "short-u": {
+    value: "u",
     name: "short-u",
     letter: "U (short)",
     examples: ["sun", "up"],
@@ -97,6 +103,7 @@ const phonemes = {
     vowel: false,
   },
   "short-o": {
+    value: "o",
     name: "short-o",
     letter: "O (short)",
     examples: ["hop", "lot"],
@@ -146,6 +153,7 @@ const phonemes = {
     vowel: false,
   },
   "hard-y": {
+    value: "y",
     name: "hard-y",
     letter: "Y (hard)",
     examples: ["yet", "young"],
@@ -174,6 +182,7 @@ const phonemes = {
     vowel: false,
   },
   "open-a": {
+    value: "a",
     name: "open-a",
     letter: "A (open)",
     examples: ["all", "fall"],
@@ -181,6 +190,7 @@ const phonemes = {
     vowel: true,
   },
   "double-l": {
+    value: "ll",
     name: "double-l",
     letter: "L (doubled)",
     examples: ["all", "fall"],
@@ -203,6 +213,7 @@ const phonemes = {
     vowel: false,
   },
   "long-o": {
+    value: "o",
     name: "long-o",
     letter: "O (long)",
     examples: ["open", "yoyo"],
@@ -210,6 +221,7 @@ const phonemes = {
     vowel: true,
   },
   "long-e": {
+    value: "e",
     name: "long-e",
     letter: "E (long)",
     examples: ["equal", "he"],
@@ -217,6 +229,7 @@ const phonemes = {
     vowel: true,
   },
   "voiced-th": {
+    value: "th",
     name: "voiced-th",
     letter: "Th (voiced)",
     examples: ["this", "weather"],
@@ -224,6 +237,7 @@ const phonemes = {
     vowel: false,
   },
   "unvoiced-th": {
+    value: "th",
     name: "unvoiced-th",
     letter: "Th (unvoiced)",
     examples: ["think", "with"],
@@ -245,6 +259,7 @@ const phonemes = {
     vowel: false,
   },
   "silent-e": {
+    value: "e",
     name: "silent-e",
     letter: "E (silent)",
     examples: ["make", "hide"],
@@ -253,6 +268,7 @@ const phonemes = {
     silent: true,
   },
   "long-a": {
+    value: "a",
     name: "long-a",
     letter: "A (long)",
     examples: ["make", "ate"],
@@ -260,6 +276,7 @@ const phonemes = {
     vowel: true,
   },
   "long-i": {
+    value: "i",
     name: "long-i",
     letter: "I (long)",
     examples: ["mine", "ides"],
@@ -267,6 +284,7 @@ const phonemes = {
     vowel: true,
   },
   "long-u": {
+    value: "u",
     name: "long-u",
     letter: "U (long)",
     examples: ["tube", "cube"],
@@ -274,6 +292,7 @@ const phonemes = {
     vowel: true,
   },
   "long-y": {
+    value: "y",
     name: "long-y",
     letter: "Y (long)",
     examples: ["by", "fly"],
@@ -281,6 +300,7 @@ const phonemes = {
     vowel: true,
   },
   "silent-y": {
+    value: "y",
     name: "silent-y",
     letter: "Y (silent)",
     examples: ["say", "away"],
@@ -295,12 +315,14 @@ const phonemes = {
     image: "https://s7.gifyu.com/images/phoneme-wh.png",
   },
   "intermediate-o": {
+    value: "o",
     name: "intermediate-o",
     letter: "O (intermediate)",
     examples: ["cost", "toss"],
     image: "https://s1.gifyu.com/images/intermediate-o.png",
   },
   "double-s": {
+    value: "ss",
     name: "double-s",
     letter: "S (doubled)",
     examples: ["mess", "moss"],

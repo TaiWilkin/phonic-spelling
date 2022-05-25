@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Wrap, WrapItem, Tooltip, Input } from "@chakra-ui/react";
 import Key from "./Key";
-
+import { filterValue } from "../util";
 const Keyboard = ({
   keys,
   handleKeyPress,
@@ -10,7 +10,7 @@ const Keyboard = ({
 }) => {
   const [filter, setFilter] = useState("");
   const keySize = Math.round(75 / (keys.length / 9));
-  const filteredKeys = keys.filter((k) => k.includes(filter));
+  const filteredKeys = keys.filter((k) => filterValue(k, filter));
 
   const onKeyPress = (name) => {
     handleKeyPress(name);
