@@ -328,6 +328,7 @@ const stems = {
     image: "https://s7.gifyu.com/images/stem-ose.png",
   },
   "ose-hard": {
+    value: "ose",
     letters: ["long-o", "hard-s", "silent-e"],
     image: "https://s8.gifyu.com/images/stem-ose.png",
   },
