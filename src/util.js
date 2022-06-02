@@ -40,17 +40,21 @@ export const letterDescription = (name) => {
     .join(" and ")}`;
 };
 
-const reverseString = (str) => str.split("").reverse().join("");
+const phonemeValue = (p) => phonemes[p]?.value || p;
+const stemValue = (s) => stems[s]?.value || s;
 
-const comparePhonemes = (a, b) => {
-  if (reverseString(a) < reverseString(b)) {
+const compareValues = (a, b) => {
+  if (a < b) {
     return -1;
   }
-  if (reverseString(a) > reverseString(b)) {
+  if (a > b) {
     return 1;
   }
   return 0;
 };
+
+const comparePhonemes = (a, b) =>
+  compareValues(phonemeValue(a), phonemeValue(b));
 
 export const calculateScore = ({
   incorrectAnswers = [],
@@ -92,7 +96,5 @@ const dateFormat = "M/d/yy h:mm aaa";
 export const formatDate = (date) => format(date, dateFormat);
 export const parseDate = (date) => parse(date, dateFormat, new Date());
 
-const phonemeValue = (p) => phonemes[p]?.value || p;
-const stemValue = (s) => stems[s]?.value || s;
 export const filterValue = (v, filter) =>
   stems[v] ? stemValue(v).includes(filter) : phonemeValue(v).includes(filter);
