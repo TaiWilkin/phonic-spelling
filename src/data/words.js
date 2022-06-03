@@ -1678,6 +1678,72 @@ const words = {
   trust: {
     letters: ["t", "r", "short-u", "s", "t"],
   },
+  cash: {
+    letters: ["hard-c", "short-a", "sh"],
+  },
+  dash: {
+    letters: ["d", "short-a", "sh"],
+  },
+  fish: {
+    letters: ["f", "short-i", "sh"],
+  },
+  wish: {
+    letters: ["w", "short-i", "sh"],
+  },
+  fresh: {
+    letters: ["f", "r", "short-e", "sh"],
+  },
+  flesh: {
+    letters: ["f", "l", "short-e", "sh"],
+  },
+  rush: {
+    letters: ["r", "short-u", "sh"],
+  },
+  brush: {
+    letters: ["b", "r", "short-u", "sh"],
+  },
+  dish: {
+    letters: ["d", "short-i", "sh"],
+  },
+  flash: {
+    letters: ["f", "l", "short-a", "sh"],
+  },
+  crush: {
+    letters: ["hard-c", "r", "short-u", "sh"],
+  },
+  smash: {
+    letters: ["s", "m", "short-a", "sh"],
+  },
+  sash: {
+    letters: ["s", "short-a", "sh"],
+  },
+  mesh: {
+    letters: ["m", "short-e", "sh"],
+  },
+  blush: {
+    letters: ["b", "l", "short-u", "sh"],
+  },
+  splash: {
+    letters: ["s", "p", "l", "short-a", "sh"],
+  },
+  stake: {
+    letters: ["s", "t", "long-a", "k", "silent-e"],
+  },
+  chime: {
+    letters: ["ch", "long-i", "m", "silent-e"],
+  },
+  chose: {
+    letters: ["ch", "long-o", "hard-s", "silent-e"],
+  },
+  chess: {
+    letters: ["ch", "short-e", "s", "s"],
+  },
+  vest: {
+    letters: ["v", "short-e", "s", "t"],
+  },
+  vote: {
+    letters: ["v", "long-o", "t", "silent-e"],
+  },
 };
 
 export default words;
