@@ -1744,6 +1744,85 @@ const words = {
   vote: {
     letters: ["v", "long-o", "t", "silent-e"],
   },
+  shine: {
+    letters: ["sh", "long-i", "n", "silent-e"],
+  },
+  shade: {
+    letters: ["sh", "long-a", "d", "silent-e"],
+  },
+  prime: {
+    letters: ["p", "r", "long-i", "m", "silent-e"],
+  },
+  shad: {
+    letters: ["sh", "short-a", "d"],
+    sentence: "A shad is a herring-like fish.",
+  },
+  tripe: {
+    letters: ["t", "r", "long-i", "p", "silent-e"],
+  },
+  prim: {
+    letters: ["p", "r", "short-i", "m"],
+  },
+  plane: {
+    letters: ["p", "l", "long-a", "n", "silent-e"],
+    sentence: "You will take a plane to Hawaii.",
+  },
+  shame: {
+    letters: ["sh", "long-a", "m", "silent-e"],
+  },
+  quite: {
+    letters: ["qu", "long-i", "t", "silent-e"],
+  },
+  glade: {
+    letters: ["g", "l", "long-a", "d", "silent-e"],
+  },
+  slope: {
+    letters: ["s", "l", "long-o", "p", "silent-e"],
+  },
+  twine: {
+    letters: ["t", "w", "long-i", "n", "silent-e"],
+  },
+  stripe: {
+    letters: ["s", "t", "r", "long-i", "p", "silent-e"],
+  },
+  scrape: {
+    letters: ["s", "hard-c", "r", "long-a", "p", "silent-e"],
+  },
+  slat: {
+    letters: ["s", "l", "short-a", "t"],
+  },
+  grim: {
+    letters: ["g", "r", "short-i", "m"],
+  },
+  sham: {
+    letters: ["sh", "short-a", "m"],
+  },
+  twin: {
+    letters: ["t", "w", "short-i", "n"],
+  },
+  wit: {
+    letters: ["w", "short-i", "t"],
+  },
+  drake: {
+    letters: ["d", "r", "long-a", "k", "silent-e"],
+    sentence: "A drake is a male duck.",
+  },
+  drill: {
+    letters: ["d", "r", "short-i", "l", "l"],
+  },
+  lime: {
+    letters: ["l", "long-i", "m", "silent-e"],
+  },
+  sand: {
+    letters: ["s", "short-a", "n", "d"],
+  },
+  send: {
+    letters: ["s", "short-e", "n", "d"],
+  },
+  sent: {
+    letters: ["s", "short-e", "n", "t"],
+    sentence: "He sent a letter.",
+  },
 };
 
 export default words;
