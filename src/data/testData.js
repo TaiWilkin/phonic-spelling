@@ -67,6 +67,34 @@ const testData = () => {
       }
     });
   });
+
+  Object.keys(words).forEach((word) => {
+    if (!words[word].letters) {
+      console.warn(`Word ${word} has no letters`);
+    } else {
+      words[word].letters.forEach((l) => {
+        if (!phonemes[l]) {
+          console.warn(
+            `Word ${word} includes phoneme ${l} but this phoneme is undefined`
+          );
+        }
+      });
+    }
+  });
+
+  Object.keys(stems).forEach((stem) => {
+    if (!stems[stem].letters) {
+      console.warn(`Stem ${stem} has no letters`);
+    } else {
+      stems[stem].letters.forEach((l) => {
+        if (!phonemes[l]) {
+          console.warn(
+            `Stem ${stem} includes phoneme ${l} but this phoneme is undefined`
+          );
+        }
+      });
+    }
+  });
 };
 
 testData();

@@ -1224,7 +1224,7 @@ const words = {
   fine: { letters: ["f", "long-i", "n", "silent-e"] },
   spite: { letters: ["s", "p", "long-i", "t", "silent-e"] },
   mad: { letters: ["m", "short-a", "d"] },
-  cut: { letters: ["c", "short-u", "t"] },
+  cut: { letters: ["hard-c", "short-u", "t"] },
   slid: {
     letters: ["s", "l", "short-i", "d"],
     sentence: "He slid down the muddy bank.",
@@ -1339,7 +1339,7 @@ const words = {
     letters: ["d", "r", "long-i", "v", "silent-e"],
   },
   cove: {
-    letters: ["c", "long-o", "v", "silent-e"],
+    letters: ["hard-c", "long-o", "v", "silent-e"],
   },
   rove: {
     letters: ["r", "long-o", "v", "silent-e"],
@@ -1348,10 +1348,10 @@ const words = {
     letters: ["d", "r", "long-o", "v", "silent-e"],
   },
   clove: {
-    letters: ["c", "l", "long-o", "v", "silent-e"],
+    letters: ["hard-c", "l", "long-o", "v", "silent-e"],
   },
   cone: {
-    letters: ["c", "long-o", "n", "silent-e"],
+    letters: ["hard-c", "long-o", "n", "silent-e"],
   },
   tone: {
     letters: ["t", "long-o", "n", "silent-e"],
@@ -1444,7 +1444,7 @@ const words = {
     letters: ["g", "r", "long-a", "v", "silent-e"],
   },
   scrap: {
-    letters: ["s", "hard-c", "r", "a", "p"],
+    letters: ["s", "hard-c", "r", "short-a", "p"],
   },
   skate: {
     letters: ["s", "k", "long-a", "t", "silent-e"],
@@ -1677,6 +1677,279 @@ const words = {
   },
   trust: {
     letters: ["t", "r", "short-u", "s", "t"],
+  },
+  cash: {
+    letters: ["hard-c", "short-a", "sh"],
+  },
+  dash: {
+    letters: ["d", "short-a", "sh"],
+  },
+  fish: {
+    letters: ["f", "short-i", "sh"],
+  },
+  wish: {
+    letters: ["w", "short-i", "sh"],
+  },
+  fresh: {
+    letters: ["f", "r", "short-e", "sh"],
+  },
+  flesh: {
+    letters: ["f", "l", "short-e", "sh"],
+  },
+  rush: {
+    letters: ["r", "short-u", "sh"],
+  },
+  brush: {
+    letters: ["b", "r", "short-u", "sh"],
+  },
+  dish: {
+    letters: ["d", "short-i", "sh"],
+  },
+  flash: {
+    letters: ["f", "l", "short-a", "sh"],
+  },
+  crush: {
+    letters: ["hard-c", "r", "short-u", "sh"],
+  },
+  smash: {
+    letters: ["s", "m", "short-a", "sh"],
+  },
+  sash: {
+    letters: ["s", "short-a", "sh"],
+  },
+  mesh: {
+    letters: ["m", "short-e", "sh"],
+  },
+  blush: {
+    letters: ["b", "l", "short-u", "sh"],
+  },
+  splash: {
+    letters: ["s", "p", "l", "short-a", "sh"],
+  },
+  stake: {
+    letters: ["s", "t", "long-a", "k", "silent-e"],
+  },
+  chime: {
+    letters: ["ch", "long-i", "m", "silent-e"],
+  },
+  chose: {
+    letters: ["ch", "long-o", "hard-s", "silent-e"],
+  },
+  chess: {
+    letters: ["ch", "short-e", "s", "s"],
+  },
+  vest: {
+    letters: ["v", "short-e", "s", "t"],
+  },
+  vote: {
+    letters: ["v", "long-o", "t", "silent-e"],
+  },
+  shine: {
+    letters: ["sh", "long-i", "n", "silent-e"],
+  },
+  shade: {
+    letters: ["sh", "long-a", "d", "silent-e"],
+  },
+  prime: {
+    letters: ["p", "r", "long-i", "m", "silent-e"],
+  },
+  shad: {
+    letters: ["sh", "short-a", "d"],
+    sentence: "A shad is a herring-like fish.",
+  },
+  tripe: {
+    letters: ["t", "r", "long-i", "p", "silent-e"],
+  },
+  prim: {
+    letters: ["p", "r", "short-i", "m"],
+  },
+  plane: {
+    letters: ["p", "l", "long-a", "n", "silent-e"],
+    sentence: "You will take a plane to Hawaii.",
+  },
+  shame: {
+    letters: ["sh", "long-a", "m", "silent-e"],
+  },
+  quite: {
+    letters: ["qu", "long-i", "t", "silent-e"],
+  },
+  glade: {
+    letters: ["g", "l", "long-a", "d", "silent-e"],
+  },
+  slope: {
+    letters: ["s", "l", "long-o", "p", "silent-e"],
+  },
+  twine: {
+    letters: ["t", "w", "long-i", "n", "silent-e"],
+  },
+  stripe: {
+    letters: ["s", "t", "r", "long-i", "p", "silent-e"],
+  },
+  scrape: {
+    letters: ["s", "hard-c", "r", "long-a", "p", "silent-e"],
+  },
+  slat: {
+    letters: ["s", "l", "short-a", "t"],
+  },
+  grim: {
+    letters: ["g", "r", "short-i", "m"],
+  },
+  sham: {
+    letters: ["sh", "short-a", "m"],
+  },
+  twin: {
+    letters: ["t", "w", "short-i", "n"],
+  },
+  wit: {
+    letters: ["w", "short-i", "t"],
+  },
+  drake: {
+    letters: ["d", "r", "long-a", "k", "silent-e"],
+    sentence: "A drake is a male duck.",
+  },
+  drill: {
+    letters: ["d", "r", "short-i", "l", "l"],
+  },
+  lime: {
+    letters: ["l", "long-i", "m", "silent-e"],
+  },
+  sand: {
+    letters: ["s", "short-a", "n", "d"],
+  },
+  send: {
+    letters: ["s", "short-e", "n", "d"],
+  },
+  sent: {
+    letters: ["s", "short-e", "n", "t"],
+    sentence: "He sent a letter.",
+  },
+  hold: {
+    letters: ["h", "long-o", "l", "d"],
+    sentence: "Would you like to hold the doll?",
+  },
+  gilt: {
+    letters: ["g", "short-i", "l", "t"],
+    sentence: "The clock was decorated with gilt.",
+  },
+  sold: {
+    letters: ["s", "long-o", "l", "d"],
+    sentence: "He sold the cat to a young woman.",
+  },
+  told: {
+    letters: ["t", "long-o", "l", "d"],
+    told: "How many times have I told you to close the door?",
+  },
+  fold: {
+    letters: ["f", "long-o", "l", "d"],
+    sentence: "Please fold your laundry neatly.",
+  },
+  gold: {
+    letters: ["g", "long-o", "l", "d"],
+  },
+  wilt: {
+    letters: ["w", "short-i", "l", "t"],
+  },
+  tilt: {
+    letters: ["t", "short-i", "l", "t"],
+  },
+  stilt: {
+    letters: ["s", "t", "short-i", "l", "t"],
+  },
+  colt: {
+    letters: ["hard-c", "long-o", "l", "t"],
+  },
+  bolt: {
+    letters: ["b", "long-o", "l", "t"],
+  },
+  jolt: {
+    letters: ["j", "long-o", "l", "t"],
+  },
+  belt: {
+    letters: ["b", "short-e", "l", "t"],
+  },
+  melt: {
+    letters: ["m", "short-e", "l", "t"],
+  },
+  felt: {
+    letters: ["f", "short-e", "l", "t"],
+  },
+  smelt: {
+    letters: ["s", "m", "short-e", "l", "t"],
+  },
+  job: {
+    letters: ["j", "short-o", "b"],
+  },
+  clip: {
+    letters: ["hard-c", "l", "short-i", "p"],
+  },
+  cop: {
+    letters: ["hard-c", "short-o", "p"],
+  },
+  hush: {
+    letters: ["h", "short-u", "sh"],
+  },
+  land: {
+    letters: ["l", "short-a", "n", "d"],
+  },
+  lend: {
+    letters: ["l", "short-e", "n", "d"],
+  },
+  went: {
+    letters: ["w", "short-e", "n", "t"],
+  },
+  less: {
+    letters: ["l", "short-e", "s", "s"],
+  },
+  scold: {
+    letters: ["s", "hard-c", "long-o", "l", "d"],
+  },
+  slant: {
+    letters: ["s", "l", "short-a", "n", "t"],
+  },
+  pride: {
+    letters: ["p", "r", "long-i", "d", "silent-e"],
+  },
+  mind: {
+    letters: ["m", "long-i", "n", "d"],
+  },
+  molt: {
+    letters: ["m", "long-o", "l", "t"],
+  },
+  slush: {
+    letters: ["s", "l", "short-u", "sh"],
+  },
+  thrash: {
+    letters: ["unvoiced-th", "r", "short-a", "sh"],
+  },
+  thrust: {
+    letters: ["unvoiced-th", "r", "short-u", "s", "t"],
+  },
+  bond: {
+    letters: ["b", "short-o", "n", "d"],
+  },
+  hint: {
+    letters: ["h", "short-i", "n", "t"],
+  },
+  blunt: {
+    letters: ["b", "l", "short-u", "n", "t"],
+  },
+  swam: {
+    letters: ["s", "w", "short-a", "m"],
+  },
+  swill: {
+    letters: ["s", "w", "short-i", "l", "l"],
+  },
+  test: {
+    letters: ["t", "short-e", "s", "t"],
+  },
+  tent: {
+    letters: ["t", "short-e", "n", "t"],
+  },
+  tint: {
+    letters: ["t", "short-i", "n", "t"],
+  },
+  pad: {
+    letters: ["p", "short-a", "d"],
   },
 };
 
