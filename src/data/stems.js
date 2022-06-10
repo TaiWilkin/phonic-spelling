@@ -324,7 +324,7 @@ const stems = {
     image: "https://s7.gifyu.com/images/stem-ite.png",
   },
   ose: {
-    letters: ["long-o", "soft-s", "silent-e"],
+    letters: ["long-o", "s", "silent-e"],
     image: "https://s7.gifyu.com/images/stem-ose.png",
   },
   "ose-hard": {
@@ -480,6 +480,30 @@ const stems = {
   ush: {
     letters: ["short-u", "sh"],
     image: "https://s8.gifyu.com/images/stem-ush.png",
+  },
+  lt: {
+    letters: ["l", "t"],
+    image: "https://s8.gifyu.com/images/stem-lt.png",
+  },
+  ilt: {
+    letters: ["short-i", "l", "t"],
+    image: "https://s8.gifyu.com/images/stem-ilt.png",
+  },
+  elt: {
+    letters: ["short-e", "l", "t"],
+    image: "https://s8.gifyu.com/images/stem-elt.png",
+  },
+  ld: {
+    letters: ["l", "d"],
+    image: "https://s8.gifyu.com/images/stem-ld.png",
+  },
+  old: {
+    letters: ["long-o", "l", "d"],
+    image: "https://s8.gifyu.com/images/stem-old.png",
+  },
+  olt: {
+    letters: ["long-o", "l", "t"],
+    image: "https://s8.gifyu.com/images/stem-olt.png",
   },
 };
 
