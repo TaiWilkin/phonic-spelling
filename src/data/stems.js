@@ -505,6 +505,42 @@ const stems = {
     letters: ["long-o", "l", "t"],
     image: "https://s8.gifyu.com/images/stem-olt.png",
   },
+  nk: {
+    letters: ["nasal-n", "k"],
+    image: "https://s8.gifyu.com/images/stem-nk.png",
+  },
+  ank: {
+    letters: ["short-a", "nasal-n", "k"],
+    image: "https://s8.gifyu.com/images/stem-ank.png",
+  },
+  unk: {
+    letters: ["short-u", "nasal-n", "k"],
+    image: "https://s8.gifyu.com/images/stem-unk.png",
+  },
+  ink: {
+    letters: ["short-i", "nasal-n", "k"],
+    image: "https://s8.gifyu.com/images/stem-ink.png",
+  },
+  ng: {
+    letters: ["nasal-n", "silent-g"],
+    image: "https://s8.gifyu.com/images/stem-ng.png",
+  },
+  ang: {
+    letters: ["short-a", "nasal-n", "silent-g"],
+    image: "https://s8.gifyu.com/images/stem-ang.png",
+  },
+  ung: {
+    letters: ["short-u", "nasal-n", "silent-g"],
+    image: "https://s8.gifyu.com/images/stem-ung.png",
+  },
+  ong: {
+    letters: ["intermediate-o", "nasal-n", "silent-g"],
+    image: "https://s8.gifyu.com/images/stem-ong.png",
+  },
+  ing: {
+    letters: ["short-i", "nasal-n", "silent-g"],
+    image: "https://s8.gifyu.com/images/stem-ing.png",
+  },
 };
 
 export default stems;

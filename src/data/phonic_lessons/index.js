@@ -33,6 +33,7 @@ import thirtynine from "./39";
 import forty from "./40";
 import fortyone from "./41";
 import fortytwo from "./42";
+import fortythree from "./43";
 
 const lessons = {
   1: {
@@ -359,6 +360,7 @@ const lessons = {
   40: forty,
   41: fortyone,
   42: fortytwo,
+  43: fortythree,
 };
 
 export default lessons;

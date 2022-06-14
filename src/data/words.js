@@ -1951,6 +1951,78 @@ const words = {
   pad: {
     letters: ["p", "short-a", "d"],
   },
+  bank: {
+    letters: ["b", "short-a", "nasal-n", "k"],
+  },
+  thank: {
+    letters: ["unvoiced-th", "short-a", "nasal-n", "k"],
+  },
+  think: {
+    letters: ["unvoiced-th", "short-i", "nasal-n", "k"],
+  },
+  drink: {
+    letters: ["d", "r", "short-i", "nasal-n", "k"],
+  },
+  rang: {
+    letters: ["r", "short-a", "nasal-n", "silent-g"],
+  },
+  hang: {
+    letters: ["h", "short-a", "nasal-n", "silent-g"],
+  },
+  ring: {
+    letters: ["r", "short-i", "nasal-n", "silent-g"],
+  },
+  bring: {
+    letters: ["b", "r", "short-i", "nasal-n", "silent-g"],
+  },
+  rung: {
+    letters: ["r", "short-u", "nasal-n", "silent-g"],
+  },
+  hung: {
+    letters: ["h", "short-u", "nasal-n", "silent-g"],
+  },
+  junk: {
+    letters: ["j", "short-u", "nasal-n", "k"],
+  },
+  chunk: {
+    letters: ["ch", "short-u", "nasal-n", "k"],
+  },
+  trunk: {
+    letters: ["t", "r", "short-u", "nasal-n", "k"],
+  },
+  song: {
+    letters: ["s", "intermediate-o", "nasal-n", "silent-g"],
+  },
+  strong: {
+    letters: ["s", "t", "r", "intermediate-o", "nasal-n", "silent-g"],
+  },
+  sting: {
+    letters: ["s", "t", "short-i", "nasal-n", "silent-g"],
+  },
+  grand: {
+    letters: ["g", "r", "short-a", "n", "d"],
+  },
+  grind: {
+    letters: ["g", "r", "long-i", "n", "d"],
+  },
+  grist: {
+    letters: ["g", "r", "long-i", "s", "t"],
+  },
+  cram: {
+    letters: ["hard-c", "r", "short-a", "m"],
+  },
+  crape: {
+    letters: ["hard-c", "r", "long-a", "p", "silent-e"],
+  },
+  mash: {
+    letters: ["m", "short-a", "sh"],
+  },
+  much: {
+    letters: ["m", "short-u", "ch"],
+  },
+  fed: {
+    letters: ["f", "short-e", "d"],
+  },
 };
 
 export default words;
