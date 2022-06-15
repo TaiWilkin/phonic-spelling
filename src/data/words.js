@@ -2023,6 +2023,60 @@ const words = {
   fed: {
     letters: ["f", "short-e", "d"],
   },
+  damp: {
+    letters: ["d", "short-a", "m", "p"],
+  },
+  dump: {
+    letters: ["d", "short-u", "m", "p"],
+  },
+  lump: {
+    letters: ["l", "short-u", "m", "p"],
+  },
+  limp: {
+    letters: ["l", "short-i", "m", "p"],
+  },
+  crimp: {
+    letters: ["hard-c", "r", "short-i", "m", "p"],
+  },
+  camp: {
+    letters: ["hard-c", "short-a", "m", "p"],
+  },
+  scamp: {
+    letters: ["s", "hard-c", "short-a", "m", "p"],
+  },
+  jump: {
+    letters: ["j", "short-u", "m", "p"],
+  },
+  pump: {
+    letters: ["p", "short-u", "m", "p"],
+  },
+  stump: {
+    letters: ["s", "t", "short-u", "m", "p"],
+  },
+  stamp: {
+    letters: ["s", "t", "short-a", "m", "p"],
+  },
+  romp: {
+    letters: ["r", "short-o", "m", "p"],
+  },
+  pomp: {
+    letters: ["p", "short-o", "m", "p"],
+  },
+  hemp: {
+    letters: ["h", "short-e", "m", "p"],
+  },
+  tramp: {
+    letters: ["t", "r", "short-a", "m", "p"],
+  },
+  bind: {
+    letters: ["b", "long-i", "n", "d"],
+  },
+  kind: {
+    letters: ["k", "long-i", "n", "d"],
+  },
+  mold: {
+    letters: ["m", "long-o", "l", "d"],
+  },
 };
 
 export default words;
