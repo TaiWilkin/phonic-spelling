@@ -2077,6 +2077,75 @@ const words = {
   mold: {
     letters: ["m", "long-o", "l", "d"],
   },
+  neck: {
+    letters: ["n", "short-e", "silent-c", "k"],
+  },
+  peck: {
+    letters: ["p", "short-e", "silent-c", "k"],
+  },
+  pack: {
+    letters: ["p", "short-a", "silent-c", "k"],
+  },
+  speck: {
+    letters: ["s", "p", "short-e", "silent-c", "k"],
+  },
+  black: {
+    letters: ["b", "l", "short-a", "silent-c", "k"],
+  },
+  crack: {
+    letters: ["hard-c", "r", "short-a", "silent-c", "k"],
+  },
+  lock: {
+    letters: ["l", "short-o", "silent-c", "k"],
+  },
+  rock: {
+    letters: ["r", "short-o", "silent-c", "k"],
+  },
+  clock: {
+    letters: ["hard-c", "l", "short-o", "silent-c", "k"],
+  },
+  block: {
+    letters: ["b", "l", "short-o", "silent-c", "k"],
+  },
+  pick: {
+    letters: ["p", "short-i", "silent-c", "k"],
+  },
+  stick: {
+    letters: ["s", "t", "short-i", "silent-c", "k"],
+  },
+  trick: {
+    letters: ["t", "r", "short-i", "silent-c", "k"],
+  },
+  thick: {
+    letters: ["unvoiced-th", "short-i", "silent-c", "k"],
+  },
+  duck: {
+    letters: ["d", "short-u", "silent-c", "k"],
+  },
+  truck: {
+    letters: ["t", "r", "short-u", "silent-c", "k"],
+  },
+  wing: {
+    letters: ["w", "short-i", "nasal-n", "silent-g"],
+  },
+  stung: {
+    letters: ["s", "t", "short-u", "nasal-n", "silent-g"],
+  },
+  sink: {
+    letters: ["s", "short-i", "nasal-n", "k"],
+  },
+  sank: {
+    letters: ["s", "short-a", "nasal-n", "k"],
+  },
+  sunk: {
+    letters: ["s", "short-u", "nasal-n", "k"],
+  },
+  smile: {
+    letters: ["s", "m", "long-i", "l", "silent-e"],
+  },
+  small: {
+    letters: ["s", "m", "open-a", "l", "l"],
+  },
 };
 
 export default words;

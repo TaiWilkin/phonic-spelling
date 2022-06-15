@@ -346,6 +346,16 @@ const phonemes = {
     examples: ["ring", "sign"],
     image: "https://s8.gifyu.com/images/phoneme-silent-g.png",
     vowel: false,
+    silent: true,
+  },
+  "silent-c": {
+    value: "c",
+    name: "silent-c",
+    letter: "C (silent)",
+    examples: ["duck", "sick"],
+    image: "https://s8.gifyu.com/images/phoneme-silent-c.png",
+    vowel: false,
+    silent: true,
   },
 };
 
