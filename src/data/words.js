@@ -2191,6 +2191,61 @@ const words = {
   tag: {
     letters: ["t", "short-a", "g"],
   },
+  feed: {
+    letters: ["f", "long-e", "silent-e", "d"],
+  },
+  tree: {
+    letters: ["t", "r", "long-e", "silent-e"],
+  },
+  seem: {
+    letters: ["s", "long-e", "silent-e", "m"],
+    sentence: "You seem hungry.",
+  },
+  beef: {
+    letters: ["b", "long-e", "silent-e", "f"],
+  },
+  free: {
+    letters: ["f", "r", "long-e", "silent-e"],
+  },
+  week: {
+    letters: ["w", "long-e", "silent-e", "k"],
+  },
+  seen: {
+    letters: ["s", "long-e", "silent-e", "n"],
+  },
+  sleep: {
+    letters: ["s", "l", "long-e", "silent-e", "p"],
+  },
+  moo: {
+    letters: ["m", "double-o"],
+  },
+  boot: {
+    letters: ["b", "double-o", "t"],
+  },
+  roof: {
+    letters: ["r", "double-o", "f"],
+  },
+  soon: {
+    letters: ["s", "double-o", "n"],
+  },
+  hoop: {
+    letters: ["h", "double-o", "p"],
+  },
+  stool: {
+    letters: ["s", "t", "double-o", "l"],
+  },
+  room: {
+    letters: ["r", "double-o", "m"],
+  },
+  stoop: {
+    letters: ["s", "t", "double-o", "p"],
+  },
+  sky: {
+    letters: ["s", "k", "long-y"],
+  },
+  skill: {
+    letters: ["s", "k", "short-i", "l", "l"],
+  },
 };
 
 export default words;

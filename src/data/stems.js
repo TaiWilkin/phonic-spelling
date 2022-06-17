@@ -589,6 +589,58 @@ const stems = {
     letters: ["short-u", "silent-c", "k"],
     image: "https://s8.gifyu.com/images/stem-uck.png",
   },
+  ee: {
+    letters: ["long-e", "silent-e"],
+    image: "https://s8.gifyu.com/images/stem-ee.png",
+  },
+  oot: {
+    letters: ["double-o", "t"],
+    image: "https://s8.gifyu.com/images/stem-oot.png",
+  },
+  eed: {
+    letters: ["long-e", "silent-e", "d"],
+    image: "https://s8.gifyu.com/images/stem-eed.png",
+  },
+  oof: {
+    letters: ["double-o", "f"],
+    image: "https://s8.gifyu.com/images/stem-oof.png",
+  },
+  eem: {
+    letters: ["long-e", "silent-e", "m"],
+    image: "https://s8.gifyu.com/images/stem-eem.png",
+  },
+  oon: {
+    letters: ["double-o", "n"],
+    image: "https://s8.gifyu.com/images/stem-oon.png",
+  },
+  eef: {
+    letters: ["long-e", "silent-e", "f"],
+    image: "https://s8.gifyu.com/images/stem-eef.png",
+  },
+  oop: {
+    letters: ["double-o", "p"],
+    image: "https://s8.gifyu.com/images/stem-oop.png",
+  },
+  eek: {
+    letters: ["long-e", "silent-e", "k"],
+    image: "https://s8.gifyu.com/images/stem-eek.png",
+  },
+  ool: {
+    letters: ["double-o", "l"],
+    image: "https://s8.gifyu.com/images/stem-ool.png",
+  },
+  oom: {
+    letters: ["double-o", "m"],
+    image: "https://s8.gifyu.com/images/stem-oom.png",
+  },
+  een: {
+    letters: ["long-e", "silent-e", "n"],
+    image: "https://s8.gifyu.com/images/stem-een.png",
+  },
+  eep: {
+    letters: ["long-e", "silent-e", "p"],
+    image: "https://s8.gifyu.com/images/stem-eep.png",
+  },
 };
 
 export default stems;

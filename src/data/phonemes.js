@@ -366,6 +366,15 @@ const phonemes = {
     vowel: false,
     silent: true,
   },
+  "double-o": {
+    value: "oo",
+    name: "double-o",
+    letter: "O (double)",
+    examples: ["roof", "soon"],
+    image: "https://s8.gifyu.com/images/phoneme-oo.png",
+    vowel: true,
+    silent: false,
+  },
 };
 
 export default phonemes;
