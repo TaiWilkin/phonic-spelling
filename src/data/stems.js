@@ -505,6 +505,90 @@ const stems = {
     letters: ["long-o", "l", "t"],
     image: "https://s8.gifyu.com/images/stem-olt.png",
   },
+  nk: {
+    letters: ["nasal-n", "k"],
+    image: "https://s8.gifyu.com/images/stem-nk.png",
+  },
+  ank: {
+    letters: ["short-a", "nasal-n", "k"],
+    image: "https://s8.gifyu.com/images/stem-ank.png",
+  },
+  unk: {
+    letters: ["short-u", "nasal-n", "k"],
+    image: "https://s8.gifyu.com/images/stem-unk.png",
+  },
+  ink: {
+    letters: ["short-i", "nasal-n", "k"],
+    image: "https://s8.gifyu.com/images/stem-ink.png",
+  },
+  ng: {
+    letters: ["nasal-n", "silent-g"],
+    image: "https://s8.gifyu.com/images/stem-ng.png",
+  },
+  ang: {
+    letters: ["short-a", "nasal-n", "silent-g"],
+    image: "https://s8.gifyu.com/images/stem-ang.png",
+  },
+  ung: {
+    letters: ["short-u", "nasal-n", "silent-g"],
+    image: "https://s8.gifyu.com/images/stem-ung.png",
+  },
+  ong: {
+    letters: ["intermediate-o", "nasal-n", "silent-g"],
+    image: "https://s8.gifyu.com/images/stem-ong.png",
+  },
+  ing: {
+    letters: ["short-i", "nasal-n", "silent-g"],
+    image: "https://s8.gifyu.com/images/stem-ing.png",
+  },
+  mp: {
+    letters: ["m", "p"],
+    image: "https://s8.gifyu.com/images/stem-mp.png",
+  },
+  amp: {
+    letters: ["short-a", "m", "p"],
+    image: "https://s8.gifyu.com/images/stem-amp.png",
+  },
+  ump: {
+    letters: ["short-u", "m", "p"],
+    image: "https://s8.gifyu.com/images/stem-ump.png",
+  },
+  imp: {
+    letters: ["short-i", "m", "p"],
+    image: "https://s8.gifyu.com/images/stem-imp.png",
+  },
+  omp: {
+    letters: ["short-o", "m", "p"],
+    image: "https://s8.gifyu.com/images/stem-omp.png",
+  },
+  emp: {
+    letters: ["short-e", "m", "p"],
+    image: "https://s8.gifyu.com/images/stem-emp.png",
+  },
+  ck: {
+    letters: ["silent-c", "k"],
+    image: "https://s8.gifyu.com/images/stem-ck.png",
+  },
+  ick: {
+    letters: ["short-i", "silent-c", "k"],
+    image: "https://s8.gifyu.com/images/stem-ick.png",
+  },
+  ack: {
+    letters: ["short-a", "silent-c", "k"],
+    image: "https://s8.gifyu.com/images/stem-ack.png",
+  },
+  eck: {
+    letters: ["short-e", "silent-c", "k"],
+    image: "https://s8.gifyu.com/images/stem-eck.png",
+  },
+  ock: {
+    letters: ["short-o", "silent-c", "k"],
+    image: "https://s8.gifyu.com/images/stem-ock.png",
+  },
+  uck: {
+    letters: ["short-u", "silent-c", "k"],
+    image: "https://s8.gifyu.com/images/stem-uck.png",
+  },
 };
 
 export default stems;

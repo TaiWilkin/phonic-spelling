@@ -319,6 +319,7 @@ const phonemes = {
     name: "intermediate-o",
     letter: "O (intermediate)",
     examples: ["cost", "toss"],
+    vowel: true,
     image: "https://s1.gifyu.com/images/intermediate-o.png",
   },
   "double-s": {
@@ -329,6 +330,32 @@ const phonemes = {
     image: "https://s1.gifyu.com/images/stem-ss.png",
     vowel: false,
     alt: ["s", "s"],
+  },
+  "nasal-n": {
+    value: "n",
+    name: "nasal-n",
+    letter: "N (nasal)",
+    examples: ["song", "thank"],
+    image: "https://s8.gifyu.com/images/phoneme-n-nasal.png",
+    vowel: false,
+  },
+  "silent-g": {
+    value: "g",
+    name: "silent-g",
+    letter: "G (silent)",
+    examples: ["ring", "sign"],
+    image: "https://s8.gifyu.com/images/phoneme-silent-g.png",
+    vowel: false,
+    silent: true,
+  },
+  "silent-c": {
+    value: "c",
+    name: "silent-c",
+    letter: "C (silent)",
+    examples: ["duck", "sick"],
+    image: "https://s8.gifyu.com/images/phoneme-silent-c.png",
+    vowel: false,
+    silent: true,
   },
 };
 

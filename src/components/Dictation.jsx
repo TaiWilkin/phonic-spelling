@@ -12,19 +12,33 @@ import {
 } from "@chakra-ui/react";
 
 import { pronounce } from "../util";
+import { content } from "../data";
 import { updateLessonAttempt } from "../reducers/lessonAttempt";
 import LessonContinueLink from "./LessonContinueLink";
 
-const getRandomSentence = (sentences = []) => {
-  return sentences[Math.floor(Math.random() * sentences.length)];
-};
+const clean = (str) => str.trim();
 
-const clean = (str) =>
-  str
-    .replace(/[^\w\s]|_/g, "")
-    .replace(/\s+/g, " ")
-    .trim()
-    .toLowerCase();
+const isLowercaseLetter = (string) => /^[a-z]*$/.test(string);
+
+const renderHiddenDictation = (d) => {
+  return (
+    <HStack spacing={0}>
+      {d.split("").map((c, i) => {
+        if (c === " ") {
+          return <Box w="5" h="5" />;
+        }
+        if (!isLowercaseLetter(c)) {
+          return (
+            <Text key={i} fontSize="lg">
+              {c}
+            </Text>
+          );
+        }
+        return <Box w="5" h="5" bg={`${content.color}.500`} />;
+      })}
+    </HStack>
+  );
+};
 
 const Dictation = ({ lesson, dictation, dictationImage }) => {
   const dispatch = useDispatch();
@@ -33,9 +47,7 @@ const Dictation = ({ lesson, dictation, dictationImage }) => {
   const [answer, setAnswer] = useState("");
   const [missedSentences, setMissedSentences] = useState([]);
   const [completedSentences, setCompletedSentences] = useState([]);
-  const [currentSentence, setCurrentSentence] = useState(
-    getRandomSentence(sentences)
-  );
+  const [currentSentence, setCurrentSentence] = useState(sentences[0]);
   const [showAnswer, setShowAnswer] = useState(false);
 
   useEffect(() => {
@@ -54,20 +66,21 @@ const Dictation = ({ lesson, dictation, dictationImage }) => {
 
   const handleSubmit = () => {
     const formattedAnswer = clean(answer);
+    const remainingSentences = sentences.filter((w) => w !== currentSentence);
     if (formattedAnswer === clean(currentSentence)) {
       if (showAnswer) {
         setShowAnswer(false);
+        setSentences([...remainingSentences, currentSentence]);
       } else {
         setCompletedSentences([...completedSentences, currentSentence]);
-        setSentences(sentences.filter((w) => w !== currentSentence));
+        setSentences(remainingSentences);
       }
-      const newSentence = getRandomSentence(
-        sentences.filter((w) => w !== currentSentence)
-      );
+      const newSentence = sentences[0];
       setCurrentSentence(newSentence);
       setAnswer("");
     } else {
       setMissedSentences([...missedSentences, currentSentence]);
+      setSentences([...remainingSentences, currentSentence]);
       setShowAnswer(true);
     }
   };
@@ -109,9 +122,12 @@ const Dictation = ({ lesson, dictation, dictationImage }) => {
       ) : null}
       <Text p="10px">
         {!showAnswer
-          ? "Type the words you hear, then click 'Submit'. If you're stuck, click 'Submit' to see the answer."
+          ? "Type the words you hear, then click 'Submit'. If you're stuck, click 'Submit' to see the answer. The text must match exactly, including capitals and punctuation."
           : "Type the words you see, then click 'Submit'."}
       </Text>
+      <Container pb={10} pt={5}>
+        {renderHiddenDictation(currentSentence)}
+      </Container>
       <Box minw="400px">
         <HStack spacing="10px" m="10px">
           <Input
@@ -128,7 +144,8 @@ const Dictation = ({ lesson, dictation, dictationImage }) => {
           <Button
             onClick={handleSubmit}
             className="basic-Button"
-            style={{ flex: 2, backgroundColor: "#04aa6d" }}
+            colorScheme={content.color}
+            style={{ flex: 2 }}
           >
             Submit
           </Button>

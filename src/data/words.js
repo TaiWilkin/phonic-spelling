@@ -1951,6 +1951,201 @@ const words = {
   pad: {
     letters: ["p", "short-a", "d"],
   },
+  bank: {
+    letters: ["b", "short-a", "nasal-n", "k"],
+  },
+  thank: {
+    letters: ["unvoiced-th", "short-a", "nasal-n", "k"],
+  },
+  think: {
+    letters: ["unvoiced-th", "short-i", "nasal-n", "k"],
+  },
+  drink: {
+    letters: ["d", "r", "short-i", "nasal-n", "k"],
+  },
+  rang: {
+    letters: ["r", "short-a", "nasal-n", "silent-g"],
+  },
+  hang: {
+    letters: ["h", "short-a", "nasal-n", "silent-g"],
+  },
+  ring: {
+    letters: ["r", "short-i", "nasal-n", "silent-g"],
+  },
+  bring: {
+    letters: ["b", "r", "short-i", "nasal-n", "silent-g"],
+  },
+  rung: {
+    letters: ["r", "short-u", "nasal-n", "silent-g"],
+  },
+  hung: {
+    letters: ["h", "short-u", "nasal-n", "silent-g"],
+  },
+  junk: {
+    letters: ["j", "short-u", "nasal-n", "k"],
+  },
+  chunk: {
+    letters: ["ch", "short-u", "nasal-n", "k"],
+  },
+  trunk: {
+    letters: ["t", "r", "short-u", "nasal-n", "k"],
+  },
+  song: {
+    letters: ["s", "intermediate-o", "nasal-n", "silent-g"],
+  },
+  strong: {
+    letters: ["s", "t", "r", "intermediate-o", "nasal-n", "silent-g"],
+  },
+  sting: {
+    letters: ["s", "t", "short-i", "nasal-n", "silent-g"],
+  },
+  grand: {
+    letters: ["g", "r", "short-a", "n", "d"],
+  },
+  grind: {
+    letters: ["g", "r", "long-i", "n", "d"],
+  },
+  grist: {
+    letters: ["g", "r", "long-i", "s", "t"],
+  },
+  cram: {
+    letters: ["hard-c", "r", "short-a", "m"],
+  },
+  crape: {
+    letters: ["hard-c", "r", "long-a", "p", "silent-e"],
+  },
+  mash: {
+    letters: ["m", "short-a", "sh"],
+  },
+  much: {
+    letters: ["m", "short-u", "ch"],
+  },
+  fed: {
+    letters: ["f", "short-e", "d"],
+  },
+  damp: {
+    letters: ["d", "short-a", "m", "p"],
+  },
+  dump: {
+    letters: ["d", "short-u", "m", "p"],
+  },
+  lump: {
+    letters: ["l", "short-u", "m", "p"],
+  },
+  limp: {
+    letters: ["l", "short-i", "m", "p"],
+  },
+  crimp: {
+    letters: ["hard-c", "r", "short-i", "m", "p"],
+  },
+  camp: {
+    letters: ["hard-c", "short-a", "m", "p"],
+  },
+  scamp: {
+    letters: ["s", "hard-c", "short-a", "m", "p"],
+  },
+  jump: {
+    letters: ["j", "short-u", "m", "p"],
+  },
+  pump: {
+    letters: ["p", "short-u", "m", "p"],
+  },
+  stump: {
+    letters: ["s", "t", "short-u", "m", "p"],
+  },
+  stamp: {
+    letters: ["s", "t", "short-a", "m", "p"],
+  },
+  romp: {
+    letters: ["r", "short-o", "m", "p"],
+  },
+  pomp: {
+    letters: ["p", "short-o", "m", "p"],
+  },
+  hemp: {
+    letters: ["h", "short-e", "m", "p"],
+  },
+  tramp: {
+    letters: ["t", "r", "short-a", "m", "p"],
+  },
+  bind: {
+    letters: ["b", "long-i", "n", "d"],
+  },
+  kind: {
+    letters: ["k", "long-i", "n", "d"],
+  },
+  mold: {
+    letters: ["m", "long-o", "l", "d"],
+  },
+  neck: {
+    letters: ["n", "short-e", "silent-c", "k"],
+  },
+  peck: {
+    letters: ["p", "short-e", "silent-c", "k"],
+  },
+  pack: {
+    letters: ["p", "short-a", "silent-c", "k"],
+  },
+  speck: {
+    letters: ["s", "p", "short-e", "silent-c", "k"],
+  },
+  black: {
+    letters: ["b", "l", "short-a", "silent-c", "k"],
+  },
+  crack: {
+    letters: ["hard-c", "r", "short-a", "silent-c", "k"],
+  },
+  lock: {
+    letters: ["l", "short-o", "silent-c", "k"],
+  },
+  rock: {
+    letters: ["r", "short-o", "silent-c", "k"],
+  },
+  clock: {
+    letters: ["hard-c", "l", "short-o", "silent-c", "k"],
+  },
+  block: {
+    letters: ["b", "l", "short-o", "silent-c", "k"],
+  },
+  pick: {
+    letters: ["p", "short-i", "silent-c", "k"],
+  },
+  stick: {
+    letters: ["s", "t", "short-i", "silent-c", "k"],
+  },
+  trick: {
+    letters: ["t", "r", "short-i", "silent-c", "k"],
+  },
+  thick: {
+    letters: ["unvoiced-th", "short-i", "silent-c", "k"],
+  },
+  duck: {
+    letters: ["d", "short-u", "silent-c", "k"],
+  },
+  truck: {
+    letters: ["t", "r", "short-u", "silent-c", "k"],
+  },
+  wing: {
+    letters: ["w", "short-i", "nasal-n", "silent-g"],
+  },
+  stung: {
+    letters: ["s", "t", "short-u", "nasal-n", "silent-g"],
+  },
+  sink: {
+    letters: ["s", "short-i", "nasal-n", "k"],
+  },
+  sank: {
+    letters: ["s", "short-a", "nasal-n", "k"],
+  },
+  sunk: {
+    letters: ["s", "short-u", "nasal-n", "k"],
+  },
+  smile: {
+    letters: ["s", "m", "long-i", "l", "silent-e"],
+  },
+  small: {
+    letters: ["s", "m", "open-a", "l", "l"],
+  },
 };
 
 export default words;
