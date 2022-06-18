@@ -2246,6 +2246,73 @@ const words = {
   skill: {
     letters: ["s", "k", "short-i", "l", "l"],
   },
+  blue: {
+    letters: ["b", "l", "u-as-oo", "silent-e"],
+  },
+  door: {
+    letters: ["d", "long-o", "silent-o", "r"],
+  },
+  glue: {
+    letters: ["g", "l", "u-as-oo", "silent-e"],
+  },
+  floor: {
+    letters: ["f", "l", "long-o", "silent-o", "r"],
+  },
+  cuff: {
+    letters: ["hard-c", "short-u", "f", "silent-f"],
+  },
+  muff: {
+    letters: ["m", "short-u", "f", "silent-f"],
+  },
+  stuff: {
+    letters: ["s", "t", "short-u", "f", "silent-f"],
+  },
+  gruff: {
+    letters: ["g", "r", "short-u", "f", "silent-f"],
+  },
+  balk: {
+    letters: ["b", "open-a", "silent-l", "k"],
+    sentence: "The horse will balk at the gate.",
+  },
+  talk: {
+    letters: ["t", "open-a", "silent-l", "k"],
+    sentence: "We will talk all night.",
+  },
+  walk: {
+    letters: ["w", "open-a", "silent-l", "k"],
+    sentence: "Let's go for a walk.",
+  },
+  chalk: {
+    letters: ["ch", "open-a", "silent-l", "k"],
+    sentence: "Children enjoy playing with sidewalk chalk.",
+  },
+  fife: {
+    letters: ["f", "long-i", "f", "silent-e"],
+  },
+  strife: {
+    letters: ["s", "t", "r", "long-i", "f", "silent-e"],
+  },
+  spring: {
+    letters: ["s", "p", "r", "short-i", "nasal-n", "silent-g"],
+  },
+  sprang: {
+    letters: ["s", "p", "r", "short-a", "nasal-n", "silent-g"],
+  },
+  sprung: {
+    letters: ["s", "p", "r", "short-u", "nasal-n", "silent-g"],
+  },
+  tick: {
+    letters: ["t", "short-i", "silent-c", "k"],
+  },
+  tack: {
+    letters: ["t", "short-a", "silent-c", "k"],
+  },
+  tuck: {
+    letters: ["t", "short-u", "silent-c", "k"],
+  },
+  tend: {
+    letters: ["t", "short-e", "n", "d"],
+  },
 };
 
 export default words;
