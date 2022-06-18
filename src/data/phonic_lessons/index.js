@@ -38,6 +38,8 @@ import fortyfour from "./44";
 import fortyfive from "./45";
 import fortysix from "./46";
 import fortyseven from "./47";
+import fortyeight from "./48";
+import fortynine from "./49";
 
 const lessons = {
   1: {
@@ -369,6 +371,8 @@ const lessons = {
   45: fortyfive,
   46: fortysix,
   47: fortyseven,
+  48: fortyeight,
+  49: fortynine,
 };
 
 export default lessons;

@@ -2313,6 +2313,105 @@ const words = {
   tend: {
     letters: ["t", "short-e", "n", "d"],
   },
+  track: {
+    letters: ["t", "r", "short-a", "silent-c", "k"],
+  },
+  trump: {
+    letters: ["t", "r", "short-u", "m", "p"],
+  },
+  sing: {
+    letters: ["s", "short-i", "nasal-n", "silent-g"],
+  },
+  sang: {
+    letters: ["s", "short-a", "nasal-n", "silent-g"],
+  },
+  sung: {
+    letters: ["s", "short-u", "nasal-n", "silent-g"],
+  },
+  cool: {
+    letters: ["hard-c", "double-o", "l"],
+  },
+  root: {
+    letters: ["r", "double-o", "t"],
+  },
+  moon: {
+    letters: ["m", "double-o", "n"],
+  },
+  proof: {
+    letters: ["p", "r", "double-o", "f"],
+  },
+  struck: {
+    letters: ["s", "t", "r", "short-u", "silent-c", "k"],
+  },
+  pink: {
+    letters: ["p", "short-i", "nasal-n", "k"],
+  },
+  skunk: {
+    letters: ["s", "k", "short-u", "nasal-n", "k"],
+  },
+  cramp: {
+    letters: ["hard-c", "r", "short-a", "m", "p"],
+  },
+  pluck: {
+    letters: ["p", "l", "short-u", "silent-c", "k"],
+  },
+  check: {
+    letters: ["ch", "short-e", "silent-c", "k"],
+  },
+  Frank: {
+    letters: ["f", "r", "short-a", "nasal-n", "k"],
+  },
+  sling: {
+    letters: ["s", "l", "short-i", "nasal-n", "silent-g"],
+  },
+  lung: {
+    letters: ["l", "short-u", "nasal-n", "silent-g"],
+  },
+  king: {
+    letters: ["k", "short-i", "nasal-n", "silent-g"],
+  },
+  brick: {
+    letters: ["b", "r", "short-i", "silent-c", "k"],
+  },
+  shock: {
+    letters: ["sh", "short-o", "silent-c", "k"],
+  },
+  Jack: {
+    letters: ["j", "short-a", "silent-c", "k"],
+  },
+  bleed: {
+    letters: ["b", "l", "long-e", "silent-e", "d"],
+  },
+  creek: {
+    letters: ["hard-c", "r", "long-e", "silent-e", "k"],
+  },
+  spree: {
+    letters: ["s", "p", "r", "long-e", "silent-e"],
+  },
+  deep: {
+    letters: ["d", "long-e", "silent-e", "p"],
+  },
+  Jill: {
+    letters: ["j", "short-i", "l", "l"],
+  },
+  kill: {
+    letters: ["k", "short-i", "l", "l"],
+  },
+  kick: {
+    letters: ["k", "short-i", "silent-c", "k"],
+  },
+  prop: {
+    letters: ["p", "r", "short-o", "p"],
+  },
+  bent: {
+    letters: ["b", "short-e", "n", "t"],
+  },
+  bunk: {
+    letters: ["b", "short-u", "nasal-n", "k"],
+  },
+  bump: {
+    letters: ["b", "short-u", "m", "p"],
+  },
 };
 
 export default words;
