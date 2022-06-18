@@ -2146,6 +2146,51 @@ const words = {
   small: {
     letters: ["s", "m", "open-a", "l", "l"],
   },
+  naps: {
+    letters: ["n", "short-a", "p", "s"],
+  },
+  sang: {
+    letters: ["s", "short-a", "nasal-n", "silent-g"],
+  },
+  track: {
+    letters: ["t", "r", "short-a", "silent-c", "k"],
+  },
+  plank: {
+    letters: ["p", "l", "short-a", "nasal-n", "k"],
+  },
+  thatch: {
+    letters: ["unvoiced-th", "short-a", "silent-t", "ch"],
+  },
+  keg: {
+    letters: ["k", "short-e", "g"],
+  },
+  pegs: {
+    letters: ["p", "short-e", "g", "hard-s"],
+  },
+  Mab: {
+    letters: ["m", "short-a", "b"],
+  },
+  Tab: {
+    letters: ["t", "short-a", "b"],
+  },
+  ram: {
+    letters: ["r", "short-a", "m"],
+  },
+  lap: {
+    letters: ["l", "short-a", "p"],
+  },
+  nap: {
+    letters: ["n", "short-a", "p"],
+  },
+  sad: {
+    letters: ["s", "short-a", "d"],
+  },
+  Dan: {
+    letters: ["d", "short-a", "n"],
+  },
+  tag: {
+    letters: ["t", "short-a", "g"],
+  },
 };
 
 export default words;

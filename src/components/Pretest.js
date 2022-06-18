@@ -51,6 +51,11 @@ const phonemeList = [
   "long-u",
   "long-y",
   "silent-y",
+  "silent-t",
+  "nasal-n",
+  "silent-g",
+  "silent-c",
+  "unvoiced-th",
 ];
 const wordList = content.pretest;
 

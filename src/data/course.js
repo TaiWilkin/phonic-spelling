@@ -1,7 +1,8 @@
 export const PHONICS = "phonics";
 export const MCGUFFEY = "mcguffey";
+export const SYNTHETIC_PRIMER = "synthetic-primer";
 
-const VALID_COURSES = [PHONICS, MCGUFFEY];
+const VALID_COURSES = [PHONICS, MCGUFFEY, SYNTHETIC_PRIMER];
 let COURSE = process.env.REACT_APP_SITE || PHONICS;
 
 if (!VALID_COURSES.includes(COURSE)) {
@@ -61,6 +62,33 @@ export const CONTENT = {
     acknowledgments: ["Wordnik API", "Project Gutenberg"],
     color: "cyan",
     pretest: ["cat", "has", "fan", "lad"],
+  },
+  [SYNTHETIC_PRIMER]: {
+    title: "Pollard's Synthetic Primer",
+    description: [
+      "This program is inspired by the Synthetic Primer by Rebecca S. Pollard, " +
+        "which was published in 1897 and is based upon " +
+        "the phonetic method.",
+      "In each lesson, students will be introduced to several phonemes and " +
+        "phonetic concepts. They will then use these phonemes to analyze the " +
+        "phonetic composition of a set of words. Finally, they will be tested " +
+        "on their ability to spell these words. As each lesson is successfully " +
+        "completed, additional lessons will unlock.",
+    ],
+    acknowledgments: ["Wordnik API", "HathiTrust"],
+    color: "purple",
+    pretest: [
+      "has",
+      "can",
+      "naps",
+      "sang",
+      "track",
+      "plank",
+      "flash",
+      "thatch",
+      "leg",
+      "pegs",
+    ],
   },
 };
 

@@ -32,3 +32,13 @@ jobs:
           channelId: live
           projectId: phonic-spelling
           target: mcguffey
+      - name: Build Synthetic Primer
+        run: yarn install && yarn build:synthetic-primer
+      - name: Deploy Synthetic Primer
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_PHONIC_SPELLING }}"
+          channelId: live
+          projectId: phonic-spelling
+          target: synthetic-primer
