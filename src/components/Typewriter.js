@@ -14,7 +14,7 @@ import {
   sortStems,
   getAlt,
 } from "../util";
-import { stems } from "../data";
+import { stems, content } from "../data";
 
 const Typewriter = ({
   phonemeList,
@@ -79,7 +79,8 @@ const Typewriter = ({
           <Button
             onClick={handleSubmit}
             className="basic-Button"
-            style={{ flex: 2, backgroundColor: "#04aa6d" }}
+            colorScheme={content.color}
+            style={{ flex: 2 }}
           >
             Submit
           </Button>

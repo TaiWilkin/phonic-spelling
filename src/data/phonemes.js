@@ -357,6 +357,15 @@ const phonemes = {
     vowel: false,
     silent: true,
   },
+  "silent-t": {
+    value: "t",
+    name: "silent-t",
+    letter: "T (silent)",
+    examples: ["catch", "stitch"],
+    image: "https://s7.gifyu.com/images/t.png",
+    vowel: false,
+    silent: true,
+  },
 };
 
 export default phonemes;
