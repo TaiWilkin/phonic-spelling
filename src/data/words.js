@@ -2412,6 +2412,75 @@ const words = {
   bump: {
     letters: ["b", "short-u", "m", "p"],
   },
+  zoo: {
+    letters: ["z", "double-o"],
+  },
+  spoon: {
+    letters: ["s", "p", "double-o", "n"],
+  },
+  spool: {
+    letters: ["s", "p", "double-o", "l"],
+  },
+  bloom: {
+    letters: ["b", "l", "double-o", "m"],
+  },
+  shoot: {
+    letters: ["sh", "double-o", "t"],
+  },
+  broom: {
+    letters: ["b", "r", "double-o", "m"],
+  },
+  meet: {
+    letters: ["m", "long-e", "silent-e", "t"],
+  },
+  cheek: {
+    letters: ["ch", "long-e", "silent-e", "k"],
+  },
+  three: {
+    letters: ["unvoiced-th", "r", "long-e", "silent-e"],
+  },
+  sweep: {
+    letters: ["s", "w", "long-e", "silent-e", "p"],
+  },
+  sweet: {
+    letters: ["s", "w", "long-e", "silent-e", "t"],
+  },
+  green: {
+    letters: ["g", "r", "long-e", "silent-e", "n"],
+  },
+  need: {
+    letters: ["n", "long-e", "silent-e", "d"],
+  },
+  feel: {
+    letters: ["f", "long-e", "silent-e", "l"],
+  },
+  creep: {
+    letters: ["hard-c", "r", "long-e", "silent-e", "p"],
+  },
+  cluck: {
+    letters: ["hard-c", "l", "short-u", "silent-c", "k"],
+  },
+  click: {
+    letters: ["hard-c", "l", "short-i", "silent-c", "k"],
+  },
+  shrill: {
+    letters: ["sh", "r", "short-i", "l", "l"],
+  },
+  shrink: {
+    letters: ["sh", "r", "short-i", "nasal-n", "k"],
+  },
+  pug: {
+    letters: ["p", "short-u", "g"],
+  },
+  puff: {
+    letters: ["p", "short-u", "f", "silent-f"],
+  },
+  string: {
+    letters: ["s", "t", "r", "short-i", "nasal-n", "silent-g"],
+  },
+  strung: {
+    letters: ["s", "t", "r", "short-u", "nasal-n", "silent-g"],
+  },
 };
 
 export default words;

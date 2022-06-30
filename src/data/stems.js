@@ -665,6 +665,14 @@ const stems = {
     letters: ["long-o", "silent-o", "r"],
     image: "https://s8.gifyu.com/images/stem-oor.png",
   },
+  eet: {
+    letters: ["long-e", "silent-e", "t"],
+    image: "https://s8.gifyu.com/images/stem-eet.png",
+  },
+  eel: {
+    letters: ["long-e", "silent-e", "l"],
+    image: "https://s8.gifyu.com/images/stem-eel.png",
+  },
 };
 
 export default stems;
