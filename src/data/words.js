@@ -2481,6 +2481,214 @@ const words = {
   strung: {
     letters: ["s", "t", "r", "short-u", "nasal-n", "silent-g"],
   },
+  ice: {
+    letters: ["long-i", "soft-c", "silent-e"],
+  },
+  rice: {
+    letters: ["r", "long-i", "soft-c", "silent-e"],
+  },
+  dice: {
+    letters: ["d", "long-i", "soft-c", "silent-e"],
+  },
+  nice: {
+    letters: ["n", "long-i", "soft-c", "silent-e"],
+  },
+  price: {
+    letters: ["p", "r", "long-i", "soft-c", "silent-e"],
+  },
+  twice: {
+    letters: ["t", "w", "long-i", "soft-c", "silent-e"],
+  },
+  splice: {
+    letters: ["s", "p", "l", "long-i", "soft-c", "silent-e"],
+  },
+  ace: {
+    letters: ["long-a", "soft-c", "silent-e"],
+  },
+  lace: {
+    letters: ["l", "long-a", "soft-c", "silent-e"],
+  },
+  place: {
+    letters: ["p", "l", "long-a", "soft-c", "silent-e"],
+  },
+  grace: {
+    letters: ["g", "r", "long-a", "soft-c", "silent-e"],
+  },
+  face: {
+    letters: ["f", "long-a", "soft-c", "silent-e"],
+  },
+  space: {
+    letters: ["s", "p", "long-a", "soft-c", "silent-e"],
+  },
+  trace: {
+    letters: ["t", "r", "long-a", "soft-c", "silent-e"],
+  },
+  age: {
+    letters: ["long-a", "soft-g", "silent-e"],
+  },
+  page: {
+    letters: ["p", "long-a", "soft-g", "silent-e"],
+  },
+  rage: {
+    letters: ["r", "long-a", "soft-g", "silent-e"],
+  },
+  cage: {
+    letters: ["hard-c", "long-a", "soft-g", "silent-e"],
+  },
+  stage: {
+    letters: ["s", "t", "long-a", "soft-g", "silent-e"],
+  },
+  blend: {
+    letters: ["b", "l", "short-e", "n", "d"],
+  },
+  stall: {
+    letters: ["s", "t", "open-a", "l", "l"],
+  },
+  stalk: {
+    letters: ["s", "t", "open-a", "silent-l", "k"],
+  },
+  stack: {
+    letters: ["s", "t", "short-a", "silent-c", "k"],
+  },
+  tool: {
+    letters: ["t", "double-o", "l"],
+  },
+  heel: {
+    letters: ["h", "long-e", "silent-e", "l"],
+  },
+  sea: {
+    letters: ["s", "ea"],
+  },
+  read: {
+    letters: ["r", "ea", "d"],
+    sentence: "Read a book.",
+  },
+  load: {
+    letters: ["l", "oa", "d"],
+    sentence: "Load the cart.",
+  },
+  hear: {
+    letters: ["h", "ea", "r"],
+    sentence: "Do you hear them sing?",
+  },
+  lie: {
+    letters: ["l", "ie"],
+    sentence: "I cannot tell a lie.",
+  },
+  loaf: {
+    letters: ["l", "oa", "f"],
+  },
+  loaves: {
+    letters: ["l", "oa", "v", "silent-e", "s"],
+  },
+  heap: {
+    letters: ["h", "ea", "p"],
+  },
+  weak: {
+    letters: ["w", "ea", "k"],
+  },
+  pea: {
+    letters: ["p", "ea"],
+    sentence: "They are like peas in a pod.",
+  },
+  mean: {
+    letters: ["m", "ea", "n"],
+  },
+  meal: {
+    letters: ["m", "ea", "l"],
+  },
+  leaf: {
+    letters: ["l", "ea", "f"],
+  },
+  leaves: {
+    letters: ["l", "ea", "v", "silent-e", "s"],
+  },
+  pie: {
+    letters: ["p", "ie"],
+  },
+  oar: {
+    letters: ["oa", "r"],
+  },
+  boat: {
+    letters: ["b", "oa", "t"],
+  },
+  meat: {
+    letters: ["m", "ea", "t"],
+  },
+  shone: {
+    letters: ["sh", "long-o", "n", "silent-e"],
+    sentence: ["The sun shone through the window."],
+  },
+  reed: {
+    letters: ["r", "double-e", "d"],
+    sentence: "A reed is a type of grass.",
+  },
+  race: {
+    letters: ["r", "long-a", "soft-c", "silent-e"],
+  },
+  crank: {
+    letters: ["hard-c", "r", "short-a", "nasal-n", "k"],
+  },
+  cress: {
+    letters: ["hard-c", "r", "short-e", "s", "s"],
+  },
+  quick: {
+    letters: ["qu", "short-i", "silent-c", "k"],
+  },
+  queen: {
+    letters: ["qu", "long-e", "silent-e", "n"],
+  },
+  car: {
+    letters: ["hard-c", "ar"],
+  },
+  farm: {
+    letters: ["f", "ar", "m"],
+  },
+  barn: {
+    letters: ["b", "ar", "n"],
+  },
+  yard: {
+    letters: ["hard-y", "ar", "d"],
+  },
+  hark: {
+    letters: ["h", "ar", "k"],
+  },
+  star: {
+    letters: ["s", "t", "ar"],
+  },
+  hard: {
+    letters: ["h", "ar", "d"],
+  },
+  harp: {
+    letters: ["h", "ar", "p"],
+  },
+  harm: {
+    letters: ["h", "ar", "m"],
+  },
+  charm: {
+    letters: ["ch", "ar", "m"],
+  },
+  cart: {
+    letters: ["hard-c", "ar", "t"],
+  },
+  far: {
+    letters: ["f", "ar"],
+  },
+  bark: {
+    letters: ["b", "ar", "k"],
+  },
+  sharp: {
+    letters: ["sh", "ar", "p"],
+  },
+  shark: {
+    letters: ["sh", "ar", "k"],
+  },
+  flue: { letters: ["f", "l", "u-as-oo", "silent-e"] },
+  flea: { letters: ["f", "l", "ea"] },
+  float: { letters: ["f", "l", "oa", "t"] },
+  floss: { letters: ["f", "l", "intermediate-o", "s", "s"] },
+  neat: { letters: ["n", "ea", "t"] },
+  noon: { letters: ["n", "double-o", "n"] },
 };
 
 export default words;

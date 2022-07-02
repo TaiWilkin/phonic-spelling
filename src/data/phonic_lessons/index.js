@@ -40,7 +40,10 @@ import fortysix from "./46";
 import fortyseven from "./47";
 import fortyeight from "./48";
 import fortynine from "./49";
-import fifty from './50'
+import fifty from "./50";
+import fiftyone from "./51";
+import fiftytwo from "./52";
+import fiftythree from "./53";
 
 const lessons = {
   1: {
@@ -374,7 +377,10 @@ const lessons = {
   47: fortyseven,
   48: fortyeight,
   49: fortynine,
-  50: fifty
+  50: fifty,
+  51: fiftyone,
+  52: fiftytwo,
+  53: fiftythree,
 };
 
 export default lessons;
