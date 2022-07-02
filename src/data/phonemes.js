@@ -489,6 +489,15 @@ const phonemes = {
     image: "https://s8.gifyu.com/images/phoneme-ar.png",
     vowel: true,
   },
+  ai: {
+    value: "ai",
+    name: "ai",
+    letter: "AI (long A)",
+    examples: ["rain", "hail"],
+    image: "https://s8.gifyu.com/images/phoneme-ai.png",
+    vowel: true,
+    alt: ["long-a", "silent-i"],
+  },
 };
 
 export default phonemes;

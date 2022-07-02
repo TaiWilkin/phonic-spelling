@@ -577,6 +577,10 @@ const stems = {
     letters: ["ar", "n"],
   },
   oap: { letters: ["oa", "p"] },
+  ail: { letters: ["ai", "l"] },
+  aid: { letters: ["ai", "d"] },
+  ain: { letters: ["ai", "n"] },
+  ait: { letters: ["ai", "t"] },
 };
 
 export default stems;
