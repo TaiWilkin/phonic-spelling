@@ -576,6 +576,7 @@ const stems = {
   arn: {
     letters: ["ar", "n"],
   },
+  oap: { letters: ["oa", "p"] },
 };
 
 export default stems;
