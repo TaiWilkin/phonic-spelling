@@ -490,7 +490,7 @@ const stems = {
     letters: ["short-u", "f", "silent-f"],
   },
   ue: {
-    letters: ["u-as-oo", "silent-e"],
+    letters: ["u-as-double-o", "silent-e"],
   },
   oor: {
     letters: ["long-o", "silent-o", "r"],
@@ -581,11 +581,16 @@ const stems = {
   aid: { letters: ["ai", "d"] },
   ain: { letters: ["ai", "n"] },
   ait: { letters: ["ai", "t"] },
-  "ook-oo": { letters: ["oo", "k"] },
-  "ood-oo": { letters: ["oo", "d"] },
-  "ool-oo": { letters: ["oo", "l"] },
-  "oot-oo": { letters: ["oo", "t"] },
-  "ow-long": { value: "ow", letters: ["long-o", "w"] },
+  "ook-oo": { value: "ook", letters: ["oo", "k"] },
+  "ood-oo": { value: "ood", letters: ["oo", "d"] },
+  "ool-oo": { value: "ool", letters: ["oo", "l"] },
+  "oot-oo": { value: "oot", letters: ["oo", "t"] },
+  "ow-long": { value: "ow", letters: ["long-o", "silent-w"] },
+  "ull-oo": { letters: ["u-as-oo", "l", "l"] },
+  "ush-oo": { letters: ["u-as-oo", "sh"] },
+  "uss-oo": { letters: ["u-as-oo", "s", "s"] },
+  "ould-oo": { letters: ["ou", "silent-l", "d"] },
+  ow: { letters: ["ow"] },
 };
 
 export default stems;

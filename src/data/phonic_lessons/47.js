@@ -1,6 +1,6 @@
 const fortyseven = {
   name: "Second Grade, Twenty-Fourth Week",
-  newPhonemes: ["oo-long", "u-as-oo", "silent-l", "silent-f", "silent-o"],
+  newPhonemes: ["oo-long", "u-as-double-o", "silent-l", "silent-f", "silent-o"],
   allPhonemes: [
     "short-a",
     "t",
@@ -34,6 +34,7 @@ const fortyseven = {
     "long-o",
     "long-e",
     "voiced-th",
+    "unvoiced-th",
     "sh",
     "ch",
     "long-a",
@@ -50,7 +51,7 @@ const fortyseven = {
     "silent-c",
     "double-o",
     "oo-long",
-    "u-as-oo",
+    "u-as-double-o",
     "silent-l",
     "silent-f",
     "silent-o",

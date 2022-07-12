@@ -1,5 +1,5 @@
 import { Wrap } from "@chakra-ui/react";
-import Image from "./Image";
+import Phoneme from "./Phoneme";
 
 const Textbox = ({ letters }) => (
   <Wrap
@@ -11,7 +11,7 @@ const Textbox = ({ letters }) => (
     spacing="10px"
   >
     {letters.map((letter, i) => (
-      <Image name={letter} key={`${letter}-${i}`} />
+      <Phoneme name={letter} key={`${letter}-${i}`} />
     ))}
   </Wrap>
 );
