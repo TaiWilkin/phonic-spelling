@@ -498,6 +498,22 @@ const phonemes = {
     vowel: true,
     alt: ["long-a", "silent-i"],
   },
+  oo: {
+    value: "oo",
+    name: "oo",
+    letter: "OO (as in 'foot')",
+    examples: ["foot", "wool"],
+    image: "https://s8.gifyu.com/images/phoneme-oo586397df0a3c0beb.png",
+    vowel: true,
+  },
+  "silent-w": {
+    value: "w",
+    name: "w",
+    letter: "W (silent)",
+    examples: ["glow", "snow"],
+    image: "https://s7.gifyu.com/images/w6da2b2712690b0ec.png",
+    silent: true,
+  },
 };
 
 export default phonemes;

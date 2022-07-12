@@ -581,6 +581,11 @@ const stems = {
   aid: { letters: ["ai", "d"] },
   ain: { letters: ["ai", "n"] },
   ait: { letters: ["ai", "t"] },
+  "ook-oo": { letters: ["oo", "k"] },
+  "ood-oo": { letters: ["oo", "d"] },
+  "ool-oo": { letters: ["oo", "l"] },
+  "oot-oo": { letters: ["oo", "t"] },
+  "ow-long": { value: "ow", letters: ["long-o", "w"] },
 };
 
 export default stems;
