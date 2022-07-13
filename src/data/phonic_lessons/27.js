@@ -34,6 +34,7 @@ const twentyseven = {
     "long-o",
     "long-e",
     "voiced-th",
+    "unvoiced-th",
     "sh",
     "ch",
     "long-a",

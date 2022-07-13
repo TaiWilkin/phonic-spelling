@@ -1,8 +1,8 @@
-import Image from "./Image";
+import Phoneme from "./Phoneme";
 import { Box } from "@chakra-ui/react";
 import { toast } from "react-toastify";
 
-import { phonemes } from "../data";
+import { phonemes, stems } from "../data";
 
 const baseStyle = {
   display: "flex",
@@ -11,14 +11,17 @@ const baseStyle = {
   justifyContent: "center",
 };
 
-const Key = ({ name, onClick, size, stem }) => {
+const Key = ({ name, onClick, size = 75, stem }) => {
   const isVowel = name && phonemes[name]?.vowel;
   const isSilent = name && phonemes[name]?.silent;
+  const value = phonemes[name]?.value || stems[name]?.value;
   const border = isVowel ? "2px solid #81E6D9" : "";
+  const stemLetters = stems[name]?.letters;
   const handleClick = () => onClick(name);
   const constrainedSize = Math.min(Math.max(size, 25), 75);
   const height = constrainedSize * 1.25;
-  let width = stem ? constrainedSize * 2 : constrainedSize * 1.25;
+  const length = value?.length || name?.length || 2;
+  let width = stem ? constrainedSize * length : constrainedSize * 1.25;
   let style = size
     ? {
         ...baseStyle,
@@ -43,8 +46,14 @@ const Key = ({ name, onClick, size, stem }) => {
       className="key"
       style={style}
     >
-      <Box>
-        <Image name={name} size={constrainedSize} />
+      <Box display="flex">
+        {stem ? (
+          stemLetters.map((l, i) => (
+            <Phoneme name={l} size={constrainedSize} key={`${l}-${i}`} />
+          ))
+        ) : (
+          <Phoneme name={name} size={constrainedSize} />
+        )}
       </Box>
     </button>
   );

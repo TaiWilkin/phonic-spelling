@@ -33,6 +33,7 @@ const eleven = {
     "long-o",
     "long-e",
     "voiced-th",
+    "unvoiced-th",
     "sh",
     "ch",
   ],

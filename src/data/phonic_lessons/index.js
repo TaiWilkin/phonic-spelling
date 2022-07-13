@@ -31,11 +31,26 @@ import thirtyseven from "./37";
 import thirtyeight from "./38";
 import thirtynine from "./39";
 import forty from "./40";
+import fortya from "./40-a";
 import fortyone from "./41";
 import fortytwo from "./42";
 import fortythree from "./43";
 import fortyfour from "./44";
 import fortyfive from "./45";
+import fortysix from "./46";
+import fortyseven from "./47";
+import fortyeight from "./48";
+import fortynine from "./49";
+import fiftya from "./50-a";
+import fifty from "./50";
+import fiftyone from "./51";
+import fiftytwo from "./52";
+import fiftythree from "./53";
+import fiftyfour from "./54";
+import fiftyseven from "./57";
+import fiftyeight from "./58";
+import fiftynine from "./59";
+import sixty from "./60";
 
 const lessons = {
   1: {
@@ -359,12 +374,27 @@ const lessons = {
   37: thirtyseven,
   38: thirtyeight,
   39: thirtynine,
-  40: forty,
-  41: fortyone,
-  42: fortytwo,
-  43: fortythree,
-  44: fortyfour,
-  45: fortyfive,
+  40: fortya,
+  41: forty,
+  42: fortyone,
+  43: fortytwo,
+  44: fortythree,
+  45: fortyfour,
+  46: fortyfive,
+  47: fortysix,
+  48: fortyseven,
+  49: fortyeight,
+  50: fortynine,
+  51: fiftya,
+  52: fifty,
+  53: fiftyone,
+  54: fiftytwo,
+  55: fiftythree,
+  56: fiftyfour,
+  57: fiftyseven,
+  58: fiftyeight,
+  59: fiftynine,
+  60: sixty,
 };
 
 export default lessons;
