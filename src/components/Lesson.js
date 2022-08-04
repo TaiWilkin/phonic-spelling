@@ -93,6 +93,8 @@ const Lesson = () => {
             notes={notes}
             sightwords={sightwords}
             lesson={match.params.id}
+            words={words}
+            review={review}
           />
         </Route>
       </Switch>
