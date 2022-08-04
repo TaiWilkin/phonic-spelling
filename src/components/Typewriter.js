@@ -27,6 +27,7 @@ const Typewriter = ({
   word,
   setShowAttributions,
   completedWords,
+  skippedWords,
   wordList,
   analysis,
   showAnswer,
@@ -108,7 +109,11 @@ const Typewriter = ({
             ? "Turn off phoneme descriptions"
             : "Turn on phoneme descriptions"}
         </Button>
-        <ProgressBar completedWords={completedWords} wordList={wordList} />
+        <ProgressBar
+          completedWords={completedWords}
+          skippedWords={skippedWords}
+          wordList={wordList}
+        />
       </HStack>
     </Box>
   );
