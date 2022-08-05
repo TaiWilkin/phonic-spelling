@@ -19,18 +19,22 @@ const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
   const audio = useSelector((state) => state.audio);
   const [completedWords, setCompletedWords] = useState([]);
   const [missedWords, setMissedWords] = useState([]);
+  const [skippedWords, setSkippedWords] = useState([]);
   const [attributions, setAttributions] = useState([]);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [showAttributions, setShowAttributions] = useState(false);
 
   const incompleteWords = wordList.filter(
-    (word) => !completedWords.includes(word)
+    (word) => !completedWords.includes(word) && !skippedWords.includes(word)
   );
   const currentWord = incompleteWords[0];
 
   const pronounceCurrentWord = () => {
     if (currentWord) pronounce(currentWord, voice);
   };
+
+  const countTimesWordMissed = (word, newMissedWords) =>
+    newMissedWords.filter((w) => w === word).length;
 
   const useInSentence = () => {
     const sentence = words[currentWord].sentence;
@@ -70,8 +74,18 @@ const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
       toast.success("Correct!");
     } else {
       pronounceCurrentWord();
-      setMissedWords([...missedWords, currentWord]);
-      toast.error("Try again");
+      const newMissedWords = [...missedWords, currentWord];
+      setMissedWords(newMissedWords);
+      if (countTimesWordMissed(currentWord, newMissedWords) >= 3) {
+        setSkippedWords([...skippedWords, currentWord]);
+        toast.error(
+          `You missed the word '${currentWord.toUpperCase()}' three times, ` +
+            `so will not be given it again in this attempt.`,
+          { autoClose: 2000 }
+        );
+      } else {
+        toast.error("Try again");
+      }
     }
   };
 
@@ -117,6 +131,7 @@ const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
         word={currentWord}
         setShowAttributions={setShowAttributions}
         completedWords={completedWords}
+        skippedWords={skippedWords}
         wordList={wordList}
       />
       <AttributionPopup
