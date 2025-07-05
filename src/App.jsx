@@ -61,7 +61,7 @@ export default function App() {
             }
           />
           <Route
-            path="/lessons/:id"
+            path="/lessons/:id/*"
             element={
               <PrivateRoute>
                 <Lesson />

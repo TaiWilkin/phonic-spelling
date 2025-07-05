@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Routes, Route, useMatch } from "react-router-dom";
+import { Routes, Route, useMatch, useParams } from "react-router-dom";
 import { Text, Box } from "@chakra-ui/react";
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
@@ -54,57 +54,68 @@ const Lesson = () => {
   return (
     <div>
       <Routes>
-        <Route path={`${path}/phoneme/:name`}>
-          <PhonemeIntroduction review={review} />
-        </Route>
-        <Route path={`${path}/sightwords`}>
-          <SightWords sightwords={sightwords} />
-        </Route>
-        <Route path={`${path}/analysis`}>
-          <WordAnalysis phonemeList={allPhonemes} wordList={wordList} />
-        </Route>
-        <Route path={`${path}/spelling`}>
-          <SpellingLesson
-            phonemeList={allPhonemes}
-            wordList={wordList}
-            stemList={stems}
-          />
-        </Route>
-        <Route path={`${path}/blenddrill`}>
-          <BlendDrill
-            phonemeList={blenddrill?.phonemes}
-            wordList={blenddrill?.words}
-            stemList={blenddrill?.stems}
-            lesson={id}
-          />
-        </Route>
-        <Route path={`${path}/dictation`}>
-          <Dictation
-            lesson={id}
-            dictation={dictation}
-            dictationImage={dictationImage}
-          />
-        </Route>
-        <Route path={`${path}/completed`}>
-          <CompletedLesson lesson={id} />
-        </Route>
-        <Route path={path}>
-          <LessonIntroduction
-            notes={notes}
-            sightwords={sightwords}
-            lesson={id}
-            words={words}
-            review={review}
-          />
-        </Route>
+        <Route
+          path="phoneme/:name"
+          element={<PhonemeIntroduction review={review} />}
+        />
+        <Route
+          path="sightwords"
+          element={<SightWords sightwords={sightwords} />}
+        />
+        <Route
+          path="analysis"
+          element={
+            <WordAnalysis phonemeList={allPhonemes} wordList={wordList} />
+          }
+        />
+        <Route
+          path="spelling"
+          element={
+            <SpellingLesson
+              phonemeList={allPhonemes}
+              wordList={wordList}
+              stemList={stems}
+            />
+          }
+        />
+        <Route
+          path="blenddrill"
+          element={
+            <BlendDrill
+              phonemeList={blenddrill?.phonemes}
+              wordList={blenddrill?.words}
+              stemList={blenddrill?.stems}
+              lesson={id}
+            />
+          }
+        />
+        <Route
+          path="dictation"
+          element={
+            <Dictation
+              lesson={id}
+              dictation={dictation}
+              dictationImage={dictationImage}
+            />
+          }
+        />
+        <Route path="completed" element={<CompletedLesson lesson={id} />} />
+        <Route
+          index
+          element={
+            <LessonIntroduction
+              notes={notes}
+              sightwords={sightwords}
+              lesson={id}
+              words={words}
+              review={review}
+            />
+          }
+        />
       </Routes>
       <Routes>
-        <Route path={`${path}/phoneme/:name`}>
-          <LessonContinueLink />
-        </Route>
-        <Route path={`${path}`} exact>
-          <LessonContinueLink />
-        </Route>
+        <Route path="/phoneme/:name" element={<LessonContinueLink />} />
+        <Route index exact element={<LessonContinueLink />} />
       </Routes>
     </div>
   );

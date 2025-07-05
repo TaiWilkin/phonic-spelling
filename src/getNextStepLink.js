@@ -1,3 +1,5 @@
+import { matchPath } from "react-router";
+
 import { lessons } from "./data";
 
 const steps = [
@@ -65,10 +67,9 @@ const getNextStep = ({ name, id, path }) => {
 
   if (!lesson) return false;
 
-  let currentStep = steps.findIndex((s) => s.path === path);
-  if (!currentStep) {
-    currentStep = 0;
-  }
+  let currentStep = steps.findIndex((s) =>
+    matchPath({ path: s.path, end: true }, path)
+  );
 
   let phonemeIndex = lesson.newPhonemes.findIndex((p) => p === name) + 1;
   if (!phonemeIndex) {
