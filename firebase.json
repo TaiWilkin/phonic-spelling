@@ -6,7 +6,7 @@
   "hosting": [
     {
       "target": "phonic-spelling",
-      "public": "build",
+      "public": "dist",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [
         {
@@ -17,7 +17,7 @@
     },
     {
       "target": "mcguffey",
-      "public": "build",
+      "public": "dist",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [
         {
@@ -28,7 +28,7 @@
     },
     {
       "target": "synthetic-primer",
-      "public": "build",
+      "public": "dist",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [
         {
