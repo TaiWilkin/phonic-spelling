@@ -2806,6 +2806,21 @@ const words = {
   stain: { letters: ["s", "t", "ai", "n"] },
   chart: { letters: ["ch", "ar", "t"] },
   cheat: { letters: ["ch", "long-e", "silent-a", "t"] },
+  eve: { letters: ["long-e", "v", "silent-e"] },
+  size: { letters: ["s", "long-i", "z", "silent-e"] },
+  gong: { letters: ["g", "intermediate-o", "nasal-n", "silent-g"] },
+  dent: { letters: ["d", "short-e", "n", "t"] },
+  blade: { letters: ["b", "l", "long-a", "d", "silent-e"] },
+  stump: { letters: ["s", "t", "short-u", "m", "p"] },
+  flock: { letters: ["f", "l", "short-o", "silent-c", "k"] },
+  due: { letters: ["d", "u-as-double-o", "silent-e"] },
+  chick: { letters: ["ch", "short-i", "silent-c", "k"] },
+  plank: { letters: ["p", "l", "short-a", "nasal-n", "k"] },
+  flake: { letters: ["f", "l", "long-a", "k", "silent-e"] },
+  keep: { letters: ["k", "long-e", "silent-e", "p"] },
+  scale: { letters: ["s", "hard-c", "long-a", "l", "silent-e"] },
+  while: { letters: ["wh", "long-i", "l", "silent-e"] },
+  chose: { letters: ["ch", "long-o", "hard-s", "silent-e"] },
 };
 
 export default words;

@@ -51,6 +51,7 @@ import fiftyseven from "./57";
 import fiftyeight from "./58";
 import fiftynine from "./59";
 import sixty from "./60";
+import sixtyone from "./61";
 
 const lessons = {
   1: {
@@ -395,6 +396,7 @@ const lessons = {
   58: fiftyeight,
   59: fiftynine,
   60: sixty,
+  61: sixtyone,
 };
 
 export default lessons;
