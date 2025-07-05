@@ -11,7 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Enable Corepack and use Yarn 3.x
+        run: |
+          corepack enable
+          corepack prepare yarn@3.3.1 --activate
       - name: Build Phonics
         run: yarn install && yarn build:phonics
       - name: Deploy Phonics
