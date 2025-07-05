@@ -7,7 +7,11 @@ exports.wordnik = functions.https.onRequest((request, response) => {
   response.set("Access-Control-Allow-Origin", "*");
   return axios
     .get(
-      `https://api.wordnik.com/v4/word.json/${request.params[0]}/audio?useCanonical=false&limit=50&api_key=${process.env.WORDNIK_API_KEY}`
+      `https://api.wordnik.com/v4/word.json/${
+        request.params[0]
+      }/audio?useCanonical=false&limit=50&api_key=${
+        import.meta.env.WORDNIK_API_KEY
+      }`
     )
     .then((apiResponse) => {
       return response.send(apiResponse.data);

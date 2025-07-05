@@ -26,17 +26,21 @@ export const lessonAttemptSlice = createSlice({
       correctAnswers: [],
     }),
   },
-  extraReducers: {
-    [clearState]: (state) => ({
-      lesson: null,
-      incorrectAnswers: [],
-      correctAnswers: [],
-    }),
-    [saveLessonAttemptSuccess]: (state) => ({
-      lesson: null,
-      incorrectAnswers: [],
-      correctAnswers: [],
-    }),
+  extraReducers: (builder) => {
+    builder.addCase(clearState, (state) => {
+      return {
+        lesson: null,
+        incorrectAnswers: [],
+        correctAnswers: [],
+      };
+    });
+    builder.addCase(saveLessonAttemptSuccess, (state) => {
+      return {
+        lesson: null,
+        incorrectAnswers: [],
+        correctAnswers: [],
+      };
+    });
   },
 });
 

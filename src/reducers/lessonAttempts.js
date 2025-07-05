@@ -33,8 +33,10 @@ export const lessonAttemptsSlice = createSlice({
       state.loading = true;
     },
   },
-  extraReducers: {
-    [clearState]: (state) => ({ attempts: {} }),
+  extraReducers: (builder) => {
+    builder.addCase(clearState, (state) => {
+      return { attempts: {} };
+    });
   },
 });
 

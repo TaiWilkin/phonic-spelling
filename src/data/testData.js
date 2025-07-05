@@ -1,7 +1,7 @@
 import { lessons, words, phonemes, stems } from "./index";
 
 const testData = () => {
-  if (process.env.NODE_ENV !== "development") return;
+  if (import.meta.env.NODE_ENV !== "development") return;
 
   Object.keys(lessons).forEach((l) => {
     const lesson = lessons[l];

@@ -3,7 +3,7 @@ export const MCGUFFEY = "mcguffey";
 export const SYNTHETIC_PRIMER = "synthetic-primer";
 
 const VALID_COURSES = [PHONICS, MCGUFFEY, SYNTHETIC_PRIMER];
-let COURSE = process.env.REACT_APP_SITE || PHONICS;
+let COURSE = import.meta.env.VITE_SITE || PHONICS;
 
 if (!VALID_COURSES.includes(COURSE)) {
   console.warning(`Course ${COURSE} is not valid.`);
