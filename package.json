@@ -1,6 +1,7 @@
 {
-  "name": "Phonic-Spelling",
+  "name": "phonic-spelling",
   "version": "1.0.0",
+  "type": "module",
   "description": "Phonic Spelling",
   "keywords": [
     "react",
