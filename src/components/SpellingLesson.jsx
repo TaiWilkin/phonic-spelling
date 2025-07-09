@@ -14,7 +14,7 @@ import getNextStepLink from "../getNextStepLink";
 const SpellingLesson = ({ phonemeList, wordList, stemList }) => {
   const match = useMatch("/lessons/:id/*");
   const { id } = useParams();
-  const path = match?.pathnameBase;
+  const path = match?.pathname;
   const dispatch = useDispatch();
   const { voice } = useSelector((state) => state.voice);
   const { lesson } = useSelector((state) => state.lessonAttempt);

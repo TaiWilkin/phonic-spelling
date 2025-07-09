@@ -97,7 +97,7 @@ const BlendDrill = ({ phonemeList, wordList, stemList }) => {
   if (!currentWord) {
     const link = getNextStepLink({
       id,
-      path: match?.pathnameBase || location.pathname, // fallback in case match is null
+      path: match?.pathname || location.pathname, // fallback in case match is null
     });
 
     return <Navigate to={link} />;

@@ -12,7 +12,7 @@ import getNextStepLink from "../getNextStepLink";
 const WordAnalysis = ({ phonemeList, wordList }) => {
   const match = useMatch("/lessons/:id/*");
   const { id } = useParams();
-  const path = match?.pathnameBase;
+  const path = match?.pathname;
   const { voice } = useSelector((state) => state.voice);
   const [completedWords, setCompletedWords] = useState([]);
   const [showAnswer, setShowAnswer] = useState(false);

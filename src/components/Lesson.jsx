@@ -17,7 +17,7 @@ import Dictation from "./Dictation";
 
 const Lesson = () => {
   const match = useMatch("/lessons/:id/*");
-  const path = match?.pathnameBase;
+  const path = match?.pathname;
   const { id } = useParams();
   const { user } = useSelector((state) => state.auth);
 
