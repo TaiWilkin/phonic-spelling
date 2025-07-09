@@ -92,20 +92,8 @@ const sixtyone = {
   ],
   sightwords: [],
   blenddrill: {
-    phonemes: ["b", "sh", "g", "sk"],
-    stems: [
-      "ind",
-      "ump",
-      "ang",
-      "ine",
-      "ame",
-      "ed",
-      "ood",
-      "ilt",
-      "in",
-      "ill",
-      "ate",
-    ],
+    phonemes: ["b", "sh", "g", "s", "oo", "k", "d"],
+    stems: ["ind", "ump", "ang", "ine", "ame", "ed", "ilt", "in", "ill", "ate"],
     words: [
       "bind",
       "bump",

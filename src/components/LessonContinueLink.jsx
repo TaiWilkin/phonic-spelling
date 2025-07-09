@@ -5,7 +5,7 @@ import getNextStepLink from "../getNextStepLink";
 
 const LessonContinueLink = () => {
   const match = useMatch("/lessons/:id/*");
-  const path = match?.pathnameBase;
+  const path = match?.pathname;
   let { name, id } = useParams();
 
   const link = getNextStepLink({ name, id, path });

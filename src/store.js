@@ -26,12 +26,11 @@ const persistConfig = {
 
 const persistedReducer = persistReducer(persistConfig, reducers);
 
-const middleware =
-  import.meta.env.NODE_ENV === "development" ? [thunk, logger] : [thunk];
+const middleware = import.meta.env.DEV ? [thunk, logger] : [thunk];
 
 const store = configureStore({
   reducer: persistedReducer,
-  devTools: import.meta.env.NODE_ENV !== "development",
+  devTools: import.meta.env.DEV,
   middleware,
 });
 

@@ -1,7 +1,7 @@
 import { format, parse } from "date-fns";
 import { phonemes, lessons, stems } from "./data";
 
-const SOUND_ON = import.meta.env.NODE_ENV === "development" ? false : true;
+const SOUND_ON = import.meta.env.DEV ? false : true;
 export let VOICES = window.speechSynthesis?.getVoices();
 export const defaultVoice = "Google US English";
 

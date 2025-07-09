@@ -2821,6 +2821,11 @@ const words = {
   scale: { letters: ["s", "hard-c", "long-a", "l", "silent-e"] },
   while: { letters: ["wh", "long-i", "l", "silent-e"] },
   chose: { letters: ["ch", "long-o", "hard-s", "silent-e"] },
+  getting: { letters: [] },
+  dip: { letters: [] },
+  dipping: { letters: [] },
+  bang: { letters: [] },
+  game: { letters: [] },
 };
 
 export default words;
